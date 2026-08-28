@@ -19,7 +19,8 @@ title: Live Board
   </p>
 </section>
 
-<section>
+<section class="card nom-board">
+  <p class="kicker">Eviction desk</p>
   <h2>Nominated this week</h2>
   {% if season.voting_open %}
     <p>Public voting is open. Save your nominated housemates.</p>
