@@ -1,0 +1,11 @@
+---
+permalink: /api/index.json
+---
+{
+  "season": {{ site.data.season | jsonify }},
+  "voting_open": {{ site.data.season.voting_open }},
+  "nominated": {% if site.data.season.voting_open %}{{ site.data.evictions | last | jsonify }}{% else %}[]{% endif %},
+  "housemates": {{ site.data.housemates | jsonify }},
+  "weekly_tasks": {{ site.data.weekly_tasks | jsonify }},
+  "evictions": {{ site.data.evictions | jsonify }}
+}
