@@ -151,7 +151,7 @@
 - id: gwen-joli
   name: Gwen Montano & Joli Alferez
   display_name: Gwen & Joli
-  moniker: Ang Brave Bromantiko of Cavite/Ang Smiling Darling ng Camarines Sur
+  moniker: Ang Brave Bromantiko of Cavite at Ang Smiling Darling ng Camarines Sur
   age_on_entry: 24
   hometown: Cavite / Camarines Sur
   type: Adult
@@ -190,9 +190,9 @@
   vote_percent: 6.86
 
 - id: dingdong-patrick
-  name: Dingdong Bahan & Patrick Ramirez
+  name: Dingdong Bahan and Patrick Ramirez
   display_name: DongPat
-  moniker: Ang Charismatic Partner ng Taguig/Ang Go-Getter Partner ng Manila
+  moniker: Ang Charismatic Partner ng Taguig at Ang Go-Getter Partner ng Manila
   age_on_entry: 27
   hometown: Taguig / Manila
   type: Adult
@@ -261,7 +261,7 @@
   vote_percent: 11.61
 
 - id: marc-nanninga
-  name: Marc Nanninga Jr.
+  name: Marc Nanninga
   display_name: Marc
   moniker: Ang Sporty-Go-Lucky Kuya ng Camarines Norte
   age_on_entry: 17
