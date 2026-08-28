@@ -1,0 +1,4 @@
+---
+permalink: /api/status.json
+---
+{{ site.data.season | jsonify }}
