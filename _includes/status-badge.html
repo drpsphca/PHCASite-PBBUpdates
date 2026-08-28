@@ -1,2 +1,4 @@
 {% assign s = include.status %}
-<span class="badge badge-{{ s }}">{{ s | replace: '_', ' ' }}</span>
+<span class="badge badge-{{ include.status | replace: ' ', '_' }}">
+  {{ include.status | replace: '_', ' ' }}
+</span>
