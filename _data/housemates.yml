@@ -1,7 +1,7 @@
 - id: fyang-smith
   name: Sofia "Fyang" Smith
   display_name: Fyang
-  moniker: Amakabogera Influencer of Mandaluyong
+  moniker: Ang Anakabogerang Influencer of Mandaluyong
   age_on_entry: 18
   hometown: Mandaluyong
   type: Teen
@@ -16,7 +16,7 @@
 - id: rain-celmar
   name: Rain Celmar
   display_name: Rain
-  moniker: Cheerfu-Langga ng Cebu
+  moniker: Ang Cheerfu-Langga ng Cebu
   age_on_entry: 17
   hometown: Cebu
   type: Teen
@@ -31,7 +31,7 @@
 - id: kolette-madelo
   name: Kolette Madelo
   display_name: Kolette
-  moniker: Ma-cute-lit na Raketera ng General Santos
+  moniker: Ang Ma-cute-lit na Raketera ng General Santos
   age_on_entry: 20
   hometown: General Santos
   type: Adult
@@ -46,7 +46,7 @@
 - id: kai-montinola
   name: Kai Montinola
   display_name: Kai
-  moniker: Singing Gwapa ng Cebu
+  moniker: Ang Singing Gwapa ng Cebu
   age_on_entry: 17
   hometown: Cebu
   type: Teen
@@ -61,7 +61,7 @@
 - id: jm-ibarra
   name: JM Ibarra
   display_name: JM
-  moniker: Poginsyanong Pilo-ToBe ng Quezon
+  moniker: Ang Poginsyanong Pilo-To Be ng Quezon
   age_on_entry: 23
   hometown: Quezon
   type: Adult
@@ -76,7 +76,7 @@
 - id: jp-cabrera
   name: JP Cabrera
   display_name: JP
-  moniker: Rising Junior ng Quezon City
+  moniker: Ang Persevering Bunso ng Quezon City
   age_on_entry: 18
   hometown: Quezon City
   type: Teen
@@ -91,7 +91,7 @@
 - id: binsoy-namoca
   name: Binsoy Namoca
   display_name: Binsoy
-  moniker: Maabilidancing Dong ng South Cotabato
+  moniker: Ang Maabilidancing Dong ng South Cotabato
   age_on_entry: 22
   hometown: South Cotabato
   type: Adult
@@ -106,7 +106,7 @@
 - id: jarren-garcia
   name: Jarren Garcia
   display_name: Jarren
-  moniker: Charming Crooner ng London
+  moniker: Ang Charming Crooner ng London
   age_on_entry: 17
   hometown: London, UK
   type: Teen
@@ -121,7 +121,7 @@
 - id: jas-dudley-scales
   name: Jas Dudley-Scales
   display_name: Jas
-  moniker: Optimistic Ate ng Dumaguete
+  moniker: Ang Optimistic Ate ng Dumaguete
   age_on_entry: 24
   hometown: Negros Oriental
   type: Adult
@@ -136,7 +136,7 @@
 - id: dylan-yturralde
   name: Dylan Yturralde
   display_name: Dylan
-  moniker: Astig Volleybae ng Pampanga
+  moniker: Ang Astig Volleybae ng Pampanga
   age_on_entry: 21
   hometown: Pampanga
   type: Adult
@@ -151,7 +151,7 @@
 - id: gwen-joli
   name: Gwen Montano & Joli Alferez
   display_name: Gwen & Joli
-  moniker: Brave Bromantic of Cavite & Bicolana ng Camarines Sur
+  moniker: Ang Brave Bromantiko of Cavite/Ang Smiling Darling ng Camarines Sur
   age_on_entry: 24
   hometown: Cavite / Camarines Sur
   type: Adult
@@ -165,19 +165,19 @@
   members:
     - id: gwen-montano
       name: Gwen Montano
-      moniker: Brave Bromantic of Cavite
+      moniker: Ang Brave Bromantiko of Cavite
       hometown: Cavite
       day_entered: 33
     - id: joli-alferez
       name: Joli Alferez
-      moniker: Bicolana ng Camarines Sur
+      moniker: Ang Smiling Darling ng Camarines Sur
       hometown: Camarines Sur
       day_entered: 24
 
 - id: jan-silva
-  name: Jan Emmanuel Silva
+  name: Jan Silva
   display_name: Jan
-  moniker: Prodigal Bai ng Cebu
+  moniker: Ang Prodigal Bai ng Cebu
   age_on_entry: 18
   hometown: Cebu
   type: Teen
@@ -192,7 +192,7 @@
 - id: dingdong-patrick
   name: Dingdong Bahan & Patrick Ramirez
   display_name: DongPat
-  moniker: Charismatic Partner ng Taguig & Go-Getter Partner ng Manila
+  moniker: Ang Charismatic Partner ng Taguig/Ang Go-Getter Partner ng Manila
   age_on_entry: 27
   hometown: Taguig / Manila
   type: Adult
@@ -218,7 +218,7 @@
 - id: noimie-steikunas
   name: Noimie Steikunas
   display_name: Noimie
-  moniker: Mombitious Chikadora ng Lithuania
+  moniker:Ang Mombitious Chikadora ng Lithuania
   age_on_entry: 31
   hometown: Lithuania
   type: Adult
@@ -233,7 +233,7 @@
 - id: brx-ruiz
   name: Brx Ruiz
   display_name: Brx
-  moniker: Seamanluluto ng Bacolod
+  moniker: Ang Seamanluluto ng Bacolod
   age_on_entry: 32
   hometown: Bacolod
   type: Adult
@@ -248,7 +248,7 @@
 - id: kanata-tapia
   name: Kanata Tapia
   display_name: Kanata
-  moniker: Lola-loving Apo ng Occidental Mindoro
+  moniker: Ang Lola-loving Apo ng Occidental Mindoro
   age_on_entry: 16
   hometown: Occidental Mindoro
   type: Teen
@@ -263,7 +263,7 @@
 - id: marc-nanninga
   name: Marc Nanninga Jr.
   display_name: Marc
-  moniker: Sporty-Go-Lucky Kuya ng Camarines Norte
+  moniker: Ang Sporty-Go-Lucky Kuya ng Camarines Norte
   age_on_entry: 17
   hometown: Camarines Norte
   type: Teen
@@ -278,7 +278,7 @@
 - id: therese-villamor
   name: Therese Villamor
   display_name: Therese
-  moniker: Determined Daughter ng Camarines Sur
+  moniker: Ang Determined Daughter ng Camarines Sur
   age_on_entry: 17
   hometown: Camarines Sur
   type: Teen
