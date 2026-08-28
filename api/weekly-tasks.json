@@ -1,0 +1,4 @@
+---
+permalink: /api/weekly-tasks.json
+---
+{{ site.data.weekly_tasks | jsonify }}
