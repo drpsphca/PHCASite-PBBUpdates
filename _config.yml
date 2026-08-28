@@ -2,6 +2,7 @@ title: PBB Updates Board
 description: PBB Updates Board from DRPS PHCA
 url: "https://pbbupdates.drpsphca.com"
 baseurl: "/pbb-updates"
+theme_name: gen11-arcade
 
 season_id: gen11
 
