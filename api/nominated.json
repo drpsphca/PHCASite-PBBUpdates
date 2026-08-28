@@ -1,0 +1,10 @@
+---
+permalink: /api/nominated.json
+---
+{% assign season = site.data.season %}
+{% if season.voting_open %}
+  {% assign latest = site.data.evictions | last %}
+  {{ latest | jsonify }}
+{% else %}
+{"voting_open":false,"nominated":[],"message":"No ongoing eviction voting."}
+{% endif %}
