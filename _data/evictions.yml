@@ -1,0 +1,136 @@
+- week: 2
+  day: 15
+  date: "2024-08-03"
+  vote_type: save_evict
+  nominated:
+    - { id: dylan-yturralde, percent: 40.06, result: saved }
+    - { id: noimie-steikunas, percent: 22.57, result: saved }
+    - { id: therese-villamor, percent: 16.22, result: evicted }
+  evicted: [therese-villamor]
+
+- week: 3
+  day: 22
+  date: "2024-08-10"
+  vote_type: save_evict
+  nominated:
+    - { id: dingdong-patrick, percent: 42.14, result: saved }
+    - { id: kolette-madelo, percent: 13.45, result: saved }
+    - { id: dylan-yturralde, percent: 13.24, result: saved }
+    - { id: kanata-tapia, percent: 11.61, result: evicted }
+    - { id: marc-nanninga, percent: 5.09, result: evicted }
+  evicted: [kanata-tapia, marc-nanninga]
+
+- week: 4
+  day: 29
+  date: "2024-08-17"
+  vote_type: save_evict
+  nominated:
+    - { id: dingdong-patrick, percent: 26.84, result: saved }
+    - { id: jas-dudley-scales, percent: 15.42, result: saved }
+    - { id: noimie-steikunas, percent: 13.22, result: evicted }
+    - { id: brx-ruiz, percent: 9.84, result: evicted }
+  evicted: [noimie-steikunas, brx-ruiz]
+
+- week: 5
+  day: 36
+  date: "2024-08-24"
+  vote_type: save_evict
+  nominated:
+    - { id: rain-celmar, percent: 18.63, result: saved }
+    - { id: fyang-smith, percent: 13.91, result: saved }
+    - { id: kolette-madelo, percent: 13.91, result: saved }
+    - { id: kai-montinola, percent: 13.05, result: saved }
+    - { id: dylan-yturralde, percent: 11.05, result: saved }
+    - { id: dingdong-patrick, percent: 9.66, result: evicted }
+  evicted: [dingdong-patrick]
+
+- week: 6
+  day: 43
+  date: "2024-08-31"
+  vote_type: save_evict
+  nominated:
+    - { id: fyang-smith, percent: 34.36, result: saved }
+    - { id: jas-dudley-scales, percent: 11.59, result: saved }
+    - { id: jan-silva, percent: 6.86, result: evicted }
+  evicted: [jan-silva]
+
+- week: 7
+  day: 50
+  date: "2024-09-07"
+  vote_type: save_evict
+  nominated:
+    - { id: fyang-smith, percent: 42.32, result: saved }
+    - { id: kolette-madelo, percent: 32.59, result: saved }
+    - { id: gwen-joli, percent: 5.29, result: evicted }
+  evicted: [gwen-joli]
+
+- week: 8
+  day: 57
+  date: "2024-09-14"
+  vote_type: save_evict
+  nominated:
+    - { id: rain-celmar, percent: 39.02, result: saved }
+    - { id: kolette-madelo, percent: 31.94, result: saved }
+    - { id: dylan-yturralde, percent: 11.05, result: evicted }
+  evicted: [dylan-yturralde]
+
+- week: 9
+  day: 64
+  date: "2024-09-21"
+  vote_type: save
+  nominated:
+    - { id: kolette-madelo, percent: 40.42, result: saved }
+    - { id: jm-ibarra, percent: 36.14, result: saved }
+    - { id: jas-dudley-scales, percent: 23.44, result: evicted }
+  evicted: [jas-dudley-scales]
+
+- week: 10
+  day: 71
+  date: "2024-09-28"
+  vote_type: save
+  nominated:
+    - { id: kai-montinola, percent: 43.97, result: saved }
+    - { id: fyang-smith, percent: 32.97, result: saved }
+    - { id: jarren-garcia, percent: 23.06, result: evicted }
+  evicted: [jarren-garcia]
+
+- week: 11
+  day: 78
+  date: "2024-10-05"
+  vote_type: save
+  nominated:
+    - { id: rain-celmar, percent: 54.79, result: saved }
+    - { id: jm-ibarra, percent: 19.14, result: saved }
+    - { id: jp-cabrera, percent: 13.19, result: saved }
+    - { id: binsoy-namoca, percent: 12.88, result: evicted }
+  evicted: [binsoy-namoca]
+
+- week: 12
+  day: 85
+  date: "2024-10-12"
+  vote_type: save
+  nominated:
+    - { id: fyang-smith, percent: 54.03, result: saved }
+    - { id: rain-celmar, percent: 36.35, result: saved }
+    - { id: jp-cabrera, percent: 9.61, result: evicted }
+  evicted: [jp-cabrera]
+
+- week: 13
+  day: 92
+  date: "2024-10-19"
+  vote_type: save
+  nominated:
+    - { id: jm-ibarra, percent: 17.32, result: evicted }
+  evicted: [jm-ibarra]
+  note: Final pre-Big Night eviction among remaining housemates.
+
+- week: 14
+  day: 99
+  date: "2024-10-26"
+  vote_type: finale
+  nominated:
+    - { id: fyang-smith, percent: 30.66, result: winner }
+    - { id: rain-celmar, percent: 26.05, result: runner_up }
+    - { id: kolette-madelo, percent: 25.91, result: third }
+    - { id: kai-montinola, percent: 17.38, result: fourth }
+  evicted: []

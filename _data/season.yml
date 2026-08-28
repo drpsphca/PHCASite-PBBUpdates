@@ -1,0 +1,26 @@
+id: gen11
+title: "Pinoy Big Brother: Gen 11"
+short_title: "PBB Gen 11"
+premiere: "2024-07-20"
+finale: "2024-10-26"
+days: 99
+status: ended          # live | eviction_open | ended
+voting_open: false
+current_week: 14
+current_day: 99
+updated_at: "2024-10-26T21:00:00+08:00"
+winner: fyang-smith
+hosts:
+  - Bianca Gonzalez
+  - Robi Domingo
+  - Kim Chiu
+  - Melai Cantiveros
+  - Enchong Dee
+  - Alexa Ilacad
+notes: >
+  Season has ended. This dataset is the complete Gen 11 archive
+  for UI and Android API testing. Set status to live and
+  voting_open to true when a new eviction week starts.
+sources:
+  - https://bigbrother.fandom.com/wiki/Pinoy_Big_Brother:_Gen11
+  - https://en.wikipedia.org/wiki/Pinoy_Big_Brother:_Gen_11

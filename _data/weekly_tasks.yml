@@ -1,0 +1,77 @@
+- week: 1
+  day: 5
+  date: "2024-07-24"
+  title: Pasa-Pasa para sa Labing-Isa
+  summary: Move 11-11.99 L of pool water across 11 platforms in 11:00-11:59 using 11 objects.
+  status: failed
+
+- week: 2
+  day: 12
+  date: "2024-07-31"
+  title: Pinoy Big Babies' Requests
+  summary: Four "parents" must fulfill at least 6 of 11 baby housemate requests.
+  status: passed
+
+- week: 3
+  day: 17
+  date: "2024-08-05"
+  title: Likes, Camera, Upload!
+  summary: Post 3 good-vibe videos; each needed 111,111 likes/reactions.
+  status: failed
+
+- week: 4
+  day: 24
+  date: "2024-08-12"
+  title: Relay ang Ship
+  summary: Secret-identity first half failed; bamboo ship relay across the pool passed.
+  status: passed
+  note: Part 1 failed; Part 2 passed. Recorded as passed for budget.
+
+- week: 5
+  day: 35
+  date: "2024-08-23"
+  title: Team to Beat
+  summary: Basketball/volleyball score-chase after swapping teams (19/20 target).
+  status: partial
+
+- week: 6
+  day: 38
+  date: "2024-08-26"
+  title: "BisTag ang Pinoy: The Musical"
+  summary: Bisaya-Tagalog musical; 80/100 bilingual-audience approvals required.
+  status: passed
+
+- week: 7
+  day: 45
+  date: "2024-09-02"
+  title: Oh Hey! Si Nonchalant
+  summary: Stay nonchalant all week; no more than 5 mistakes.
+  status: failed
+
+- week: 8
+  day: 54
+  date: "2024-09-11"
+  title: Two Towers
+  summary: Build paper-cup towers without hands/arms; 5 ft minimum.
+  status: passed
+
+- week: 9
+  day: 59
+  date: "2024-09-16"
+  title: Tuloy Tulay
+  summary: Build a connected bridge from the house blueprint and cross in 11 minutes.
+  status: passed
+
+- week: 10
+  day: 66
+  date: "2024-09-23"
+  title: "K.K.K.: Kakampi, Kasama, Kaibigan"
+  summary: Pair trick shots; 3 of 4 successes needed for budget.
+  status: passed
+
+- week: 11
+  day: 85
+  date: "2024-10-12"
+  title: Tumba Table
+  summary: Stack 111 nomination blocks on an unstable table and hold 11 seconds.
+  status: failed

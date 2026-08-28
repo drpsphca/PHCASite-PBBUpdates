@@ -1,0 +1,291 @@
+- id: fyang-smith
+  name: Sofia "Fyang" Smith
+  display_name: Fyang
+  moniker: Amakabogera Influencer of Mandaluyong
+  age_on_entry: 18
+  hometown: Mandaluyong
+  type: Teen
+  pair_id: null
+  day_entered: 16
+  day_exited: 99
+  status: winner
+  place: 1
+  nomination_points: 56
+  vote_percent_finale: 30.66
+
+- id: rain-celmar
+  name: Rain Celmar
+  display_name: Rain
+  moniker: Cheerfu-Langga ng Cebu
+  age_on_entry: 17
+  hometown: Cebu
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: 99
+  status: runner_up
+  place: 2
+  nomination_points: 39
+  vote_percent_finale: 26.05
+
+- id: kolette-madelo
+  name: Kolette Madelo
+  display_name: Kolette
+  moniker: Ma-cute-lit na Raketera ng General Santos
+  age_on_entry: 20
+  hometown: General Santos
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: 99
+  status: finalist
+  place: 3
+  nomination_points: 46
+  vote_percent_finale: 25.91
+
+- id: kai-montinola
+  name: Kai Montinola
+  display_name: Kai
+  moniker: Singing Gwapa ng Cebu
+  age_on_entry: 17
+  hometown: Cebu
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: 99
+  status: finalist
+  place: 4
+  nomination_points: 36
+  vote_percent_finale: 17.38
+
+- id: jm-ibarra
+  name: JM Ibarra
+  display_name: JM
+  moniker: Poginsyanong Pilo-ToBe ng Quezon
+  age_on_entry: 23
+  hometown: Quezon
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: 92
+  status: evicted
+  place: 5
+  nomination_points: 28
+  vote_percent: 17.32
+
+- id: jp-cabrera
+  name: JP Cabrera
+  display_name: JP
+  moniker: Rising Junior ng Quezon City
+  age_on_entry: 18
+  hometown: Quezon City
+  type: Teen
+  pair_id: null
+  day_entered: 24
+  day_exited: 85
+  status: evicted
+  place: 6
+  nomination_points: 32
+  vote_percent: 9.61
+
+- id: binsoy-namoca
+  name: Binsoy Namoca
+  display_name: Binsoy
+  moniker: Maabilidancing Dong ng South Cotabato
+  age_on_entry: 22
+  hometown: South Cotabato
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: 78
+  status: evicted
+  place: 7
+  nomination_points: 8
+  vote_percent: 12.88
+
+- id: jarren-garcia
+  name: Jarren Garcia
+  display_name: Jarren
+  moniker: Charming Crooner ng London
+  age_on_entry: 17
+  hometown: London, UK
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: 71
+  status: evicted
+  place: 8
+  nomination_points: 7
+  vote_percent: 23.06
+
+- id: jas-dudley-scales
+  name: Jas Dudley-Scales
+  display_name: Jas
+  moniker: Optimistic Ate ng Dumaguete
+  age_on_entry: 24
+  hometown: Negros Oriental
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: 64
+  status: evicted
+  place: 9
+  nomination_points: 14
+  vote_percent: 23.44
+
+- id: dylan-yturralde
+  name: Dylan Yturralde
+  display_name: Dylan
+  moniker: Astig Volleybae ng Pampanga
+  age_on_entry: 21
+  hometown: Pampanga
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: 57
+  status: evicted
+  place: 10
+  nomination_points: 16
+  vote_percent: 11.05
+
+- id: gwen-joli
+  name: Gwen Montano & Joli Alferez
+  display_name: Gwen & Joli
+  moniker: Brave Bromantic of Cavite & Bicolana ng Camarines Sur
+  age_on_entry: 24
+  hometown: Cavite / Camarines Sur
+  type: Adult
+  pair_id: gwen-joli
+  day_entered: 24
+  day_exited: 50
+  status: evicted
+  place: 11
+  nomination_points: 5
+  vote_percent: 5.29
+  members:
+    - id: gwen-montano
+      name: Gwen Montano
+      moniker: Brave Bromantic of Cavite
+      hometown: Cavite
+      day_entered: 33
+    - id: joli-alferez
+      name: Joli Alferez
+      moniker: Bicolana ng Camarines Sur
+      hometown: Camarines Sur
+      day_entered: 24
+
+- id: jan-silva
+  name: Jan Emmanuel Silva
+  display_name: Jan
+  moniker: Prodigal Bai ng Cebu
+  age_on_entry: 18
+  hometown: Cebu
+  type: Teen
+  pair_id: null
+  day_entered: 16
+  day_exited: 43
+  status: evicted
+  place: 12
+  nomination_points: 10
+  vote_percent: 6.86
+
+- id: dingdong-patrick
+  name: Dingdong Bahan & Patrick Ramirez
+  display_name: DongPat
+  moniker: Charismatic Partner ng Taguig & Go-Getter Partner ng Manila
+  age_on_entry: 27
+  hometown: Taguig / Manila
+  type: Adult
+  pair_id: dingdong-patrick
+  day_entered: 1
+  day_exited: 36
+  status: evicted
+  place: 13
+  nomination_points: 17
+  vote_percent: 9.66
+  members:
+    - id: dingdong-bahan
+      name: Dingdong Bahan
+      moniker: Charismatic Partner ng Taguig
+      hometown: Taguig
+      day_entered: 1
+    - id: patrick-ramirez
+      name: Patrick Ramirez
+      moniker: Go-Getter Partner ng Manila
+      hometown: Manila
+      day_entered: 1
+
+- id: noimie-steikunas
+  name: Noimie Steikunas
+  display_name: Noimie
+  moniker: Mombitious Chikadora ng Lithuania
+  age_on_entry: 31
+  hometown: Lithuania
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: 29
+  status: evicted
+  place: 14
+  nomination_points: 17
+  vote_percent: 13.22
+
+- id: brx-ruiz
+  name: Brx Ruiz
+  display_name: Brx
+  moniker: Seamanluluto ng Bacolod
+  age_on_entry: 32
+  hometown: Bacolod
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: 29
+  status: evicted
+  place: 15
+  nomination_points: 8
+  vote_percent: 9.84
+
+- id: kanata-tapia
+  name: Kanata Tapia
+  display_name: Kanata
+  moniker: Lola-loving Apo ng Occidental Mindoro
+  age_on_entry: 16
+  hometown: Occidental Mindoro
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: 22
+  status: evicted
+  place: 16
+  nomination_points: 8
+  vote_percent: 11.61
+
+- id: marc-nanninga
+  name: Marc Nanninga Jr.
+  display_name: Marc
+  moniker: Sporty-Go-Lucky Kuya ng Camarines Norte
+  age_on_entry: 17
+  hometown: Camarines Norte
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: 22
+  status: evicted
+  place: 17
+  nomination_points: 9
+  vote_percent: 5.09
+
+- id: therese-villamor
+  name: Therese Villamor
+  display_name: Therese
+  moniker: Determined Daughter ng Camarines Sur
+  age_on_entry: 17
+  hometown: Camarines Sur
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: 15
+  status: evicted
+  place: 18
+  nomination_points: 13
+  vote_percent: 16.22
