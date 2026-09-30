@@ -11,8 +11,10 @@ title: Nominations and Evictions
   <h2>{{ t.title }} · Week {{ t.week }}</h2>
   <p class="mono">{{ t.method }}{% if t.note %} · {{ t.note }}{% endif %}</p>
   <div class="tally-grid">
+    {% assign is_finale = false %}
+    {% if t.id >= 12 %}{% assign is_finale = true %}{% endif %}
     {% for entry in t.entries %}
-      {% include tally-card.html entry=entry %}
+      {% include tally-card.html entry=entry finale=is_finale %}
     {% endfor %}
   </div>
 </section>
