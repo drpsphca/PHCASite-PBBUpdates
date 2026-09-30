@@ -1,5 +1,5 @@
 {% assign hm = site.data.housemates | where: "id", include.entry.id | first %}
-<article class="tally-card tally-{{ include.entry.state }}">
+<article class="tally-card tally-{{ include.entry.state }}{% if include.finale %} tally-hm-{{ include.entry.id }}{% endif %}">
   {% include housemate-photo.html id=include.entry.id alt=hm.display_name %}
   <h3>{{ hm.display_name }}</h3>
   <p class="tally-label">{{ include.entry.label }}</p>

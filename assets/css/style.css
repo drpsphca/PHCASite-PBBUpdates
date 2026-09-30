@@ -153,26 +153,59 @@ h3 { margin: 0 0 6px; }
 .hm-cell { display: flex; gap: 10px; align-items: center; }
 .hm-cell .hm-photo { width: 64px; height: 64px; }
 
-.tally-card {
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  color: #ffffff;
+.tally-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  align-items: stretch;
 }
-.tally-card h3,
-.tally-card .tally-label,
-.tally-card .tally-state { color: #ffffff; margin: 6px 0 0; }
+
+.tally-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 268px;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.tally-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tally-photo img,
 .tally-card .hm-photo {
   width: 100%;
-  height: 140px;
-  margin: 0 auto 8px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  background: transparent;
 }
-.tally-nominated { background: var(--tally-red); }
-.tally-not_nominated,
-.tally-ineligible { background: var(--tally-blue); }
+
+.tally-card h3 {
+  margin: 8px 0 2px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.tally-card .tally-label,
+.tally-card .tally-state {
+  color: #fff;
+  margin: 0;
+}
+
 .tally-state {
-  display: inline-block;
-  margin-top: 6px;
+  margin-top: auto;
+  padding-top: 6px;
   font-size: .68rem;
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -220,3 +253,9 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   .top { flex-direction: column; align-items: flex-start; }
   .row, .hm-cell { flex-direction: column; }
 }
+
+.tally-hm-jm-ibarra      { background: #005bc0; }
+.tally-hm-kai-montinola  { background: #f3000c; }
+.tally-hm-kolette-madelo { background: #c305b9; }
+.tally-hm-rain-celmar    { background: #0fd20d; }
+.tally-hm-fyang-smith    { background: #4707ca; }

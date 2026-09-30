@@ -1,10 +1,12 @@
 {% assign file = site.data.photos[include.id] %}
 {% if file %}
-<img
-  class="hm-photo {{ include.class }}"
-  src="{{ '/assets/img/gen11/' | append: file | relative_url }}"
-  alt="{{ include.alt | default: include.id }}"
-  width="240"
-  height="240"
-  loading="lazy">
+<span class="tally-photo">
+  <img
+    class="hm-photo {{ include.class }}"
+    src="{{ '/assets/img/gen11/' | append: file | relative_url }}"
+    alt="{{ include.alt | default: include.id }}"
+    width="240"
+    height="240"
+    loading="lazy">
+</span>
 {% endif %}
