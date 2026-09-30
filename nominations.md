@@ -38,23 +38,3 @@ title: Nominations and Evictions
   </div>
 </section>
 {% endfor %}
-
-{% for e in site.data.evictions %}
-  {% if e.week >= 13 %}
-  <section class="card block">
-    <h3>Week {{ e.week }} · {{ e.date }}</h3>
-    <div class="tally-grid">
-      {% for n in e.nominated %}
-        {% assign hm = site.data.housemates | where: "id", n.id | first %}
-        {% assign fake = n.id | split: "" %}
-        <article class="tally-card tally-nominated tally-hm-{{ n.id }}">
-          {% include housemate-photo.html id=n.id alt=hm.display_name %}
-          <h3>{{ hm.display_name }}</h3>
-          <p class="tally-label">{{ n.percent }}%</p>
-          {% include status-badge.html status=n.result %}
-        </article>
-      {% endfor %}
-    </div>
-  </section>
-  {% endif %}
-{% endfor %}
