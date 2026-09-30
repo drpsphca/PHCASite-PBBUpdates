@@ -18,20 +18,6 @@ title: Nominations and Evictions
 </section>
 {% endfor %}
 
-{% for t in site.data.nomination_tallies %}
-<section class="block">
-  <h2>{{ t.title }} · Week {{ t.week }}</h2>
-  <p class="mono">{{ t.method }}{% if t.note %} · {{ t.note }}{% endif %}</p>
-  <div class="tally-grid">
-    {% assign is_finale = false %}
-    {% if t.id >= 12 %}{% assign is_finale = true %}{% endif %}
-    {% for entry in t.entries %}
-      {% include tally-card.html entry=entry finale=is_finale %}
-    {% endfor %}
-  </div>
-</section>
-{% endfor %}
-
 <h2>Public vote results</h2>
 {% for e in site.data.evictions reversed %}
 <section class="card block">
