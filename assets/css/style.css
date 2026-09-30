@@ -254,8 +254,63 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   .row, .hm-cell { flex-direction: column; }
 }
 
-.tally-hm-jm-ibarra      { background: #005bc0; }
-.tally-hm-kai-montinola  { background: #f3000c; }
-.tally-hm-kolette-madelo { background: #c305b9; }
-.tally-hm-rain-celmar    { background: #0fd20d; }
-.tally-hm-fyang-smith    { background: #4707ca; }
+.tally-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+.tally-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 268px;
+  padding: 10px 8px 12px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.tally-card .hm-photo,
+.tally-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  object-position: center bottom;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  display: block;
+}
+
+.tally-card h3,
+.tally-card .tally-label,
+.tally-card .tally-state {
+  color: #fff;
+  margin: 6px 0 0;
+}
+
+.tally-state {
+  margin-top: auto;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* Weeks 1-11 nominations */
+.tally-nominated { background: #c62828; }
+.tally-not_nominated,
+.tally-ineligible,
+.tally-safe,
+.tally-saved { background: #1565c0; }
+
+/* Eviction results before Big 4 */
+.tally-evicted { background: #c62828; }
+
+/* Week 12 + Eviction Night + Big Night only */
+.tally-finale.tally-hm-jm-ibarra      { background: #005bc0; }
+.tally-finale.tally-hm-kai-montinola  { background: #f3000c; }
+.tally-finale.tally-hm-kolette-madelo { background: #c305b9; }
+.tally-finale.tally-hm-rain-celmar    { background: #0fd20d; }
+.tally-finale.tally-hm-fyang-smith    { background: #4707ca; }
