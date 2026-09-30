@@ -18,7 +18,15 @@ title: Housemates
   {% for h in people %}
     <tr>
       <td>{{ h.place }}</td>
-      <td><strong>{{ h.display_name }}</strong><br><small>{{ h.name }} · {{ h.hometown }}</small></td>
+      <td>
+        <div class="hm-cell">
+          {% include housemate-photo.html id=h.id alt=h.display_name %}
+          <div>
+            <strong>{{ h.display_name }}</strong><br>
+            <small>{{ h.name }} · {{ h.hometown }}</small>
+          </div>
+        </div>
+      </td>
       <td>{{ h.moniker }}</td>
       <td>{{ h.type }}</td>
       <td>D{{ h.day_entered }}</td>

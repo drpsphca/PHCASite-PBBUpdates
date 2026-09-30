@@ -1,0 +1,190 @@
+- id: 1
+  title: 1st Nominations
+  week: 2
+  method: House vote
+  note: Dylan is an automatic nominee.
+  entries:
+    - { id: dylan-yturralde, label: Auto, state: nominated }
+    - { id: therese-villamor, label: 13 pts, state: nominated }
+    - { id: noimie-steikunas, label: 12 pts, state: nominated }
+    - { id: jas-dudley-scales, label: 5 pts, state: not_nominated }
+    - { id: jm-ibarra, label: 4 pts, state: not_nominated }
+    - { id: kanata-tapia, label: 4 pts, state: not_nominated }
+    - { id: brx-ruiz, label: 1 pt, state: not_nominated }
+    - { id: dingdong-patrick, label: 1 pt, state: not_nominated }
+    - { id: kai-montinola, label: 1 pt, state: not_nominated }
+    - { id: kolette-madelo, label: 1 pt, state: not_nominated }
+    - { id: binsoy-namoca, label: 0 pt, state: not_nominated }
+    - { id: jarren-garcia, label: 0 pt, state: not_nominated }
+    - { id: marc-nanninga, label: 0 pt, state: not_nominated }
+    - { id: rain-celmar, label: 0 pt, state: not_nominated }
+
+- id: 2
+  title: 2nd Nominations
+  week: 3
+  method: House vote
+  entries:
+    - { id: marc-nanninga, label: 9 pts, state: nominated }
+    - { id: kolette-madelo, label: 7 pts, state: nominated }
+    - { id: dingdong-patrick, label: 4 pts, state: nominated }
+    - { id: dylan-yturralde, label: 4 pts, state: nominated }
+    - { id: kanata-tapia, label: 4 pts, state: nominated }
+    - { id: binsoy-namoca, label: 3 pts, state: not_nominated }
+    - { id: brx-ruiz, label: 2 pts, state: not_nominated }
+    - { id: kai-montinola, label: 2 pts, state: not_nominated }
+    - { id: rain-celmar, label: 2 pts, state: not_nominated }
+    - { id: jm-ibarra, label: 1 pt, state: not_nominated }
+    - { id: noimie-steikunas, label: 1 pt, state: not_nominated }
+    - { id: jarren-garcia, label: 0 pt, state: not_nominated }
+    - { id: jas-dudley-scales, label: 0 pt, state: not_nominated }
+
+- id: 3
+  title: 3rd Nominations
+  week: 4
+  method: House vote
+  note: Fyang and Jan are ineligible as new housemates.
+  entries:
+    - { id: dingdong-patrick, label: 12 pts, state: nominated }
+    - { id: brx-ruiz, label: 5 pts, state: nominated }
+    - { id: jas-dudley-scales, label: 5 pts, state: nominated }
+    - { id: noimie-steikunas, label: 4 pts, state: nominated }
+    - { id: dylan-yturralde, label: 3 pts, state: not_nominated }
+    - { id: jm-ibarra, label: 3 pts, state: not_nominated }
+    - { id: kolette-madelo, label: 3 pts, state: not_nominated }
+    - { id: binsoy-namoca, label: 1 pt, state: not_nominated }
+    - { id: jarren-garcia, label: 0 pt, state: not_nominated }
+    - { id: fyang-smith, label: Ineligible, state: ineligible }
+    - { id: jan-silva, label: Ineligible, state: ineligible }
+
+- id: 4
+  title: 4th Nominations
+  week: 5
+  method: Violations
+  entries:
+    - { id: fyang-smith, label: 16 pts, state: nominated }
+    - { id: rain-celmar, label: 16 pts, state: nominated }
+    - { id: kai-montinola, label: 14 pts, state: nominated }
+    - { id: kolette-madelo, label: 14 pts, state: nominated }
+    - { id: dingdong-patrick, label: 13 pts, state: nominated }
+    - { id: dylan-yturralde, label: 11 pts, state: nominated }
+    - { id: jm-ibarra, label: 10 pts, state: not_nominated }
+    - { id: binsoy-namoca, label: 9 pts, state: not_nominated }
+    - { id: jarren-garcia, label: 6 pts, state: not_nominated }
+    - { id: jan-silva, label: 5 pts, state: not_nominated }
+    - { id: jas-dudley-scales, label: 4 pts, state: not_nominated }
+    - { id: joli-alferez, label: 2 pts, state: not_nominated }
+    - { id: jp-cabrera, label: 1 pt, state: not_nominated }
+
+- id: 5
+  title: 5th Nominations
+  week: 6
+  method: House vote
+  entries:
+    - { id: jan-silva, label: 10 pts, state: nominated }
+    - { id: fyang-smith, label: 9 pts, state: nominated }
+    - { id: jas-dudley-scales, label: 4 pts, state: nominated }
+    - { id: dylan-yturralde, label: 3 pts, state: not_nominated }
+    - { id: jp-cabrera, label: 3 pts, state: not_nominated }
+    - { id: kolette-madelo, label: 3 pts, state: not_nominated }
+    - { id: jm-ibarra, label: 2 pts, state: not_nominated }
+    - { id: binsoy-namoca, label: 1 pt, state: not_nominated }
+    - { id: kai-montinola, label: 1 pt, state: not_nominated }
+    - { id: jarren-garcia, label: 0 pt, state: not_nominated }
+    - { id: gwen-joli, label: 0 pt, state: not_nominated }
+    - { id: rain-celmar, label: 0 pt, state: not_nominated }
+
+- id: 6
+  title: 6th Nominations
+  week: 7
+  method: House vote
+  entries:
+    - { id: fyang-smith, label: 12 pts, state: nominated }
+    - { id: gwen-joli, label: 5 pts, state: nominated }
+    - { id: kolette-madelo, label: 5 pts, state: nominated }
+    - { id: binsoy-namoca, label: 3 pts, state: not_nominated }
+    - { id: jm-ibarra, label: 3 pts, state: not_nominated }
+    - { id: kai-montinola, label: 2 pts, state: not_nominated }
+    - { id: rain-celmar, label: 2 pts, state: not_nominated }
+    - { id: dylan-yturralde, label: 1 pt, state: not_nominated }
+    - { id: jarren-garcia, label: 0 pt, state: not_nominated }
+    - { id: jas-dudley-scales, label: 0 pt, state: not_nominated }
+    - { id: jp-cabrera, label: 0 pt, state: not_nominated }
+
+- id: 7
+  title: 7th Nominations
+  week: 8
+  method: House vote
+  entries:
+    - { id: rain-celmar, label: 6 pts, state: nominated }
+    - { id: kolette-madelo, label: 5 pts, state: nominated }
+    - { id: dylan-yturralde, label: 5 pts, state: nominated }
+    - { id: kai-montinola, label: 4 pts, state: not_nominated }
+    - { id: fyang-smith, label: 4 pts, state: not_nominated }
+    - { id: jarren-garcia, label: 2 pts, state: not_nominated }
+    - { id: jm-ibarra, label: 2 pts, state: not_nominated }
+    - { id: jp-cabrera, label: 2 pts, state: not_nominated }
+    - { id: binsoy-namoca, label: 0 pt, state: not_nominated }
+    - { id: jas-dudley-scales, label: 0 pt, state: not_nominated }
+
+- id: 8
+  title: 8th Nominations
+  week: 9
+  method: Ligtask
+  note: Failed Ligtask nominees face the public vote.
+  entries:
+    - { id: binsoy-namoca, label: "Passed (3m 18s)", state: not_nominated }
+    - { id: jm-ibarra, label: "Failed (3m 56s)", state: nominated }
+    - { id: jas-dudley-scales, label: "Failed (4m 33s)", state: nominated }
+    - { id: kolette-madelo, label: "Failed (8m 14s)", state: nominated }
+
+- id: 9
+  title: 9th Nominations
+  week: 10
+  method: House vote
+  entries:
+    - { id: kai-montinola, label: 8 pts, state: nominated }
+    - { id: fyang-smith, label: 6 pts, state: nominated }
+    - { id: jarren-garcia, label: 5 pts, state: nominated }
+    - { id: jp-cabrera, label: 2 pts, state: not_nominated }
+    - { id: kolette-madelo, label: 2 pts, state: not_nominated }
+    - { id: rain-celmar, label: 1 pt, state: not_nominated }
+    - { id: binsoy-namoca, label: 0 pt, state: not_nominated }
+    - { id: jm-ibarra, label: 0 pt, state: not_nominated }
+
+- id: 10
+  title: 10th Nominations
+  week: 11
+  method: Ligtask
+  note: Failed Ligtask nominees face the public vote.
+  entries:
+    - { id: binsoy-namoca, label: Failed, state: nominated }
+    - { id: jp-cabrera, label: Failed, state: nominated }
+    - { id: jm-ibarra, label: Failed, state: nominated }
+    - { id: rain-celmar, label: Failed, state: nominated }
+    - { id: fyang-smith, label: Passed, state: not_nominated }
+    - { id: kai-montinola, label: Passed, state: not_nominated }
+    - { id: kolette-madelo, label: Passed, state: not_nominated }
+
+- id: 11
+  title: 11th Nominations
+  week: 12
+  method: Ranking
+  entries:
+    - { id: rain-celmar, label: 27 pts, state: nominated }
+    - { id: fyang-smith, label: 25 pts, state: nominated }
+    - { id: jp-cabrera, label: 25 pts, state: nominated }
+    - { id: kolette-madelo, label: 20 pts, state: not_nominated }
+    - { id: kai-montinola, label: 16 pts, state: not_nominated }
+    - { id: jm-ibarra, label: 13 pts, state: not_nominated }
+
+- id: 12
+  title: 12th Nominations
+  week: 13
+  method: Big 4 selection
+  note: All remaining housemates are nominated.
+  entries:
+    - { id: fyang-smith, label: Nominated, state: nominated }
+    - { id: rain-celmar, label: Nominated, state: nominated }
+    - { id: kolette-madelo, label: Nominated, state: nominated }
+    - { id: kai-montinola, label: Nominated, state: nominated }
+    - { id: jm-ibarra, label: Nominated, state: nominated }

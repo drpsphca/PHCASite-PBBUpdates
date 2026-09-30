@@ -1,0 +1,4 @@
+---
+permalink: /api/nomination-tallies.json
+---
+{{ site.data.nomination_tallies | jsonify }}

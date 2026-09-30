@@ -33,6 +33,7 @@ title: Live Board
 <section>
   <h2>Big 4 result</h2>
   <div class="grid">
+    {% include housemate-photo.html id=h.id alt=h.display_name class="hm-photo-lg" %}
     {% assign big4 = site.data.housemates | where_exp: "h", "h.place <= 4" %}
     {% for h in big4 %}
       <article class="card">

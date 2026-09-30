@@ -1,19 +1,26 @@
 <header class="top">
-  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
-  <a class="brand" href="{{ '/' | relative_url }}">PBB Updates Board</a>
-  <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCQ0HG4GNX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-PCQ0HG4GNX');
-    </script>
+  <div class="brand-row">
+    <a class="brand" href="{{ '/' | relative_url }}">PBB Updates Board</a>
+    <label class="season-switch">
+      <span class="sr-only">Season</span>
+      <select id="season-select" aria-label="Select season">
+        {% for s in site.data.seasons %}
+          <option
+            value="{{ s.href | relative_url }}"
+            data-available="{{ s.available }}"
+            {% if s.id == site.season_id %}selected{% endif %}>
+            {{ s.label }}{% unless s.available %} (coming soon){% endunless %}
+          </option>
+        {% endfor %}
+      </select>
+    </label>
+  </div>
   <nav>
     <a href="{{ '/' | relative_url }}">Live</a>
     <a href="{{ '/housemates.html' | relative_url }}">Housemates</a>
     <a href="{{ '/nominations.html' | relative_url }}">Nominations</a>
     <a href="{{ '/tasks.html' | relative_url }}">Weekly Tasks</a>
     <a href="{{ '/api/index.json' | relative_url }}">API</a>
+    <button type="button" id="theme-toggle" class="theme-btn" aria-label="Switch theme">Dark</button>
   </nav>
 </header>

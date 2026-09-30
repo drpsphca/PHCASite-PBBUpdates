@@ -8,4 +8,7 @@ permalink: /api/index.json
   "housemates": {{ site.data.housemates | jsonify }},
   "weekly_tasks": {{ site.data.weekly_tasks | jsonify }},
   "evictions": {{ site.data.evictions | jsonify }}
+  "photos": {{ site.data.photos | jsonify }},
+  "nomination_tallies": {{ site.data.nomination_tallies | jsonify }},
+  "seasons": {{ site.data.seasons | jsonify }}
 }

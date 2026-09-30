@@ -1,24 +1,38 @@
 ---
 layout: default
-title: Nominations & Evictions
+title: Nominations and Evictions
 ---
 
-<h1>Nominations & evictions</h1>
-<p>Public vote percentages as published. Early weeks used save–evict; later weeks used vote-to-save.</p>
+<h1>Nominations and evictions</h1>
+<p>Full house tally first, then the public-vote result. Red cards are nominated. Blue cards are not nominated or ineligible.</p>
 
-{% assign lookup = site.data.housemates | map: "id" %}
+{% for t in site.data.nomination_tallies %}
+<section class="block">
+  <h2>{{ t.title }} · Week {{ t.week }}</h2>
+  <p class="mono">{{ t.method }}{% if t.note %} · {{ t.note }}{% endif %}</p>
+  <div class="tally-grid">
+    {% for entry in t.entries %}
+      {% include tally-card.html entry=entry %}
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<h2>Public vote results</h2>
 {% for e in site.data.evictions reversed %}
 <section class="card block">
-  <h2>Week {{ e.week }} · Day {{ e.day }} · {{ e.date }}</h2>
+  <h3>Week {{ e.week }} · Day {{ e.day }} · {{ e.date }}</h3>
   <p>Vote type: <code>{{ e.vote_type }}</code></p>
-  <ul>
+  <div class="tally-grid">
     {% for n in e.nominated %}
       {% assign hm = site.data.housemates | where: "id", n.id | first %}
-      <li>
-        <strong>{{ hm.display_name }}</strong> — {{ n.percent }}%
+      <article class="tally-card tally-nominated">
+        {% include housemate-photo.html id=n.id alt=hm.display_name %}
+        <h3>{{ hm.display_name }}</h3>
+        <p class="tally-label">{{ n.percent }}%</p>
         {% include status-badge.html status=n.result %}
-      </li>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
 </section>
 {% endfor %}
