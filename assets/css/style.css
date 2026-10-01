@@ -156,21 +156,51 @@ h3 { margin: 0 0 6px; }
 .tally-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  align-items: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px 12px;
 }
 
 .tally-card {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
-  min-height: 248px;
-  flex: 0 0 150px;
-  padding: 10px 8px 12px;
+  width: 148px;
+  max-width: 148px;
+  flex: 0 0 148px;
+  margin: 0;
+  padding: 8px 8px 12px;
   border-radius: 12px;
   text-align: center;
   color: #fff;
+}
+
+.tally-card .hm-photo,
+.tally-card img {
+  width: 132px;
+  height: 132px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  display: block;
+}
+
+.tally-card h3,
+.tally-card .tally-label,
+.tally-card .tally-state {
+  color: #fff;
+  margin: 6px 0 0;
+}
+
+.tally-state {
+  margin-top: 4px;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
 }
 
 .tally-photo {
@@ -211,6 +241,12 @@ h3 { margin: 0 0 6px; }
   font-size: .68rem;
   letter-spacing: .06em;
   text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
 }
 
 .badge {
