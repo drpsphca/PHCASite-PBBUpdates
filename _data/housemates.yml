@@ -206,12 +206,12 @@
   members:
     - id: dingdong-bahan
       name: Dingdong Bahan
-      moniker: Charismatic Partner ng Taguig
+      moniker: Ang Charismatic Partner ng Taguig
       hometown: Taguig
       day_entered: 1
     - id: patrick-ramirez
       name: Patrick Ramirez
-      moniker: Go-Getter Partner ng Manila
+      moniker: Ang Go-Getter Partner ng Manila
       hometown: Manila
       day_entered: 1
 

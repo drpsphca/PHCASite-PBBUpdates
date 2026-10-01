@@ -156,19 +156,18 @@ h3 { margin: 0 0 6px; }
 .tally-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  gap: 12px;
   align-items: stretch;
-  gap: 8px;
 }
 
 .tally-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 132px;
-  flex: 0 0 132px;
-  min-height: 232px;
-  padding: 8px 6px 10px;
+  width: 150px;
+  min-height: 248px;
+  flex: 0 0 150px;
+  padding: 10px 8px 12px;
   border-radius: 12px;
   text-align: center;
   color: #fff;
@@ -260,6 +259,8 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
 .tally-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  align-items: stretch;
 }
 
 .tally-card {
