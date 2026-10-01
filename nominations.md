@@ -28,13 +28,14 @@ title: Nominations and Evictions
   <div class="tally-grid">
     {% for n in e.nominated %}
       {% assign hm = site.data.housemates | where: "id", n.id | first %}
-      <article class="tally-card tally-nominated">
-        {% include housemate-photo.html id=n.id alt=hm.display_name %}
-        <h3>{{ hm.display_name }}</h3>
-        <p class="tally-label">{{ n.percent }}%</p>
-        {% include status-badge.html status=n.result %}
-      </article>
-    {% endfor %}
+      <article class="tally-card tally-result-{{ n.result }}{% if e.week >= 13 %} tally-finale tally-hm-{{ n.id }}{% endif %}">
+      {% include housemate-photo.html id=n.id alt=hm.display_name %}
+      <h3>{{ hm.display_name }}</h3>
+      <p class="tally-label">{{ n.percent }}%</p>
+      {% include status-badge.html status=n.result %}
+  </article>
+{% endfor %}
+
   </div>
 </section>
 {% endfor %}

@@ -154,8 +154,8 @@ h3 { margin: 0 0 6px; }
 .hm-cell .hm-photo { width: 64px; height: 64px; }
 
 .tally-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: stretch;
 }
@@ -164,8 +164,10 @@ h3 { margin: 0 0 6px; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 268px;
-  padding: 10px;
+  width: 150px;
+  min-height: 248px;
+  flex: 0 0 150px;
+  padding: 10px 8px 12px;
   border-radius: 12px;
   text-align: center;
   color: #fff;
@@ -410,3 +412,6 @@ html[data-theme="light"] .badge-ended {
   color: #b71c1c;
   border-color: #f0a0a0;
 }
+
+.tally-result-saved { background: #1b8a3e; }
+.tally-result-evicted { background: #c62828; }

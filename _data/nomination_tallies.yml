@@ -60,6 +60,7 @@
   title: 4th Nominations
   week: 5
   method: Violations
+  note: "Joli Alferez was currently inside the house before Gwen Montano has entered the house and formed as a duo. Gwen Montano was not inside the house during this nomination round caused by the violations done by the housemates."
   entries:
     - { id: fyang-smith, label: 16 pts, state: nominated }
     - { id: rain-celmar, label: 16 pts, state: nominated }
@@ -72,7 +73,7 @@
     - { id: jarren-garcia, label: 6 pts, state: not_nominated }
     - { id: jan-silva, label: 5 pts, state: not_nominated }
     - { id: jas-dudley-scales, label: 4 pts, state: not_nominated }
-    - { id: joli-alferez, label: 2 pts, state: not_nominated }
+    - { id: joli-alferez, label: 2 pts, state: not_nominated, name: Joli }
     - { id: jp-cabrera, label: 1 pt, state: not_nominated }
 
 - id: 5
