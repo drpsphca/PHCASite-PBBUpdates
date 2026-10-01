@@ -1,5 +1,5 @@
 title: PBB Updates Board
-description: PBB Updates Board from DRPS PHCA
+description: DRPS PHCA's website for updates involving Pinoy Big Brother (PBB), featuring housemates, nominations and evictions, weekly tasks, and other related content.
 url: "https://pbbupdates.drpsphca.com"
 baseurl: ""
 encoding: utf-8
@@ -7,7 +7,16 @@ theme_name: gen11-arcade
 season_id: gen11
 
 # Do not set theme: or remote_theme:
-plugins: []
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-include-cache
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-optional-front-matter
+
 exclude:
   - Gemfile
   - Gemfile.lock
