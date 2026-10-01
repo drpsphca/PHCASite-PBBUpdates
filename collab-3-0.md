@@ -7,5 +7,5 @@ permalink: /collab3.html
 <section class="hero">
   <p class="kicker">Upcoming season</p>
   <h1>Pinoy Big Brother: Collab 3.0</h1>
-  <p>Coming soon. Housemates, nominations, and weekly tasks will publish here when the season opens.</p>
+  <p>Coming soon on several ABS-CBN and GMA platforms this October 2026. Housemates, nominations, and weekly tasks will publish on the DRPS PHCA PBB Updates website and on the DRPS PHCA App when the season opens.</p>
 </section>
