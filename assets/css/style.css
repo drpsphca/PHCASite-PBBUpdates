@@ -155,9 +155,9 @@ h3 { margin: 0 0 6px; }
 
 .tally-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, 160px);
   justify-content: start;
+  gap: 12px;
 }
 
 .tally-card {
@@ -165,8 +165,8 @@ h3 { margin: 0 0 6px; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  min-width: 0;
+  width: 160px;
+  max-width: 160px;
   margin: 0;
   padding: 8px 8px 12px;
   border-radius: 12px;
@@ -287,24 +287,6 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
 @media (max-width: 720px) {
   .top { flex-direction: column; align-items: flex-start; }
   .row, .hm-cell { flex-direction: column; }
-}
-
-.tally-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
-  align-items: stretch;
-}
-
-.tally-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 268px;
-  padding: 10px 8px 12px;
-  border-radius: 12px;
-  text-align: center;
-  color: #fff;
 }
 
 .tally-card .hm-photo,
