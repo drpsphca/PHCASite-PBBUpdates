@@ -1,7 +1,7 @@
-{% assign season = page.season | default: "home" %}
-{% assign show_season_nav = false %}
-{% if season == "gen11" or season == "collab3" %}
-  {% assign show_season_nav = true %}
+{% assign slug = page.url | remove_first: "/" | split: "/" | first %}
+{% assign season = "home" %}
+{% if slug == "gen11" or slug == "collab3" %}
+  {% assign season = slug %}
 {% endif %}
 
 <header class="top">
@@ -21,7 +21,7 @@
   </div>
 
   <nav class="desktop-nav" aria-label="Primary">
-    {% if show_season_nav %}
+    {% if season != "home" %}
       <a href="{{ '/' | append: season | append: '/' | relative_url }}">Live</a>
       <a href="{{ '/' | append: season | append: '/housemates/' | relative_url }}">Housemates</a>
       <a href="{{ '/' | append: season | append: '/nominations/' | relative_url }}">Nominations</a>
@@ -34,7 +34,7 @@
 
   <button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
   <nav class="mobile-nav" id="mobile-nav" hidden>
-    {% if show_season_nav %}
+    {% if season != "home" %}
       <a href="{{ '/' | append: season | append: '/' | relative_url }}">Live</a>
       <a href="{{ '/' | append: season | append: '/housemates/' | relative_url }}">Housemates</a>
       <a href="{{ '/' | append: season | append: '/nominations/' | relative_url }}">Nominations</a>

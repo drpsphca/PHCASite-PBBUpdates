@@ -40,6 +40,6 @@ if (menu && panel) {
 }
 document.querySelectorAll(".season-select").forEach(function (select) {
   select.addEventListener("change", function () {
-    window.location.href = select.value;
+    if (select.value) window.location.href = select.value;
   });
 });
