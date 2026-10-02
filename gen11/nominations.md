@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gen 11 - Nominations and Evictions
-permalink: /gen11/nominations
+permalink: /gen11/nominations/
 ---
 
 <h1>Nominations and evictions</h1>

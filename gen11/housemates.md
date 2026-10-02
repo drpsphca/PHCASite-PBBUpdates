@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gen 11 - Housemates
-permalink: /gen11/housemates
+permalink: /gen11/housemates/
 ---
 
 <h1>Housemates</h1>

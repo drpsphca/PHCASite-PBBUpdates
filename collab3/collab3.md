@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PBB Collab 3.0
-permalink: /collab3
+permalink: /collab3/
 ---
 
 <section class="hero">

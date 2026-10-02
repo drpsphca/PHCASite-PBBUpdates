@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gen 11 - Main Page
-permalink: /gen11
+permalink: /gen11/
 ---
 
 {% assign season = site.data.season %}
