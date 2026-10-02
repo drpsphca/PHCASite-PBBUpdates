@@ -2,6 +2,7 @@
 layout: default
 title: PBB Updates Board from DRPS PHCA
 permalink: /
+season: home
 ---
 
 <section class="hero">
