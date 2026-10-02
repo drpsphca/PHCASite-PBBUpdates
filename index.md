@@ -1,63 +1,26 @@
 ---
 layout: default
-title: Live Board
+title: PBB Updates Board from DRPS PHCA
+permalink: /
 ---
 
-{% assign season = site.data.season %}
-
 <section class="hero">
-  <p class="kicker">{{ season.short_title }}</p>
-  <h1>{{ season.title }}</h1>
-  <p>{{ season.premiere }} → {{ season.finale }} · {{ season.days }} days · Week {{ season.current_week }}</p>
+  <p class="kicker">Previous season</p>
+  <h1><a href="{{ '/gen11/' | relative_url }}">Pinoy Big Brother: Gen 11</a></h1>
+  <p>July 20 to October 26, 2024. Winner <a href="{{ '/gen11/' | relative_url }}">Fyang Smith</a> (30.66%).</p>
   <p>
-    {% include status-badge.html status=season.status %}
-    {% if season.voting_open %}
-      {% include status-badge.html status="eviction_open" %}
-    {% else %}
-      <span class="badge badge-safe">no live voting</span>
-    {% endif %}
+    <a href="{{ '/gen11/housemates/' | relative_url }}">Housemates</a> ·
+    <a href="{{ '/gen11/nominations/' | relative_url }}">Nominations</a> ·
+    <a href="{{ '/gen11/tasks/' | relative_url }}">Weekly tasks</a>
   </p>
 </section>
 
-<section class="card nom-board">
-  <p class="kicker">Eviction desk</p>
-  <h2>Nominated this week</h2>
-  {% if season.voting_open %}
-    <p>Public voting is open. Save your nominated housemates.</p>
-  {% else %}
-    <div class="empty">No ongoing eviction voting. Season status: <strong>{{ season.status }}</strong>.</div>
-    <p>Last public result was the Big Night. Winner: <strong>Fyang Smith</strong> (30.66%).</p>
-  {% endif %}
-</section>
-
-<section>
-  <h2>Big 4 result</h2>
-  <div class="grid">
-    {% include housemate-photo.html id=h.id alt=h.display_name class="hm-photo-lg" %}
-    {% assign big4 = site.data.housemates | where_exp: "h", "h.place <= 4" %}
-    {% for h in big4 %}
-      <article class="card">
-        <h3>{{ h.display_name }}</h3>
-        <p class="mono">{{ h.moniker }}</p>
-        {% include status-badge.html status=h.status %}
-        <p>{{ h.vote_percent_finale }}% · Place {{ h.place }}</p>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
-<section>
-  <h2>Latest weekly tasks</h2>
-  <div class="list">
-    {% assign tasks = site.data.weekly_tasks | reverse %}
-    {% for t in tasks limit: 4 %}
-      <article class="row">
-        <div>
-          <strong>Week {{ t.week }} · {{ t.title }}</strong>
-          <p>{{ t.summary }}</p>
-        </div>
-        {% include status-badge.html status=t.status %}
-      </article>
-    {% endfor %}
-  </div>
-</section>
+<div class="season-cards">
+  {% for s in site.data.seasons %}
+  <a class="season-card" href="{{ s.href | relative_url }}">
+    <p class="kicker">{{ s.label }}</p>
+    <h2>{{ s.label }}</h2>
+    <p>{{ s.summary }}</p>
+  </a>
+  {% endfor %}
+</div>

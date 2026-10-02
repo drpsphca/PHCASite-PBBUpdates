@@ -1,8 +1,10 @@
 - id: gen11
   label: Gen 11
-  href: /
+  href: /gen11/
   available: true
-- id: collab30
+  summary: "Ended October 26, 2024. Winner Fyang Smith, 30.66%."
+- id: collab3
   label: Collab 3.0
-  href: /collab3
+  href: /collab3/
   available: false
+  summary: "Coming soon on ABS-CBN and GMA platforms this October 2026."

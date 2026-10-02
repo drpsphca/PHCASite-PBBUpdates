@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Weekly Tasks
+title: Gen 11 - Weekly Tasks
+permalink: /gen11/tasks
 ---
 
 <h1>Weekly tasks</h1>

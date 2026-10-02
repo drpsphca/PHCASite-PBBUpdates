@@ -315,6 +315,57 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   text-transform: uppercase;
 }
 
+.hero,
+.card,
+.block,
+.row,
+.empty,
+.table-wrap,
+.season-card {
+  border-radius: 16px;
+}
+
+.season-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+.season-card {
+  display: block;
+  padding: 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: inherit;
+}
+
+.menu-btn, .mobile-nav { display: none; }
+
+@media (max-width: 900px) {
+  .desktop-nav, .desktop-only { display: none; }
+  .menu-btn {
+    display: inline-flex;
+    margin-left: auto;
+    background: var(--panel);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 12px;
+    width: min(280px, calc(100% - 24px));
+    padding: 12px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+  .mobile-nav.open { display: flex; flex-direction: column; gap: 10px; }
+  .top { position: sticky; }
+}
+
 /* Weeks 1-11 nominations */
 .tally-nominated { background: #c62828; }
 .tally-not_nominated,

@@ -11,4 +11,5 @@ permalink: /api/index.json
   "photos": {{ site.data.photos | jsonify }},
   "nomination_tallies": {{ site.data.nomination_tallies | jsonify }},
   "seasons": {{ site.data.seasons | jsonify }}
+  "posts_url": "{{ '/api/posts.json' | relative_url }}"
 }

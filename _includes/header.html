@@ -1,27 +1,40 @@
 <header class="top">
   <div class="brand-row">
     <a class="brand" href="{{ '/' | relative_url }}">PBB Updates Board</a>
-    <label class="season-switch">
+    <label class="season-switch desktop-only">
       <span class="sr-only">Season</span>
-      <select id="season-select" aria-label="Select season">
+      <select class="season-select" aria-label="Select season">
         {% for s in site.data.seasons %}
-          <option
-            value="{{ s.href | relative_url }}"
-            data-available="{{ s.available }}"
-            {% if s.id == site.season_id %}selected{% endif %}>
+          <option value="{{ s.href | relative_url }}" {% if page.season == s.id %}selected{% endif %}>
             {{ s.label }}{% unless s.available %} (coming soon){% endunless %}
           </option>
         {% endfor %}
       </select>
     </label>
   </div>
-  <nav>
-    <a href="{{ '/' | relative_url }}">Live</a>
-    <a href="{{ '/housemates.html' | relative_url }}">Housemates</a>
-    <a href="{{ '/nominations.html' | relative_url }}">Nominations</a>
-    <a href="{{ '/tasks.html' | relative_url }}">Weekly Tasks</a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <a href="{{ '/gen11/' | relative_url }}">Live</a>
+    <a href="{{ '/gen11/housemates/' | relative_url }}">Housemates</a>
+    <a href="{{ '/gen11/nominations/' | relative_url }}">Nominations</a>
+    <a href="{{ '/gen11/tasks/' | relative_url }}">Weekly Tasks</a>
     <a href="{{ '/announcements' | relative_url }}">Announcements</a>
     <a href="{{ '/api/index.json' | relative_url }}">API</a>
-    <button type="button" id="theme-toggle" class="theme-btn" aria-label="Switch theme">Dark</button>
+    <button type="button" id="theme-toggle" class="theme-btn">Dark</button>
+  </nav>
+  <button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+  <nav class="mobile-nav" id="mobile-nav" hidden>
+    <a href="{{ '/gen11/' | relative_url }}">Live</a>
+    <a href="{{ '/gen11/housemates/' | relative_url }}">Housemates</a>
+    <a href="{{ '/gen11/nominations/' | relative_url }}">Nominations</a>
+    <a href="{{ '/gen11/tasks/' | relative_url }}">Weekly Tasks</a>
+    <a href="{{ '/announcements' | relative_url }}">Announcements</a>
+    <label>
+      Season
+      <select class="season-select" aria-label="Select season">
+        {% for s in site.data.seasons %}
+          <option value="{{ s.href | relative_url }}">{{ s.label }}{% unless s.available %} (coming soon){% endunless %}</option>
+        {% endfor %}
+      </select>
+    </label>
   </nav>
 </header>

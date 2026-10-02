@@ -28,3 +28,18 @@
     });
   }
 })();
+
+var menu = document.getElementById("menu-toggle");
+var panel = document.getElementById("mobile-nav");
+if (menu && panel) {
+  menu.addEventListener("click", function () {
+    var open = panel.classList.toggle("open");
+    panel.hidden = !open;
+    menu.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+}
+document.querySelectorAll(".season-select").forEach(function (select) {
+  select.addEventListener("change", function () {
+    window.location.href = select.value;
+  });
+});
