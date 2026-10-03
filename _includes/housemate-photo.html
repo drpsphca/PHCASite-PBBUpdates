@@ -1,8 +1,10 @@
-{% assign file = site.data.seasons.gen11.photos[include.id] %}
+{% assign season = include.season | default: "gen11" %}
+{% assign photos = site.data.seasons[season].photos %}
+{% assign file = photos[include.id] %}
 {% if file %}
 <img
   class="hm-photo {{ include.class }}"
-  src="{{ '/assets/img/gen11/' | append: file | relative_url }}"
+  src="{{ '/assets/img/' | append: season | append: '/' | append: file | relative_url }}"
   alt="{{ include.alt | default: include.id }}"
   width="240"
   height="240"

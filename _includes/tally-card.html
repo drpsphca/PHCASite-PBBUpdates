@@ -1,7 +1,8 @@
-{% assign hm = site.data.seasons.gen11.housemates | where: "id", include.entry.id | first %}
+{% assign season = include.season | default: "gen11" %}
+{% assign hm = site.data.seasons[season].housemates | where: "id", include.entry.id | first %}
 {% assign label_name = include.entry.name | default: hm.display_name %}
 <article class="tally-card tally-{{ include.entry.state }}{% if include.finale %} tally-finale tally-hm-{{ include.entry.id }}{% endif %}">
-  {% include housemate-photo.html id=include.entry.id alt=label_name %}
+  {% include housemate-photo.html id=include.entry.id alt=label_name season=season %}
   <h3>{{ label_name }}</h3>
   <p class="tally-label">{{ include.entry.label }}</p>
   <span class="tally-state">{{ include.entry.state | replace: '_', ' ' }}</span>

@@ -4,10 +4,9 @@ title: PBB Collab 3.0
 permalink: /collab3/
 ---
 
-{% assign season = site.data.season %}
-
+{% assign season = site.data.seasons.collab3.season %}
 <section class="hero">
   <p class="kicker">Upcoming season</p>
-  <h1>Pinoy Big Brother: Collab 3.0</h1>
-  <p>Coming soon on several ABS-CBN and GMA platforms this October 2026. Housemates, nominations, and weekly tasks will publish on the DRPS PHCA PBB Updates website and on the DRPS PHCA App when the season opens.</p>
+  <h1>{{ season.title }}</h1>
+  <p>{{ season.summary | default: "Coming soon." }}</p>
 </section>

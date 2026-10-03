@@ -15,7 +15,7 @@ permalink: /gen11/nominations/
     {% assign is_finale = false %}
     {% if t.id >= 12 %}{% assign is_finale = true %}{% endif %}
     {% for entry in t.entries %}
-      {% include tally-card.html entry=entry finale=is_finale %}
+      {% include tally-card.html entry=entry finale=is_finale season="gen11" %}
     {% endfor %}
   </div>
 </section>
