@@ -523,6 +523,26 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   .top { position: sticky; }
 }
 
+.theme-label { display: none; }
+
+.theme-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+  height: auto;
+  padding: 6px 0;
+}
+
+@media (max-width: 900px) {
+  .mobile-nav .theme-label {
+    display: inline;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 700;
+    color: var(--ink);
+  }
+}
+
 .top { position: sticky; }
 .mobile-nav {
   z-index: 30;
