@@ -1,4 +1,8 @@
 ---
 permalink: /api/nomination-tallies.json
+layout: null
 ---
-{{ site.data.nomination_tallies | jsonify }}
+{
+  "gen11": {{ site.data.seasons.gen11.nomination_tallies | default: empty | jsonify }},
+  "collab3": {{ site.data.seasons.collab3.nomination_tallies | default: empty | jsonify }}
+}

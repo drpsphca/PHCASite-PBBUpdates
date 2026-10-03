@@ -1,10 +1,8 @@
 ---
 permalink: /api/nominated.json
+layout: null
 ---
-{% assign season = site.data.season %}
-{% if season.voting_open %}
-  {% assign latest = site.data.evictions | last %}
-  {{ latest | jsonify }}
-{% else %}
-{"voting_open":false,"nominated":[],"message":"No ongoing eviction voting."}
-{% endif %}
+{
+  "gen11": {% if site.data.seasons.gen11.season.voting_open %}{{ site.data.seasons.gen11.evictions | last | jsonify }}{% else %}{"voting_open":false,"nominated":[]}{% endif %},
+  "collab3": {% if site.data.seasons.collab3.season.voting_open %}{{ site.data.seasons.collab3.evictions | last | jsonify }}{% else %}{"voting_open":false,"nominated":[]}{% endif %}
+}

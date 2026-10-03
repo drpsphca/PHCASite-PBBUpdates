@@ -1,4 +1,8 @@
 ---
 permalink: /api/weekly-tasks.json
+layout: null
 ---
-{{ site.data.weekly_tasks | jsonify }}
+{
+  "gen11": {{ site.data.seasons.gen11.weekly_tasks | default: empty | jsonify }},
+  "collab3": {{ site.data.seasons.collab3.weekly_tasks | default: empty | jsonify }}
+}

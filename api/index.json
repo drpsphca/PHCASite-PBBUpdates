@@ -1,22 +1,11 @@
 ---
 permalink: /api/index.json
+layout: null
 ---
 {
-  "season": {{ site.data.season | jsonify }},
-  "voting_open": {{ site.data.season.voting_open }},
-  "nominated": {% if site.data.season.voting_open %}{{ site.data.evictions | last | jsonify }}{% else %}[]{% endif %},
-  "housemates": {{ site.data.housemates | jsonify }},
-  "weekly_tasks": {{ site.data.weekly_tasks | jsonify }},
-  "evictions": {{ site.data.evictions | jsonify }}
-  "photos": {{ site.data.photos | jsonify }},
-  "nomination_tallies": {{ site.data.nomination_tallies | jsonify }},
-  "seasons": {{ site.data.seasons | jsonify }}
-  "posts_url": "{{ '/api/posts.json' | relative_url }}"
-}
-{
+  "posts_url": {{ "/api/posts.json" | relative_url | jsonify }},
   "seasons": {
     "gen11": {{ site.data.seasons.gen11 | jsonify }},
     "collab3": {{ site.data.seasons.collab3 | jsonify }}
-  },
-  "posts_url": "{{ '/api/posts.json' | relative_url }}"
+  }
 }

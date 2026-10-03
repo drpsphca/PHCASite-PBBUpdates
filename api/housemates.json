@@ -1,0 +1,8 @@
+---
+permalink: /api/housemates.json
+layout: null
+---
+{
+  "gen11": {{ site.data.seasons.gen11.housemates | default: empty | jsonify }},
+  "collab3": {{ site.data.seasons.collab3.housemates | default: empty | jsonify }}
+}
