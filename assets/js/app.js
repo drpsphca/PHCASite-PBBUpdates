@@ -49,3 +49,10 @@
     });
   });
 })();
+
+var t = "light";
+try {
+  var saved = localStorage.getItem("pbb-theme");
+  if (saved === "light" || saved === "dark") t = saved;
+} catch (e) {}
+document.documentElement.setAttribute("data-theme", t);
