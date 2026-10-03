@@ -8,6 +8,7 @@ season_id: gen11
 author:
   name: "DRPS PHCA"
   twitter: "DRPSPHCA"
+published: true
 
 # Do not set theme: or remote_theme:
 plugins:
