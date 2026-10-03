@@ -25,7 +25,7 @@ permalink: /gen11/nominations/
 {% for e in site.data.seasons.gen11.evictions reversed %}
 <section class="card block">
   <h3>Week {{ e.week }} · Day {{ e.day }} · {{ e.date }}</h3>
-  <p>Vote type: <code>{{ e.vote_type }}</code>{% if t.note %} · {{ t.note }}{% endif %}</p>
+  <p>Vote type: <code>{{ e.vote_type }}</code></p>
   <div class="tally-grid">
     {% for n in e.nominated %}
       {% assign hm = site.data.seasons.gen11.housemates | where: "id", n.id | first %}
