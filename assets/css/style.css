@@ -369,6 +369,12 @@ html[data-theme="light"] .badge-eviction_open { background: #fff3c4; color: #8a6
 html[data-theme="light"] .badge-evicted,
 html[data-theme="light"] .badge-failed,
 html[data-theme="light"] .badge-ended { background: #ffd6d6; color: #b71c1c; border-color: #f0a0a0; }
+html[data-theme="dark"] .desktop-nav a:hover,
+html[data-theme="dark"] .desktop-nav a[aria-current="page"],
+html[data-theme="dark"] .mobile-nav a:hover,
+html[data-theme="dark"] .mobile-nav a[aria-current="page"] {
+  color: #ffffff;
+}
 
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
