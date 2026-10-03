@@ -31,7 +31,7 @@
 
 body { font-family: "Gilroy", "Segoe UI", sans-serif; font-weight: 400; }
 
-.brand img { height: 100px; width: auto; display: block; }
+.brand img { height: 60px; width: auto; display: block; }
 
 .desktop-nav a,
 .mobile-nav a {
