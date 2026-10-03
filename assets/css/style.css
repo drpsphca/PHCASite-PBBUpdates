@@ -103,7 +103,6 @@ body { font-family: "Gilroy", "Segoe UI", sans-serif; font-weight: 400; }
   justify-content: space-between;
 }
 .brand-row { display: flex; align-items: center; min-width: 0; }
-.brand img { height: 100px; width: auto; }
 .menu-btn,
 .icon-btn {
   width: 44px;
