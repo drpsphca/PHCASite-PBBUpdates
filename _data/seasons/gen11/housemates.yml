@@ -151,7 +151,7 @@
 - id: gwen-joli
   name: Gwen Montano & Joli Alferez
   display_name: Gwen & Joli
-  moniker: Ang Brave Bromantiko of Cavite at Ang Smiling Darling ng Camarines Sur
+  moniker: Ang Brave Bromantiko ng Cavite at Ang Smiling Darling ng Camarines Sur
   age_on_entry: 24
   hometown: Cavite / Camarines Sur
   type: Adult
@@ -165,7 +165,7 @@
   members:
     - id: gwen-montano
       name: Gwen Montano
-      moniker: Ang Brave Bromantiko of Cavite
+      moniker: Ang Brave Bromantiko ng Cavite
       hometown: Cavite
       day_entered: 33
     - id: joli-alferez
