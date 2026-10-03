@@ -2,6 +2,7 @@
 layout: default
 title: Collab 3.0 - Nominations and Evictions
 permalink: /collab3/nominations/
+description: View all of the nomination tallies and eviction voting results of Pinoy Big Brother Collab 3.0 here.
 ---
 
 <h1>Nominations and evictions</h1>

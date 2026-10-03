@@ -2,6 +2,7 @@
 layout: default
 title: Gen 11 - Housemates
 permalink: /gen11/housemates/
+description: View all of the housemates of Pinoy Big Brother Gen 11 here.
 ---
 
 <h1>Housemates</h1>

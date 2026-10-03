@@ -2,6 +2,7 @@
 layout: default
 title: Collab 3.0 - Housemates
 permalink: /collab3/housemates/
+description: View all of the housemates of Pinoy Big Brother Collab 3.0 here.
 ---
 
 <h1>Housemates</h1>

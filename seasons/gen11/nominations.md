@@ -2,6 +2,7 @@
 layout: default
 title: Gen 11 - Nominations and Evictions
 permalink: /gen11/nominations/
+description: View all of the nomination tallies and eviction voting results of Pinoy Big Brother Gen 11 here.
 ---
 
 <h1>Nominations and evictions</h1>

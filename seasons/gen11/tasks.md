@@ -2,6 +2,7 @@
 layout: default
 title: Gen 11 - Weekly Tasks
 permalink: /gen11/tasks/
+description: View all of weekly tasks done by the housemates of Pinoy Big Brother Gen 11 here.
 ---
 
 <h1>Weekly tasks</h1>
