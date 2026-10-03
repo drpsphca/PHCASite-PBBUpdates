@@ -43,3 +43,25 @@ document.querySelectorAll(".season-select").forEach(function (select) {
     if (select.value) window.location.href = select.value;
   });
 });
+
+var buttons = document.querySelectorAll("[data-theme-toggle]");
+
+function current() {
+  return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+}
+
+function paint(theme) {
+  buttons.forEach(function (btn) {
+    btn.textContent = theme === "light" ? "Dark" : "Light";
+  });
+}
+
+paint(current());
+buttons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var next = current() === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("pbb-theme", next); } catch (e) {}
+    paint(next);
+  });
+});

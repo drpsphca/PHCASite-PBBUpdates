@@ -13,3 +13,10 @@ permalink: /api/index.json
   "seasons": {{ site.data.seasons | jsonify }}
   "posts_url": "{{ '/api/posts.json' | relative_url }}"
 }
+{
+  "seasons": {
+    "gen11": {{ site.data.seasons.gen11 | jsonify }},
+    "collab3": {{ site.data.seasons.collab3 | jsonify }}
+  },
+  "posts_url": "{{ '/api/posts.json' | relative_url }}"
+}

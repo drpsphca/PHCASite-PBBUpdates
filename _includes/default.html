@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +12,12 @@
   <script>
     (function () {
       try {
-        var t = localStorage.getItem("pbb-theme");
-        if (t === "light" || t === "dark") {
-          document.documentElement.setAttribute("data-theme", t);
-        }
+        var t = "light";
+        try {
+          var saved = localStorage.getItem("pbb-theme");
+          if (saved === "light" || saved === "dark") t = saved;
+        } catch (e) {}
+        document.documentElement.setAttribute("data-theme", t);
       } catch (e) {}
     })();
   </script>
