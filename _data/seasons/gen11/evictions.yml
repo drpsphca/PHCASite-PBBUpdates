@@ -2,6 +2,7 @@
   day: 15
   date: "2024-08-03"
   vote_type: save_evict
+  note: Single eviction.
   nominated:
     - { id: dylan-yturralde, percent: 40.06, result: saved }
     - { id: noimie-steikunas, percent: 22.57, result: saved }
@@ -12,6 +13,7 @@
   day: 22
   date: "2024-08-10"
   vote_type: save_evict
+  note: Double eviction.
   nominated:
     - { id: dingdong-patrick, percent: 42.14, result: saved }
     - { id: kolette-madelo, percent: 13.45, result: saved }
@@ -24,6 +26,7 @@
   day: 29
   date: "2024-08-17"
   vote_type: save_evict
+  note: Double eviction.
   nominated:
     - { id: dingdong-patrick, percent: 26.84, result: saved }
     - { id: jas-dudley-scales, percent: 15.42, result: saved }
@@ -35,6 +38,7 @@
   day: 36
   date: "2024-08-24"
   vote_type: save_evict
+  note: Single eviction.
   nominated:
     - { id: rain-celmar, percent: 18.63, result: saved }
     - { id: fyang-smith, percent: 13.91, result: saved }
@@ -48,6 +52,7 @@
   day: 43
   date: "2024-08-31"
   vote_type: save_evict
+  note: Single eviction.
   nominated:
     - { id: fyang-smith, percent: 34.36, result: saved }
     - { id: jas-dudley-scales, percent: 11.59, result: saved }
@@ -58,6 +63,7 @@
   day: 50
   date: "2024-09-07"
   vote_type: save_evict
+  note: Single eviction.
   nominated:
     - { id: fyang-smith, percent: 42.32, result: saved }
     - { id: kolette-madelo, percent: 32.59, result: saved }
@@ -68,6 +74,7 @@
   day: 57
   date: "2024-09-14"
   vote_type: save_evict
+  note: Single eviction.
   nominated:
     - { id: rain-celmar, percent: 39.02, result: saved }
     - { id: kolette-madelo, percent: 31.94, result: saved }
@@ -78,6 +85,7 @@
   day: 64
   date: "2024-09-21"
   vote_type: save
+  note: Single eviction. Only Votes to Save were allowed on the Maya app. The option for Votes to Evict has been removed as a result of the earlier controversy.
   nominated:
     - { id: kolette-madelo, percent: 40.42, result: saved }
     - { id: jm-ibarra, percent: 36.14, result: saved }
@@ -88,6 +96,7 @@
   day: 71
   date: "2024-09-28"
   vote_type: save
+  note: Single eviction. Jarren Garcia was later became part of the House Challengers for the remaining housemates, joining with ex-housemates Therese Villamor, Dingdong Bahan-Patrick Ramirez duo, and Jas Dudley-Scales.
   nominated:
     - { id: kai-montinola, percent: 43.97, result: saved }
     - { id: fyang-smith, percent: 32.97, result: saved }
@@ -98,6 +107,7 @@
   day: 78
   date: "2024-10-05"
   vote_type: save
+  note: Single eviction.
   nominated:
     - { id: rain-celmar, percent: 54.79, result: saved }
     - { id: jm-ibarra, percent: 19.14, result: saved }
@@ -109,6 +119,7 @@
   day: 85
   date: "2024-10-12"
   vote_type: save
+  note: Single eviction.
   nominated:
     - { id: fyang-smith, percent: 54.03, result: saved }
     - { id: rain-celmar, percent: 36.35, result: saved }
@@ -119,6 +130,7 @@
   day: 92
   date: "2024-10-19"
   vote_type: save
+  note: Single eviction. This is the final eviction night voting before the Big Night finale. The rest of the nominated housemates will be part of the Big 4 finalists for the Big Night finale, which the results have not been revealed upon announcement of the final tally of votes.
   nominated:
     - { id: jm-ibarra, percent: 17.32, result: evicted }
   evicted: [jm-ibarra]
@@ -128,6 +140,7 @@
   day: 99
   date: "2024-10-26"
   vote_type: finale
+  note: This is a combined vote from the earlier pre-Big Night eviction and the Big Night finale. The results have been revealed upon announcement of the final tally of votes.
   nominated:
     - { id: fyang-smith, percent: 30.66, result: winner }
     - { id: rain-celmar, percent: 26.05, result: runner_up }
