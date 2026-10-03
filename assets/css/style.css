@@ -57,7 +57,7 @@ body { font-family: "Gilroy", "Segoe UI", sans-serif; font-weight: 400; }
   background: transparent;
 }
 .icon-btn img,
-.menu-btn img { width: 24px; height: 24px; display: block; }
+.menu-btn img { width: 24px; height: 24px; display: block; text-align: center; }
 
 .post-grid {
   display: grid;
