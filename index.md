@@ -17,7 +17,7 @@ season: home
 </section>
 
 <div class="season-cards">
-  {% for s in site.data.seasons %}
+  {% for s in site.data.season_list %}
   <a class="season-card" href="{{ s.href | relative_url }}">
     <p class="kicker">{{ s.label }}</p>
     <h2>{{ s.label }}</h2>
