@@ -13,11 +13,8 @@
       document.documentElement.setAttribute("data-theme", t);
     })();
   </script>
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  {% seo %}
 </head>
 <body>
   {% include header.html %}
