@@ -11,7 +11,7 @@
       <span class="sr-only">Season</span>
       <select class="season-select" aria-label="Select season">
         <option value="{{ '/' | relative_url }}" {% if season == "home" %}selected{% endif %}>Main Page</option>
-        {% for s in site.data.seasons %}
+        {% for s in site.data.season_list %}
           <option value="{{ s.href | relative_url }}" {% if season == s.id %}selected{% endif %}>
             {{ s.label }}{% unless s.available %} (coming soon){% endunless %}
           </option>
@@ -46,7 +46,7 @@
       Season
       <select class="season-select" aria-label="Select season">
         <option value="{{ '/' | relative_url }}" {% if season == "home" %}selected{% endif %}>Select Season</option>
-        {% for s in site.data.seasons %}
+        {% for s in site.data.season_list %}
           <option value="{{ s.href | relative_url }}" {% if season == s.id %}selected{% endif %}>
             {{ s.label }}{% unless s.available %} (coming soon){% endunless %}
           </option>
