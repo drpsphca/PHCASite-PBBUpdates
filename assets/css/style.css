@@ -406,3 +406,14 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   }
   .mobile-nav.open { display: flex; flex-direction: column; gap: 10px; }
 }
+
+@media (max-width: 900px) {
+  .top { justify-content: flex-start; }
+  .brand-row {
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+  }
+  .mobile-theme { margin-left: auto; }
+  .menu-btn { margin-left: 8px; }
+}
