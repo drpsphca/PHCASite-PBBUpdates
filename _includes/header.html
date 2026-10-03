@@ -7,11 +7,8 @@
 <header class="top">
   <div class="brand-row">
     <a class="brand" href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="PBB Updates Board">
+      <img src="{{ '/assets/img/logo/logo.png' | relative_url }}" alt="PBB Updates Board">
     </a>
-    <button type="button" class="menu-btn" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
-    <img src="{{ '/assets/icons/menu.png' | relative_url }}" alt="">
-  </button>
     <label class="season-switch desktop-only">
       <span class="sr-only">Season</span>
       <select class="season-select" aria-label="Select season">
@@ -23,6 +20,9 @@
         {% endfor %}
       </select>
     </label>
+    <button type="button" class="menu-btn" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+      <img class="theme-icon" data-icon="menu" src="{{ '/assets/icons/menu.png' | relative_url }}" alt="">
+    </button>
   </div>
 
   <nav class="desktop-nav" aria-label="Primary">
@@ -35,13 +35,10 @@
     <a href="{{ '/announcements' | relative_url }}">Announcements</a>
     <a href="{{ '/api/index.json' | relative_url }}">API</a>
     <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch theme">
-      <img src="{{ '/assets/icons/theme.png' | relative_url }}" alt="">
+      <img class="theme-icon" data-icon="theme" src="{{ '/assets/icons/theme.png' | relative_url }}" alt="">
     </button>
   </nav>
 
-  <button type="button" class="menu-btn" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
-    <img src="{{ '/assets/icons/menu.png' | relative_url }}" alt="">
-  </button>
   <nav class="mobile-nav" id="mobile-nav" hidden>
     {% if season != "home" %}
       <a href="{{ '/' | append: season | append: '/' | relative_url }}">Live</a>
@@ -51,7 +48,7 @@
     {% endif %}
     <a href="{{ '/announcements' | relative_url }}">Announcements</a>
     <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch theme">
-      <img src="{{ '/assets/icons/theme.svg' | relative_url }}" alt="">
+      <img class="theme-icon" data-icon="theme" src="{{ '/assets/icons/theme.png' | relative_url }}" alt="">
     </button>
     <label>
       Season

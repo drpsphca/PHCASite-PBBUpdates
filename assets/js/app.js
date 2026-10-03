@@ -65,3 +65,25 @@ buttons.forEach(function (btn) {
     paint(next);
   });
 });
+
+function iconSrc(name, theme) {
+  var file = theme === "dark" ? name + "w.png" : name + ".png";
+  return "/assets/icons/" + file;
+}
+
+function paintIcons(theme) {
+  document.querySelectorAll("[data-icon]").forEach(function (img) {
+    img.src = iconSrc(img.getAttribute("data-icon"), theme);
+  });
+}
+
+paintIcons(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
+
+document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("pbb-theme", next); } catch (e) {}
+    paintIcons(next);
+  });
+});
