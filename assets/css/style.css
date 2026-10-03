@@ -417,3 +417,10 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   .mobile-theme { margin-left: auto; }
   .menu-btn { margin-left: 8px; }
 }
+
+.desktop-nav a,
+.mobile-nav a,
+.mobile-nav label,
+.season-select {
+  font-size: 20px;
+}
