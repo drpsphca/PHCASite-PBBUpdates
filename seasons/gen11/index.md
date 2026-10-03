@@ -5,6 +5,13 @@ permalink: /gen11/
 ---
 
 {% assign season = site.data.season %}
+{% assign slug = page.url | remove_first: "/" | split: "/" | first %}
+{% assign pack = site.data.seasons[slug] %}
+{% assign season = pack.season %}
+{% assign housemates = pack.housemates %}
+{% assign evictions = pack.evictions %}
+{% assign tallies = pack.nomination_tallies %}
+{% assign tasks = pack.weekly_tasks %}
 
 <section class="hero">
   <p class="kicker">{{ season.short_title }}</p>
