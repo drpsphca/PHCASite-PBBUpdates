@@ -41,126 +41,6 @@
   font-style: italic;
 }
 
-body { font-family: "Gilroy", "Segoe UI", sans-serif; font-weight: 400; }
-
-.brand img { height: 60px; width: auto; display: block; }
-
-.desktop-nav a,
-.mobile-nav a {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 700;
-  color: #7f7f7f;
-}
-.desktop-nav a:hover,
-.desktop-nav a[aria-current="page"],
-.mobile-nav a:hover,
-.mobile-nav a[aria-current="page"] {
-  color: #000000;
-}
-
-.brand-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: auto;
-  flex: 0 0 auto;
-}
-.desktop-nav { margin-left: auto; }
-.icon-btn,
-.menu-btn {
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.mobile-theme,
-.menu-btn { display: none; }
-
-@media (max-width: 900px) {
-  .desktop-nav, .desktop-only { display: none; }
-  .mobile-theme,
-  .menu-btn { display: inline-flex; }
-  .mobile-theme { margin-left: auto; }
-}
-
-.season-select { font-family: "Gilroy", sans-serif; font-weight: 500; }
-
-.icon-btn,
-.menu-btn {
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  border: 0;
-  background: transparent;
-}
-.icon-btn img,
-.menu-btn img { width: 24px; height: 24px; display: block; text-align: center; }
-
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-.post-card { border-radius: 16px; }
-.post-card h2,
-.post-card h2 a {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 700;
-}
-.post-body,
-.post-body p,
-.post-body strong,
-.post-body em {
-  font-family: "Noto Serif PHCA", "Noto Serif", serif;
-  font-weight: 400;
-}
-.post-body strong { font-weight: 700; }
-.post-body em { font-style: italic; }
-
-@media (max-width: 900px) {
-  .post-grid { grid-template-columns: 1fr; }
-}
-
-.top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: nowrap;
-  gap: 12px;
-}
-.menu-btn {
-  display: none;
-  margin-left: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 900px) {
-  .top { flex-direction: row; align-items: center; }
-  .desktop-nav, .desktop-only { display: none; }
-  .menu-btn { display: inline-flex; }
-}
-
 :root,
 html[data-theme="dark"] {
   --bg: #0b0b0b;
@@ -212,7 +92,8 @@ html, body {
     repeating-linear-gradient(0deg, transparent 0 27px, var(--grid) 27px 28px),
     var(--bg);
   color: var(--ink);
-  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-family: "Gilroy", "Segoe UI", sans-serif;
+  font-weight: 400;
 }
 
 a { color: var(--brand); text-decoration: none; }
@@ -223,25 +104,51 @@ a:hover { text-decoration: underline; }
   top: 0;
   z-index: 20;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   gap: 16px;
   padding: 14px 20px;
   background: var(--header);
   border-bottom: 4px solid var(--brand);
 }
 
-.brand-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.brand {
-  color: var(--brand);
-  font-family: "Gilroy", sans-serif;
-  font-weight: 800;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  width: auto;
+  flex: 0 0 auto;
+  margin-left: 0;
 }
 
-.season-switch select,
-.theme-btn {
+.brand img { height: 60px; width: auto; display: block; }
+
+.desktop-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.desktop-nav a,
+.mobile-nav a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  color: #7f7f7f;
+  font-size: .92rem;
+}
+.desktop-nav a:hover,
+.desktop-nav a[aria-current="page"],
+.mobile-nav a:hover,
+.mobile-nav a[aria-current="page"] { color: #000000; }
+
+.season-select { font-family: "Gilroy", sans-serif; font-weight: 500; }
+.season-switch select {
   background: var(--panel);
   color: var(--ink);
   border: 1px solid var(--line);
@@ -251,27 +158,44 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
 }
 
-.theme-btn { min-width: 72px; }
-
-nav { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
-nav a { color: var(--ink); font-size: .92rem; }
+.icon-btn,
+.menu-btn,
+.mobile-theme {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn img,
+.menu-btn img { width: 24px; height: 24px; display: block; }
+.mobile-theme,
+.menu-btn,
+.mobile-nav { display: none; }
 
 .sr-only {
   position: absolute;
-  width: 1px; height: 1px;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
 
 .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 80px; }
 
-.hero, .card, .block, .row, .empty, .table-wrap {
+.hero, .card, .block, .row, .empty, .table-wrap, .season-card {
   background: var(--panel);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  border-radius: 16px;
 }
-
 .hero { padding: 28px 24px; margin-bottom: 28px; }
+.card { padding: 16px; }
+.block { padding: 18px; margin: 0 0 18px; }
 .kicker {
   margin: 0 0 8px;
   color: var(--brand);
@@ -290,40 +214,40 @@ h1, h2, h3,
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
 }
+h1 { margin: 0 0 10px; font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.2; }
+h2 { margin: 28px 0 12px; font-size: 1.1rem; letter-spacing: .04em; text-transform: uppercase; line-height: 1.2; }
+h3 { margin: 0 0 6px; line-height: 1.2; }
 
-body,
-.tally-label,
-.tally-state,
-.badge,
-.row p,
-.post-body,
-.post-body p {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 400;
+.mono, small { color: var(--muted); }
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
 }
-
 .post-body,
 .post-body p,
 .post-body em,
-.post-body strong {
-  font-family: "Noto Serif PHCA", serif;
-}
+.post-body strong { font-family: "Noto Serif PHCA", serif; font-weight: 400; }
 .post-body strong { font-weight: 700; }
 .post-body em { font-style: italic; }
 
-.mono, small { color: var(--muted); }
-.grid, .tally-grid {
+.season-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 12px;
 }
-.grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.season-card { display: block; padding: 18px; color: inherit; }
 
-.card { padding: 16px; }
-.block { padding: 18px; margin: 0 0 18px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   padding: 14px 16px;
   margin: 10px 0;
@@ -347,7 +271,6 @@ body,
   justify-content: start;
   gap: 12px;
 }
-
 .tally-card {
   box-sizing: border-box;
   display: flex;
@@ -361,121 +284,6 @@ body,
   text-align: center;
   color: #fff;
 }
-
-.tally-card .hm-photo,
-.tally-card img {
-  width: 100%;
-  height: 132px;
-  object-fit: contain;
-  object-position: center bottom;
-  background: transparent;
-  border: 0;
-  border-radius: 8px;
-  display: block;
-}
-
-.tally-card h3,
-.tally-card .tally-label,
-.tally-card .tally-state {
-  color: #fff;
-  margin: 6px 0 0;
-}
-
-.tally-state {
-  margin-top: 4px;
-  font-size: .68rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-
-.tally-photo {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 10px;
-  background: #111111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.tally-photo img,
-.tally-card .hm-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  background: transparent;
-}
-
-.tally-card h3 {
-  margin: 8px 0 2px;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.tally-card .tally-label,
-.tally-card .tally-state {
-  color: #fff;
-  margin: 0;
-}
-
-.tally-state {
-  margin-top: auto;
-  padding-top: 6px;
-  font-size: .68rem;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-}
-
-.badge {
-  display: inline-block;
-  padding: 4px 9px;
-  border-radius: 999px;
-  font-size: .7rem;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-}
-.badge-winner, .badge-runner_up, .badge-finalist, .badge-third, .badge-fourth, .badge-win {
-  background: #102333; color: var(--finale); border-color: #2b5573;
-}
-.badge-safe, .badge-saved, .badge-passed {
-  background: #102318; color: var(--safe); border-color: #2c6a38;
-}
-.badge-nominated, .badge-partial, .badge-eviction_open {
-  background: #2b2206; color: var(--nom); border-color: var(--nom-dim);
-}
-.badge-evicted, .badge-failed, .badge-ended {
-  background: #2a1212; color: var(--evicted); border-color: #7a2b2b;
-}
-
-.table-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; }
-th, td { border-bottom: 1px solid var(--line); padding: 11px 8px; text-align: left; vertical-align: top; }
-th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
-
-.nom-board { border-color: var(--nom); }
-.empty { padding: 18px; border-style: dashed; color: var(--muted); }
-.foot {
-  padding: 24px 16px;
-  color: var(--muted);
-  font-size: .85rem;
-  border-top: 1px solid var(--line);
-  background: var(--header);
-}
-
-@media (max-width: 720px) {
-  .top { flex-direction: column; align-items: flex-start; }
-}
-
 .tally-card .hm-photo,
 .tally-card img {
   width: 100%;
@@ -487,14 +295,9 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   border-radius: 0;
   display: block;
 }
-
 .tally-card h3,
 .tally-card .tally-label,
-.tally-card .tally-state {
-  color: #fff;
-  margin: 6px 0 0;
-}
-
+.tally-card .tally-state { color: #fff; margin: 6px 0 0; }
 .tally-state {
   margin-top: auto;
   font-size: .68rem;
@@ -502,128 +305,19 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   text-transform: uppercase;
 }
 
-.hero,
-.card,
-.block,
-.row,
-.empty,
-.table-wrap,
-.season-card {
-  border-radius: 16px;
-}
-
-.season-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 12px;
-}
-.season-card {
-  display: block;
-  padding: 18px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  color: inherit;
-}
-
-.menu-btn, .mobile-nav { display: none; }
-
-@media (max-width: 900px) {
-  .desktop-nav, .desktop-only { display: none; }
-  .menu-btn {
-    display: inline-flex;
-    margin-left: auto;
-    background: var(--panel);
-    color: var(--ink);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 6px 10px;
-  }
-  .mobile-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 12px;
-    width: min(280px, calc(100% - 24px));
-    padding: 12px;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-  }
-  .mobile-nav.open { display: flex; flex-direction: column; gap: 10px; }
-  .top { position: sticky; }
-}
-
-.theme-label { display: none; }
-
-.theme-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  width: auto;
-  height: auto;
-  padding: 6px 0;
-}
-
-@media (max-width: 900px) {
-  .mobile-nav .theme-label {
-    display: inline;
-    font-family: "Gilroy", sans-serif;
-    font-weight: 700;
-    color: var(--ink);
-  }
-}
-
-.top { position: sticky; }
-.mobile-nav {
-  z-index: 30;
-  pointer-events: auto;
-}
-.mobile-nav .icon-btn {
-  position: relative;
-  z-index: 31;
-  pointer-events: auto;
-  width: 44px;
-  height: 44px;
-}
-
-.mobile-theme { display: none; }
-
-.menu-btn,
-.mobile-theme {
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel);
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 900px) {
-  .brand-row { margin-left: auto; }
-  .mobile-theme,
-  .menu-btn { display: inline-flex; }
-  .mobile-theme { margin-left: auto; }
-  .menu-btn { margin-left: 8px; }
-}
-
-/* Weeks 1-11 nominations */
 .tally-nominated { background: #c62828; }
 .tally-not_nominated,
 .tally-ineligible,
 .tally-safe,
 .tally-saved { background: #1565c0; }
-
-/* Eviction results before Big 4 */
 .tally-evicted { background: #c62828; }
-
-/* Week 12 + Eviction Night + Big Night only */
-.tally-finale.tally-hm-jm-ibarra      { background: #005bc0; }
-.tally-finale.tally-hm-kai-montinola  { background: #f3000c; }
+.tally-result-saved { background: #1b8a3e; }
+.tally-result-evicted { background: #c62828; }
+.tally-finale.tally-hm-jm-ibarra { background: #005bc0; }
+.tally-finale.tally-hm-kai-montinola { background: #f3000c; }
 .tally-finale.tally-hm-kolette-madelo { background: #c305b9; }
-.tally-finale.tally-hm-rain-celmar    { background: #0d910b; }
-.tally-finale.tally-hm-fyang-smith    { background: #4707ca; }
+.tally-finale.tally-hm-rain-celmar { background: #0d910b; }
+.tally-finale.tally-hm-fyang-smith { background: #4707ca; }
 
 .badge {
   display: inline-flex;
@@ -642,84 +336,73 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   white-space: nowrap;
   border: 1px solid transparent;
 }
+.row .badge { align-self: center; }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  padding: 14px 16px;
-  margin: 10px 0;
-}
-
-.row .badge {
-  align-self: center;
-}
-/* Dark (default) */
 html[data-theme="dark"] .badge-winner,
 html[data-theme="dark"] .badge-runner_up,
 html[data-theme="dark"] .badge-finalist,
 html[data-theme="dark"] .badge-third,
 html[data-theme="dark"] .badge-fourth,
-html[data-theme="dark"] .badge-win {
-  background: #102333;
-  color: #7ec8ff;
-  border-color: #2b5573;
-}
+html[data-theme="dark"] .badge-win { background: #102333; color: #7ec8ff; border-color: #2b5573; }
 html[data-theme="dark"] .badge-safe,
 html[data-theme="dark"] .badge-saved,
-html[data-theme="dark"] .badge-passed {
-  background: #102318;
-  color: #7dce82;
-  border-color: #2c6a38;
-}
+html[data-theme="dark"] .badge-passed { background: #102318; color: #7dce82; border-color: #2c6a38; }
 html[data-theme="dark"] .badge-nominated,
 html[data-theme="dark"] .badge-partial,
-html[data-theme="dark"] .badge-eviction_open {
-  background: #2b2206;
-  color: #f5c518;
-  border-color: #7a5f0a;
-}
+html[data-theme="dark"] .badge-eviction_open { background: #2b2206; color: #f5c518; border-color: #7a5f0a; }
 html[data-theme="dark"] .badge-evicted,
 html[data-theme="dark"] .badge-failed,
-html[data-theme="dark"] .badge-ended {
-  background: #2a1212;
-  color: #e15b5b;
-  border-color: #7a2b2b;
-}
+html[data-theme="dark"] .badge-ended { background: #2a1212; color: #e15b5b; border-color: #7a2b2b; }
 
-/* Light */
 html[data-theme="light"] .badge-winner,
 html[data-theme="light"] .badge-runner_up,
 html[data-theme="light"] .badge-finalist,
 html[data-theme="light"] .badge-third,
 html[data-theme="light"] .badge-fourth,
-html[data-theme="light"] .badge-win {
-  background: #d6ecff;
-  color: #0b5cab;
-  border-color: #8ec4f0;
-}
+html[data-theme="light"] .badge-win { background: #d6ecff; color: #0b5cab; border-color: #8ec4f0; }
 html[data-theme="light"] .badge-safe,
 html[data-theme="light"] .badge-saved,
-html[data-theme="light"] .badge-passed {
-  background: #d9f5de;
-  color: #157a32;
-  border-color: #8ed39a;
-}
+html[data-theme="light"] .badge-passed { background: #d9f5de; color: #157a32; border-color: #8ed39a; }
 html[data-theme="light"] .badge-nominated,
 html[data-theme="light"] .badge-partial,
-html[data-theme="light"] .badge-eviction_open {
-  background: #fff3c4;
-  color: #8a6a00;
-  border-color: #f5c518;
-}
+html[data-theme="light"] .badge-eviction_open { background: #fff3c4; color: #8a6a00; border-color: #f5c518; }
 html[data-theme="light"] .badge-evicted,
 html[data-theme="light"] .badge-failed,
-html[data-theme="light"] .badge-ended {
-  background: #ffd6d6;
-  color: #b71c1c;
-  border-color: #f0a0a0;
+html[data-theme="light"] .badge-ended { background: #ffd6d6; color: #b71c1c; border-color: #f0a0a0; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid var(--line); padding: 11px 8px; text-align: left; vertical-align: top; }
+th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.nom-board { border-color: var(--nom); }
+.empty { padding: 18px; border-style: dashed; color: var(--muted); }
+.foot {
+  padding: 24px 16px;
+  color: var(--muted);
+  font-size: .85rem;
+  border-top: 1px solid var(--line);
+  background: var(--header);
 }
 
-.tally-result-saved { background: #1b8a3e; }
-.tally-result-evicted { background: #c62828; }
+@media (max-width: 900px) {
+  .desktop-nav,
+  .desktop-only { display: none; }
+  .mobile-theme,
+  .menu-btn { display: inline-flex; }
+  .mobile-theme { margin-left: auto; }
+  .menu-btn { margin-left: 8px; }
+  .post-grid { grid-template-columns: 1fr; }
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 12px;
+    z-index: 30;
+    width: min(280px, calc(100% - 24px));
+    padding: 12px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+  .mobile-nav.open { display: flex; flex-direction: column; gap: 10px; }
+}
