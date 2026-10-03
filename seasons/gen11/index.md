@@ -2,6 +2,7 @@
 layout: default
 title: Gen 11 - Main Page
 permalink: /gen11/
+description: View the full summary of Pinoy Big Brother Gen 11, aired on ABS-CBN platforms from July 20, 2024, to October 26, 2024. Fyang Smith is the Big Winner for that season.
 ---
 
 {% assign season = site.data.seasons.gen11.season %}
