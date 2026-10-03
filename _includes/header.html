@@ -13,13 +13,16 @@
       <span class="sr-only">Season</span>
       <select class="season-select" aria-label="Select season">
         <option value="{{ '/' | relative_url }}" {% if season == "home" %}selected{% endif %}>Main Page</option>
-        {% for s in site.data.season_list %}
-          <option value="{{ s.href | relative_url }}" {% if season == s.id %}selected{% endif %}>
-            {{ s.label }}{% unless s.available %} (coming soon){% endunless %}
-          </option>
-        {% endfor %}
+          {% for s in site.data.season_list %}
+        <option value="{{ s.href | relative_url }}" {% if season == s.id %}selected{% endif %}>
+          {{ s.label }}{% unless s.available %} (coming soon){% endunless %}
+        </option>
+      {% endfor %}
       </select>
     </label>
+    <button type="button" class="icon-btn mobile-theme" data-theme-toggle aria-label="Switch theme">
+      <img class="theme-icon" data-icon="theme" src="{{ '/assets/icons/theme.png' | relative_url }}" alt="">
+    </button>
     <button type="button" class="menu-btn" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
       <img class="theme-icon" data-icon="menu" src="{{ '/assets/icons/menu.png' | relative_url }}" alt="">
     </button>

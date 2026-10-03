@@ -556,6 +556,28 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   height: 44px;
 }
 
+.mobile-theme { display: none; }
+
+.menu-btn,
+.mobile-theme {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .brand-row { margin-left: auto; }
+  .mobile-theme,
+  .menu-btn { display: inline-flex; }
+  .mobile-theme { margin-left: auto; }
+  .menu-btn { margin-left: 8px; }
+}
+
 /* Weeks 1-11 nominations */
 .tally-nominated { background: #c62828; }
 .tally-not_nominated,
