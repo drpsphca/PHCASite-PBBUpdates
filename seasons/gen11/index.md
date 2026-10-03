@@ -35,7 +35,7 @@ permalink: /gen11/
   <h2>Big 4 result</h2>
   <div class="grid">
     {% include housemate-photo.html id=h.id alt=h.display_name class="hm-photo-lg" %}
-    {% assign big4 = site.data.housemates | where_exp: "h", "h.place <= 4" %}
+    {% assign big4 = site.data.seasons.gen11.housemates | where_exp: "h", "h.place <= 4" %}
     {% for h in big4 %}
       <article class="card">
         <h3>{{ h.display_name }}</h3>
@@ -50,7 +50,7 @@ permalink: /gen11/
 <section>
   <h2>Latest weekly tasks</h2>
   <div class="list">
-    {% assign tasks = site.data.weekly_tasks | reverse %}
+    {% assign tasks = site.data.seasons.gen11.weekly_tasks | reverse %}
     {% for t in tasks limit: 4 %}
       <article class="row">
         <div>
