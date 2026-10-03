@@ -1,3 +1,89 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/phca_gilroy_regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/phca_gilroy_medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/phca_gilroy_bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Serif PHCA";
+  src: url("/assets/fonts/google_noto_serif_variant.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Serif PHCA";
+  src: url("/assets/fonts/google_noto_serif_variant.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body { font-family: "Gilroy", "Segoe UI", sans-serif; font-weight: 400; }
+
+.brand img { height: 100px; width: auto; display: block; }
+
+.desktop-nav a,
+.mobile-nav a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  color: #7f7f7f;
+}
+.desktop-nav a:hover,
+.desktop-nav a[aria-current="page"],
+.mobile-nav a:hover,
+.mobile-nav a[aria-current="page"] {
+  color: #000000;
+}
+
+.season-select { font-family: "Gilroy", sans-serif; font-weight: 500; }
+
+.icon-btn,
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+}
+.icon-btn img,
+.menu-btn img { width: 24px; height: 24px; display: block; }
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.post-card { border-radius: 16px; }
+.post-card h2,
+.post-card h2 a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+}
+.post-body,
+.post-body p,
+.post-body strong,
+.post-body em {
+  font-family: "Noto Serif PHCA", "Noto Serif", serif;
+  font-weight: 400;
+}
+.post-body strong { font-weight: 700; }
+.post-body em { font-style: italic; }
+
+@media (max-width: 900px) {
+  .post-grid { grid-template-columns: 1fr; }
+}
+
 :root,
 html[data-theme="dark"] {
   --bg: #0b0b0b;

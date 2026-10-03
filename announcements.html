@@ -4,14 +4,13 @@ title: Announcements
 permalink: /announcements/
 ---
 
-    <h1>{{ page.title }}</h1>
-
-<ul>
+<h1>{{ page.title }}</h1>
+<div class="post-grid">
   {% for post in site.posts %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    </li>
+    <article class="card post-card">
+      <p class="kicker">{{ post.date | date: "%b %d, %Y" }}</p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="post-body">{{ post.excerpt }}</div>
+    </article>
   {% endfor %}
-</ul>
+</div>
