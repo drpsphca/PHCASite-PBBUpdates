@@ -15,7 +15,7 @@ permalink: /gen11/housemates/
     </tr>
   </thead>
   <tbody>
-  {% assign people = site.data.housemates | sort: "place" %}
+  {% assign people = site.data.seasons.gen11.housemates | default: empty | sort: "place" %}
   {% for h in people %}
     <tr>
       <td>{{ h.place }}</td>
