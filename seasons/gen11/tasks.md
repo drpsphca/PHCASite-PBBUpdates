@@ -5,7 +5,7 @@ permalink: /gen11/tasks/
 ---
 
 <h1>Weekly tasks</h1>
-{% for t in site.data.seasons.gen11.weekly_tasks %}
+{% for t in site.data.seasons.gen11.weekly_tasks reversed %}
 <article class="row">
   <div>
     <strong>Week {{ t.week }} · {{ t.title }}</strong>
