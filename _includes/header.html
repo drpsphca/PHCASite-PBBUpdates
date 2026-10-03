@@ -51,7 +51,8 @@
     {% endif %}
     <a href="{{ '/announcements' | relative_url }}">Announcements</a>
     <label>
-      Season
+      Select season:
+      <br>
       <select class="season-select" aria-label="Select season">
         <option value="{{ '/' | relative_url }}" {% if season == "home" %}selected{% endif %}>Select Season</option>
         {% for s in site.data.season_list %}
