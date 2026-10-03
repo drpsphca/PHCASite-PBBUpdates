@@ -8,5 +8,5 @@ permalink: /collab3/
 <section class="hero">
   <p class="kicker">Upcoming season</p>
   <h1>{{ season.title }}</h1>
-  <p>{{ season.summary | default: "Coming soon." }}</p>
+  <p>{{ season.summary | default: "Coming this October 2026 on ABS-CBN and GMA platforms." }}</p>
 </section>

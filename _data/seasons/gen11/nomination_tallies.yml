@@ -2,7 +2,7 @@
   title: 1st Nominations
   week: 2
   method: House vote
-  note: Dylan is an automatic nominee.
+  note: Dylan is an automatic nominee upon the decision of the housemates to automatically nominate him due to failing their first weekly task.
   entries:
     - { id: dylan-yturralde, label: Auto, state: nominated }
     - { id: therese-villamor, label: 13 pts, state: nominated }
@@ -42,7 +42,7 @@
   title: 3rd Nominations
   week: 4
   method: House vote
-  note: Fyang and Jan are ineligible as new housemates.
+  note: Fyang and Jan are ineligible as new housemates. Both of whom have entered the house a day after the 1st eviction night took place and during the 2nd nomination round.
   entries:
     - { id: dingdong-patrick, label: 12 pts, state: nominated }
     - { id: brx-ruiz, label: 5 pts, state: nominated }
@@ -60,7 +60,7 @@
   title: 4th Nominations
   week: 5
   method: Violations
-  note: "Joli Alferez was currently inside the house before Gwen Montano has entered the house and formed as a duo. Gwen Montano was not inside the house during this nomination round caused by the violations done by the housemates."
+  note: Joli Alferez was currently inside the house before Gwen Montano has entered the house and formed as a duo. Gwen Montano was not inside the house during this nomination round caused by the violations done by the housemates.
   entries:
     - { id: fyang-smith, label: 16 pts, state: nominated }
     - { id: rain-celmar, label: 16 pts, state: nominated }
@@ -131,7 +131,7 @@
   title: 8th Nominations
   week: 9
   method: Ligtask
-  note: Failed Ligtask nominees face the public vote.
+  note: Failed Ligtask nominees face the public vote. Option for Vote to Evict has been removed on the Maya app as a result of the earlier controversy. For the 1st Ligtask mechanics, they have to transfer two balls one by one from point A to point B, using the pipe. When the ball falls, they have to return to the starting point. The fastest to do it will be saved from the nomination for this week.
   entries:
     - { id: binsoy-namoca, label: "Passed (3m 18s)", state: not_nominated }
     - { id: jm-ibarra, label: "Failed (3m 56s)", state: nominated }
