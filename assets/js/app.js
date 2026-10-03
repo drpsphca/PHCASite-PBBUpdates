@@ -25,8 +25,11 @@
   apply(current());
 
   document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      apply(current() === "light" ? "dark" : "light");
+  btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var next = current() === "light" ? "dark" : "light";
+    apply(next);
     });
   });
 

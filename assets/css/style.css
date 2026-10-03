@@ -523,6 +523,19 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   .top { position: sticky; }
 }
 
+.top { position: sticky; }
+.mobile-nav {
+  z-index: 30;
+  pointer-events: auto;
+}
+.mobile-nav .icon-btn {
+  position: relative;
+  z-index: 31;
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+}
+
 /* Weeks 1-11 nominations */
 .tally-nominated { background: #c62828; }
 .tally-not_nominated,
