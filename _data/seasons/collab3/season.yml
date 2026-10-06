@@ -8,19 +8,21 @@ premiere: "2026-10-24"
 # voting_open: false
 # current_week: 1
 # current_day: 1
-updated_at: "2026-10-03T12:35:00+08:00"
+updated_at: "2026-10-06T13:20:00+08:00"
 # winner: fyang-smith
-# hosts:
-#  - Bianca Gonzalez
-#  - Robi Domingo
-#  - Kim Chiu
-#  - Melai Cantiveros
-#  - Enchong Dee
-#  - Alexa Ilacad
-#  - Gabbi Garcia
-#  - Mavy Legaspi
+hosts:
+- Bianca Gonzalez
+- Robi Domingo
+- Melai Cantiveros
+- Enchong Dee
+- Alexa Ilacad
+- Gabbi Garcia
+- Michael Sager
 notes: >
   PBB Collab 3.0 is the 3rd season of Pinoy Big Brother under a collaboration of ABS-CBN and GMA Network. This dataset is the complete Collab 3.0 archive for UI and Android API testing. Set status to live and voting_open to true when a new eviction week starts.
-# sources:
-#  - https://bigbrother.fandom.com/wiki/Pinoy_Big_Brother:_Gen11
-#  - https://en.wikipedia.org/wiki/Pinoy_Big_Brother:_Gen_11
+sources:
+  - https://drpsphca.com
+  - https://corporate.abs-cbn.com/newsroom
+  - https://x.com/pbbabscbn
+  - https://x.com/ABSCBNpr
+  - https://x.com/GMANetwork.com
