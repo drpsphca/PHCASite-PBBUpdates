@@ -1,0 +1,9 @@
+{% if page.image %}
+  {% if page.image contains '://' %}
+    <!-- External cloud image (Absolute URL) -->
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="featured-image">
+  {% else %}
+    <!-- Local image (Relative URL) -->
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="featured-image">
+  {% endif %}
+{% endif %}
