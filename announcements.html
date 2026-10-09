@@ -9,6 +9,15 @@ description: Stay up to date with the latest announcements, updates, changes, an
 <div class="post-grid">
   {% for post in site.posts %}
     <article class="card post-card">
+      {% assign featured = post.image %}
+      {% if featured == nil %}
+        {% assign featured = post.content | split: 'src="' | last | split: '"' | first %}
+      {% endif %}
+      {% if featured %}
+        <a href="{{ post.url | relative_url }}">
+          <img class="post-featured" src="{{ featured }}" alt="{{ post.title }}">
+        </a>
+      {% endif %}
       <p class="kicker">{{ post.date | date: "%b %d, %Y" }}</p>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <div class="post-body">{{ post.excerpt }}</div>
