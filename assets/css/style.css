@@ -431,7 +431,11 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
   font-size: 20px;
 }
 
-.post-card { overflow: hidden; padding: 0 0 16px; }
+.post-card {
+  overflow: hidden;
+  padding: 0 0 16px;
+  border-radius: 16px;
+}
 .post-featured {
   display: block;
   width: 100%;
@@ -441,5 +445,7 @@ th { color: var(--brand); font-size: .75rem; letter-spacing: .08em; text-transfo
 }
 .post-card .kicker,
 .post-card h2,
-.post-card .post-body { padding: 0 16px; }
-.post-card .kicker { padding-top: 14px; }
+.post-card .post-body {
+  padding-left: 16px;
+  padding-right: 16px;
+}
