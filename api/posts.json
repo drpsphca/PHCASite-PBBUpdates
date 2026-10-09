@@ -9,22 +9,9 @@ layout: null
     "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
     "url": {{ post.url | absolute_url | jsonify }},
     "excerpt": {{ post.excerpt | strip_html | jsonify }},
-    "author": {{ post.author | jsonify }},
-    "categories": {{ post.categories | jsonify }},
-    "tags": {{ post.tags | jsonify }},
+    "featured_image": {{ post.image | jsonify }},
     "content_html": {{ post.content | jsonify }},
-    "content_text": {{ post.content | strip_html | strip | jsonify }},
-    "images": [
-      {% assign parts = post.content | split: 'src="' %}
-      {% for part in parts offset: 1 %}
-        {% assign src = part | split: '"' | first %}
-        {% if src contains '://' %}
-          {{ src | jsonify }}
-        {% else %}
-          {{ src | absolute_url | jsonify }}
-        {% endif %}{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]
+    "content_text": {{ post.content | strip_html | strip | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
