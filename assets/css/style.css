@@ -375,6 +375,16 @@ html[data-theme="dark"] .mobile-nav a:hover,
 html[data-theme="dark"] .mobile-nav a[aria-current="page"] {
   color: #ffffff;
 }
+html[data-theme="dark"] .badge-pending {
+  background: #2b1a06;
+  color: #ff9800;
+  border-color: #e65100;
+}
+html[data-theme="light"] .badge-pending {
+  background: #fff3e0;
+  color: #e65100;
+  border-color: #ffb74d;
+}
 
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
