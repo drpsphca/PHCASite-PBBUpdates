@@ -1,0 +1,111 @@
+- id: test-1
+  name: Test 1
+  display_name: Test 1
+  moniker: Ang Test Housemate 1
+  age_on_entry: 20
+  hometown: Test City
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: nominated
+  place: 1
+  nomination_points: 5
+
+- id: test-2
+  name: Test 2
+  display_name: Test 2
+  moniker: Ang Test Housemate 2
+  age_on_entry: 21
+  hometown: Test City
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 2
+  nomination_points: 3
+
+- id: test-3
+  name: Test 3
+  display_name: Test 3
+  moniker: Ang Test Housemate 3
+  age_on_entry: 22
+  hometown: Test City
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: nominated
+  place: 3
+  nomination_points: 4
+
+- id: test-4
+  name: Test 4
+  display_name: Test 4
+  moniker: Ang Test Housemate 4
+  age_on_entry: 23
+  hometown: Test City
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 4
+  nomination_points: 2
+
+- id: test-5
+  name: Test 5
+  display_name: Test 5
+  moniker: Ang Test Housemate 5
+  age_on_entry: 24
+  hometown: Test City
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: nominated
+  place: 5
+  nomination_points: 1
+
+- id: test-6
+  name: Test 6
+  display_name: Test 6
+  moniker: Ang Test Housemate 6
+  age_on_entry: 25
+  hometown: Test City
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 6
+  nomination_points: 0
+
+- id: test-7
+  name: Test 7
+  display_name: Test 7
+  moniker: Ang Test Housemate 7
+  age_on_entry: 26
+  hometown: Test City
+  type: Teen
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: nominated
+  place: 7
+  nomination_points: 6
+
+- id: test-8
+  name: Test 8
+  display_name: Test 8
+  moniker: Ang Test Housemate 8
+  age_on_entry: 27
+  hometown: Test City
+  type: Adult
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 8
+  nomination_points: 0

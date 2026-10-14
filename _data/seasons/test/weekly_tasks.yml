@@ -1,0 +1,20 @@
+- week: 1
+  day: 1
+  date: "2026-10-14"
+  title: Test Weekly Task 1
+  summary: Complete the first test task successfully.
+  status: passed
+
+- week: 2
+  day: 2
+  date: "2026-10-15"
+  title: Test Weekly Task 2
+  summary: Complete the first test task successfully.
+  status: failed
+
+- week: 3
+  day: 3
+  date: "2026-10-16"
+  title: Test Weekly Task 3
+  summary: Complete the first test task successfully.
+  status: pending

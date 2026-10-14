@@ -1,6 +1,6 @@
 {% assign slug = page.url | remove_first: "/" | split: "/" | first %}
 {% assign season = "home" %}
-{% if slug == "gen11" or slug == "collab3" %}
+{% if slug == "gen11" or slug == "collab3" or slug == "test" %}
   {% assign season = slug %}
 {% endif %}
 

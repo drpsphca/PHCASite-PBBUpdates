@@ -4,8 +4,10 @@ layout: null
 ---
 {
   "posts_url": {{ "/api/posts.json" | relative_url | jsonify }},
+  "season_list": {{ site.data.season_list | jsonify }},
   "seasons": {
     "gen11": {{ site.data.seasons.gen11 | jsonify }},
-    "collab3": {{ site.data.seasons.collab3 | jsonify }}
+    "collab3": {{ site.data.seasons.collab3 | jsonify }},
+    "test": {{ site.data.seasons.test | jsonify }}
   }
 }

@@ -2,11 +2,16 @@
 {% assign photos = site.data.seasons[season].photos %}
 {% assign file = photos[include.id] %}
 {% if file %}
-<img
-  class="hm-photo {{ include.class }}"
-  src="{{ '/assets/img/' | append: season | append: '/' | append: file | relative_url }}"
-  alt="{{ include.alt | default: include.id }}"
-  width="240"
-  height="240"
-  loading="lazy">
+  {% if file contains '/' %}
+    {% assign src = file | relative_url %}
+  {% else %}
+    {% assign src = '/assets/img/' | append: season | append: '/' | append: file | relative_url %}
+  {% endif %}
+  <img
+    class="hm-photo {{ include.class }}"
+    src="{{ src }}"
+    alt="{{ include.alt | default: include.id }}"
+    width="240"
+    height="240"
+    loading="lazy">
 {% endif %}

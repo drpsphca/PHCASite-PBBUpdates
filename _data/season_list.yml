@@ -8,3 +8,8 @@
   href: /collab3/
   available: false
   summary: "Coming soon on ABS-CBN and GMA platforms this October 2026."
+- id: test
+  label: PBB Test Season
+  href: /test/
+  available: true
+  summary: "Test season for UI and API testing. Enable or disable with the available flag."
