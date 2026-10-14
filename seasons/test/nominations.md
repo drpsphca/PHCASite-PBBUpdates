@@ -8,13 +8,36 @@ description: Test PBB Season.
 <h1>Nominations and evictions</h1>
 <p>Full house tally first, then the public-vote result. Red cards are nominated. Blue cards are not nominated or ineligible.</p>
 
-{% assign tallies = site.data.seasons.test.nomination_tallies | default: empty %}
-{% assign evictions = site.data.seasons.test.evictions | default: empty %}
-{% if tallies.size == 0 and evictions.size == 0 %}
-  <p class="empty">No nomination or eviction data yet.</p>
-{% endif %}
-{% for t in tallies %}
-  {% for entry in t.entries %}
-    {% include tally-card.html entry=entry season="test" %}
-  {% endfor %}
+{% for t in site.data.seasons.test.nomination_tallies %}
+<section class="block">
+  <h2>{{ t.title }} · Week {{ t.week }}</h2>
+  <p class="mono">{{ t.method }}{% if t.note %} · {{ t.note }}{% endif %}</p>
+  <div class="tally-grid">
+    {% assign is_finale = false %}
+    {% if t.id >= 12 %}{% assign is_finale = true %}{% endif %}
+    {% for entry in t.entries %}
+      {% include tally-card.html entry=entry finale=is_finale season="test" %}
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<h2>Public vote results</h2>
+{% for e in site.data.seasons.test.evictions reversed %}
+<section class="card block">
+  <h3>Week {{ e.week }} · Day {{ e.day }} · {{ e.date }}</h3>
+  <p>Vote type: <code>{{ e.vote_type }}</code></p>
+  <div class="tally-grid">
+    {% for n in e.nominated %}
+      {% assign hm = site.data.seasons.test.housemates | where: "id", n.id | first %}
+      <article class="tally-card tally-result-{{ n.result }}{% if e.week >= 13 %} tally-finale tally-hm-{{ n.id }}{% endif %}">
+      {% include housemate-photo.html id=n.id alt=hm.display_name %}
+      <h3>{{ hm.display_name }}</h3>
+      <p class="tally-label">{{ n.percent }}%</p>
+      {% include status-badge.html status=n.result %}
+  </article>
+{% endfor %}
+
+  </div>
+</section>
 {% endfor %}
