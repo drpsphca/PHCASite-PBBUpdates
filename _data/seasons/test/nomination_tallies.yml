@@ -12,3 +12,17 @@
     - { id: test-4, label: 2 pts, state: not_nominated }
     - { id: test-6, label: 0 pt, state: not_nominated }
     - { id: test-8, label: 0 pt, state: not_nominated }
+
+- id: 2
+  title: 1st Nominations
+  week: 2
+  method: House vote
+  note: Test nomination round.
+  entries:
+    - { id: test-2, label: 6 pts, state: nominated }
+    - { id: test-4, label: 7 pts, state: nominated }
+    - { id: test-6, label: 4 pt, state: nominated }
+    - { id: test-8, label: 3 pts, state: nominated }
+    - { id: test-1, label: 2 pts, state: not_nominated }
+    - { id: test-2, label: 0 pt, state: not_nominated }
+    - { id: test-3, label: 0 pt, state: not_nominated }
