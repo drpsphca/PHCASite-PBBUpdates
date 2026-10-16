@@ -21,22 +21,20 @@ description: Test PBB Season.
   </p>
 </section>
 
-{% assign latest = site.data.seasons.test.evictions | last %}
 <section class="card nom-board">
   <p class="kicker">Eviction desk</p>
 
   {% if latest.desk_state == "started" %}
-  <h2>Current vote standings</h2>
-  <div class="tally-grid">
-    {% for n in latest.nominated %}
-      <article class="tally-card desk-hidden">
-        <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label }}">
-        <h3>{{ n.label }}</h3>
-        <p class="tally-label">0.00%</p>
-      </article>
-    {% endfor %}
-  </div>
-  {% endif %}
+    <h2>Current vote standings</h2>
+    <div class="tally-grid">
+      {% for n in latest.nominated %}
+        <article class="tally-card desk-hidden">
+          <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label }}">
+          <h3>{{ n.label }}</h3>
+          <p class="tally-label">0.00%</p>
+        </article>
+      {% endfor %}
+    </div>
 
   {% elsif latest.desk_state == "partial" or latest.desk_state == "eviction_night" or latest.desk_state == "closed_tally" %}
     <h2>Nominated housemates</h2>
@@ -80,7 +78,6 @@ description: Test PBB Season.
     <p>Evicted: {% for id in latest.evicted %}{% assign hm = site.data.seasons.test.housemates | where: "id", id | first %}{{ hm.display_name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
   {% endif %}
 </section>
-
   {% assign last_tally = site.data.seasons.test.nomination_tallies | last %}
   {% if last_tally %}
   <section class="card block">
