@@ -106,7 +106,7 @@ description: Test PBB Season.
   </div>
 </section>
 
-<section>
+<section class="card block">
   <h2>Housemates</h2>
   <div class="tally-grid">
     {% assign people = site.data.seasons.test.housemates | default: empty %}
