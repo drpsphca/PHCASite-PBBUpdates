@@ -416,6 +416,9 @@ html[data-theme="light"] .badge-live {
 .tally-card .badge {
   margin-top: 8px;
 }
+.nom-board {
+  margin-bottom: 18px;
+}
 
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
