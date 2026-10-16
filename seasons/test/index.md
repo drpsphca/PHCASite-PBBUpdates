@@ -38,30 +38,18 @@ description: Test PBB Season.
       {% endfor %}
     </div>
 
-  {% elsif latest.desk_state == "partial" or latest.desk_state == "eviction_night" or latest.desk_state == "closed_tally" %}
-    <h2>Current vote standings</h2>
-    <div class="tally-grid">
-      {% for n in latest.nominated %}
-        {% assign hm = site.data.seasons.test.housemates | where: "id", n.id | first %}
-        <article class="tally-card tally-nominated">
-          {% include housemate-photo.html id=n.id alt=hm.display_name season="test" %}
-          <h3>{{ hm.display_name }}</h3>
-          {% include status-badge.html status="nominated" %}
-        </article>
-      {% endfor %}
-    </div>
-
-    <h2>Current vote standings</h2>
-    <p class="mono">Voting results as of {{ latest.results_as_of | date: "%b %d, %Y %I:%M %p" }}</p>
-    <div class="tally-grid">
-      {% for n in latest.nominated %}
-        <article class="tally-card desk-hidden">
-          <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label }}">
-          <h3>{{ n.label }}</h3>
-          <p class="tally-label">{{ n.percent | default: 0.00 }}%</p>
-        </article>
-      {% endfor %}
-    </div>
+{% elsif latest.desk_state == "partial" or latest.desk_state == "eviction_night" or latest.desk_state == "closed_tally" %}
+  <h2>Partial votes tally</h2>
+  <p class="mono">Voting results as of {{ latest.results_as_of | date: "%b %d, %Y %I:%M %p" }}</p>
+  <div class="tally-grid">
+    {% for n in latest.nominated %}
+      <article class="tally-card desk-hidden">
+        <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label }}">
+        <h3>{{ n.label }}</h3>
+        <p class="tally-label">{{ n.percent | default: 0.00 }}%</p>
+      </article>
+    {% endfor %}
+  </div>
 
   {% elsif latest.desk_state == "closed_revealed" %}
     <h2>Final votes tally</h2>
