@@ -21,6 +21,8 @@ description: Test PBB Season.
   </p>
 </section>
 
+{% assign latest = site.data.seasons.test.evictions | last %}
+
 <section class="card nom-board">
   <p class="kicker">Eviction desk</p>
 
