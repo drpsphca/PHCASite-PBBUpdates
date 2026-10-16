@@ -109,10 +109,13 @@ description: Test PBB Season.
 <section>
   <h2>Housemates</h2>
   <div class="grid">
-    {% assign people = site.data.seasons[season.id].housemates | sort: "place" %}
+    {% assign people = site.data.seasons.test.housemates | default: empty %}
+    {% if people.first %}
+      {% assign people = people | sort: "place" %}
+    {% endif %}
     {% for h in people %}
       <article class="card">
-        {% include housemate-photo.html id=h.id alt=h.display_name season=season.id %}
+        {% include housemate-photo.html id=h.id alt=h.display_name season="test" %}
         <h3>{{ h.display_name }}</h3>
         <p class="mono">{{ h.moniker }}</p>
         {% include status-badge.html status=h.status %}
