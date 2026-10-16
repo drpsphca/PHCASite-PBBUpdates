@@ -26,16 +26,17 @@ description: Test PBB Season.
   <p class="kicker">Eviction desk</p>
 
   {% if latest.desk_state == "started" %}
-    <h2>Nominated this week</h2>
-    <div class="tally-grid">
-      {% for n in latest.nominated %}
-        <article class="tally-card desk-hidden">
-          <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="Nominee">
-          <h3>Nominee</h3>
-          <p class="tally-label">0.00%</p>
-        </article>
-      {% endfor %}
-    </div>
+  <h2>Current vote standings</h2>
+  <div class="tally-grid">
+    {% for n in latest.nominated %}
+      <article class="tally-card desk-hidden">
+        <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label }}">
+        <h3>{{ n.label }}</h3>
+        <p class="tally-label">0.00%</p>
+      </article>
+    {% endfor %}
+  </div>
+  {% endif %}
 
   {% elsif latest.desk_state == "partial" or latest.desk_state == "eviction_night" or latest.desk_state == "closed_tally" %}
     <h2>Nominated housemates</h2>
@@ -79,6 +80,21 @@ description: Test PBB Season.
     <p>Evicted: {% for id in latest.evicted %}{% assign hm = site.data.seasons.test.housemates | where: "id", id | first %}{{ hm.display_name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
   {% endif %}
 </section>
+
+  {% assign last_tally = site.data.seasons.test.nomination_tallies | last %}
+  {% if last_tally %}
+  <section class="card block">
+    <h2>Latest Nomination Tally</h2>
+    <p class="mono">{{ last_tally.title }} · Week {{ last_tally.week }}</p>
+    <div class="tally-grid">
+      {% for entry in last_tally.entries %}
+        {% if entry.state == "nominated" %}
+          {% include tally-card.html entry=entry season="test" %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
 <section>
   <h2>Big 4 result</h2>
