@@ -15,7 +15,7 @@
   day: 2
   date: "2026-10-14"
   vote_type: save_evict
-  desk_state: eviction_night
+  desk_state: started
   results_as_of: "2026-10-16T18:00:00+08:00"
   note: Test eviction.
   nominated:
