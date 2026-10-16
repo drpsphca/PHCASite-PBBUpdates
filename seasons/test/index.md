@@ -39,7 +39,7 @@ description: Test PBB Season.
     </div>
 
   {% elsif latest.desk_state == "partial" or latest.desk_state == "eviction_night" or latest.desk_state == "closed_tally" %}
-    <h2>Nominated housemates</h2>
+    <h2>Current vote standings</h2>
     <div class="tally-grid">
       {% for n in latest.nominated %}
         {% assign hm = site.data.seasons.test.housemates | where: "id", n.id | first %}
@@ -51,7 +51,7 @@ description: Test PBB Season.
       {% endfor %}
     </div>
 
-    <h2>Partial votes tally</h2>
+    <h2>Current vote standings</h2>
     <p class="mono">Voting results as of {{ latest.results_as_of | date: "%b %d, %Y %I:%M %p" }}</p>
     <div class="tally-grid">
       {% for n in latest.nominated %}
@@ -80,6 +80,7 @@ description: Test PBB Season.
     <p>Evicted: {% for id in latest.evicted %}{% assign hm = site.data.seasons.test.housemates | where: "id", id | first %}{{ hm.display_name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
   {% endif %}
 </section>
+
   {% assign last_tally = site.data.seasons.test.nomination_tallies | last %}
   {% if last_tally %}
   <section class="card block">
