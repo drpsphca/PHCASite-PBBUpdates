@@ -6,8 +6,8 @@ finale: null
 days: 1
 status: live
 voting_open: true
-current_week: 1
-current_day: 1
+current_week: 2
+current_day: 2
 updated_at: "2026-10-14T00:00:00+08:00"
 winner: null
 hosts:
