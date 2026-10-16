@@ -64,8 +64,6 @@ description: Test PBB Season.
         </article>
       {% endfor %}
     </div>
-    <h3>Previous final eviction result</h3>
-    <p>Evicted: {% for id in latest.evicted %}{% assign hm = site.data.seasons.test.housemates | where: "id", id | first %}{{ hm.display_name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
   {% endif %}
 </section>
 
