@@ -34,7 +34,7 @@ description: Test PBB Season.
     <div class="tally-grid">
       {% for n in latest.nominated %}
         {% assign hm = site.data.seasons[season.id].housemates | where: "id", n.id | first %}
-        <article class="tally-card">
+        <article class="tally-card {% if latest.desk_state == 'closed_revealed' %}tally-result-{{ n.result }}{% else %}desk-hidden{% endif %}">
           {% if latest.desk_state == "closed_revealed" %}
             {% include housemate-photo.html id=n.id alt=hm.display_name season=season.id %}
             <h3>{{ hm.display_name }}</h3>
@@ -42,10 +42,10 @@ description: Test PBB Season.
             <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label | default: 'Nominee' }}">
             <h3>{{ n.label | default: "Nominee" }}</h3>
           {% endif %}
-          <p class="tally-label">{{ n.percent | default: 0.00 }}%</p>
-          {% if latest.desk_state == "closed_revealed" %}
-            {% include status-badge.html status=n.result %}
-          {% endif %}
+        <p class="tally-label">{{ n.percent | default: 0.00 }}%</p>
+        {% if latest.desk_state == "closed_revealed" %}
+        {% include status-badge.html status=n.result %}
+        {% endif %}
         </article>
       {% endfor %}
     </div>
@@ -75,6 +75,21 @@ description: Test PBB Season.
   </div>
 </section>
 
+{% assign last_tally = site.data.seasons[season.id].nomination_tallies | last %}
+{% if last_tally %}
+<section>
+  <h2>Recent nomination tally</h2>
+  <p class="mono">{{ last_tally.title }} · Week {{ last_tally.week }}</p>
+  <div class="tally-grid">
+    {% for entry in last_tally.entries %}
+      {% if entry.state == "nominated" %}
+        {% include tally-card.html entry=entry season=season.id %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <section>
   <h2>Latest weekly tasks</h2>
   <div class="list">
@@ -86,6 +101,21 @@ description: Test PBB Season.
           <p>{{ t.summary }}</p>
         </div>
         {% include status-badge.html status=t.status %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>Housemates</h2>
+  <div class="grid">
+    {% assign people = site.data.seasons[season.id].housemates | sort: "place" %}
+    {% for h in people %}
+      <article class="card">
+        {% include housemate-photo.html id=h.id alt=h.display_name season=season.id %}
+        <h3>{{ h.display_name }}</h3>
+        <p class="mono">{{ h.moniker }}</p>
+        {% include status-badge.html status=h.status %}
       </article>
     {% endfor %}
   </div>

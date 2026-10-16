@@ -385,6 +385,27 @@ html[data-theme="light"] .badge-pending {
   color: #e65100;
   border-color: #ffb74d;
 }
+/* Season status: Live = green */
+html[data-theme="dark"] .badge-live {
+  background: #102318;
+  color: #7dce82;
+  border-color: #2c6a38;
+}
+html[data-theme="light"] .badge-live {
+  background: #d9f5de;
+  color: #157a32;
+  border-color: #8ed39a;
+}
+
+/* Eviction desk: results shown but housemates not revealed */
+.tally-card.desk-hidden {
+  background: #262626;
+  color: #fff;
+}
+.tally-card.desk-hidden h3,
+.tally-card.desk-hidden .tally-label {
+  color: #fff;
+}
 
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
