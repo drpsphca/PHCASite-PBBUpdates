@@ -21,14 +21,41 @@ description: Test PBB Season.
   </p>
 </section>
 
+{% assign latest = site.data.seasons[season.id].evictions | last %}
 <section class="card nom-board">
   <p class="kicker">Eviction desk</p>
   <h2>Nominated this week</h2>
-  {% if season.voting_open %}
-    <p>Public voting is open. Save your nominated housemates.</p>
+
+  {% if season.voting_open or latest.desk_state %}
+    {% if latest.desk_state == "partial" or latest.desk_state == "eviction_night" or latest.desk_state == "closed_tally" %}
+      <p class="mono">Voting results as of {{ latest.results_as_of | date: "%b %d, %Y %I:%M %p" }}</p>
+    {% endif %}
+
+    <div class="tally-grid">
+      {% for n in latest.nominated %}
+        {% assign hm = site.data.seasons[season.id].housemates | where: "id", n.id | first %}
+        <article class="tally-card">
+          {% if latest.desk_state == "closed_revealed" %}
+            {% include housemate-photo.html id=n.id alt=hm.display_name season=season.id %}
+            <h3>{{ hm.display_name }}</h3>
+          {% else %}
+            <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label | default: 'Nominee' }}">
+            <h3>{{ n.label | default: "Nominee" }}</h3>
+          {% endif %}
+          <p class="tally-label">{{ n.percent | default: 0.00 }}%</p>
+          {% if latest.desk_state == "closed_revealed" %}
+            {% include status-badge.html status=n.result %}
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if latest.desk_state == "closed_revealed" %}
+      <h3>Previous final eviction result</h3>
+      <p>Evicted: {% for id in latest.evicted %}{{ id }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    {% endif %}
   {% else %}
-    <div class="empty">No ongoing eviction voting. Season status: <strong>{{ season.status }}</strong>.</div>
-    <p>Last public result was the Big Night. Winner: <strong>Fyang Smith</strong> (30.66%).</p>
+    <div class="empty">No ongoing eviction voting.</div>
   {% endif %}
 </section>
 
