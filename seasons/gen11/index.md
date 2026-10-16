@@ -63,3 +63,21 @@ description: View the full summary of Pinoy Big Brother Gen 11, aired on ABS-CBN
     {% endfor %}
   </div>
 </section>
+
+<section class="card block">
+  <h2>Housemates</h2>
+  <div class="tally-grid">
+    {% assign people = site.data.seasons.gen11.housemates | default: empty %}
+    {% if people.first %}
+      {% assign people = people | sort: "place" %}
+    {% endif %}
+    {% for h in people %}
+      <article class="tally-card tally-{{ h.status }}">
+        {% include housemate-photo.html id=h.id alt=h.display_name season="gen11" %}
+        <h3>{{ h.display_name }}</h3>
+        <p class="tally-label">{{ h.moniker }}</p>
+        {% include status-badge.html status=h.status %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
