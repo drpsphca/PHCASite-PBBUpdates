@@ -18,8 +18,8 @@
   desk_state: started
   note: Test eviction.
   nominated:
-    - { id: a, label: "Housemate A", percent: 0.00, result: pending }
-    - { id: b, label: "Housemate B", percent: 0.00, result: pending }
-    - { id: c, label: "Housemate C", percent: 0.00, result: pending }
-    - { id: d, label: "Housemate D", percent: 0.00, result: pending }
+    - { id: a, label: "Housemate A", percent: 25.00, result: pending }
+    - { id: b, label: "Housemate B", percent: 15.00, result: pending }
+    - { id: c, label: "Housemate C", percent: 35.00, result: pending }
+    - { id: d, label: "Housemate D", percent: 25.00, result: pending }
   evicted: []
