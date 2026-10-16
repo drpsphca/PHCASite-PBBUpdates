@@ -27,17 +27,28 @@ description: Test PBB Season.
 <section class="card block">
   <h3>Week {{ e.week }} · Day {{ e.day }} · {{ e.date }}</h3>
   <p>Vote type: <code>{{ e.vote_type }}</code></p>
+  {% if e.desk_state == "partial" or e.desk_state == "eviction_night" or e.desk_state == "closed_tally" %}
+    <p class="mono">Voting results as of {{ e.results_as_of | date: "%b %d, %Y %I:%M %p" }}</p>
+  {% endif %}
   <div class="tally-grid">
     {% for n in e.nominated %}
       {% assign hm = site.data.seasons.test.housemates | where: "id", n.id | first %}
-      <article class="tally-card tally-result-{{ n.result }}{% if e.week >= 13 %} tally-finale tally-hm-{{ n.id }}{% endif %}">
-      {% include housemate-photo.html id=n.id alt=hm.display_name %}
-      <h3>{{ hm.display_name }}</h3>
-      <p class="tally-label">{{ n.percent }}%</p>
-      {% include status-badge.html status=n.result %}
-  </article>
-{% endfor %}
-
+      <article class="tally-card {% if e.desk_state == 'closed_revealed' %}tally-result-{{ n.result }}{% else %}desk-hidden{% endif %}">
+        {% if e.desk_state == "closed_revealed" %}
+          {% include housemate-photo.html id=n.id alt=hm.display_name season="test" %}
+          <h3>{{ hm.display_name }}</h3>
+        {% else %}
+          <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label | default: 'Nominee' }}">
+          <h3>{{ n.label | default: "Nominee" }}</h3>
+        {% endif %}
+        <p class="tally-label">{{ n.percent | default: 0.00 }}%</p>
+        {% if e.desk_state == "closed_revealed" %}
+          {% include status-badge.html status=n.result %}
+        {% else %}
+          {% include status-badge.html status=n.result %}
+        {% endif %}
+      </article>
+    {% endfor %}
   </div>
 </section>
 {% endfor %}
