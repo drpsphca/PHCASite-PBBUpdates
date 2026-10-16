@@ -8,7 +8,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
   place: 1
   nomination_points: 5
 
@@ -22,7 +22,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 2
   nomination_points: 3
 
@@ -36,7 +36,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
   place: 3
   nomination_points: 4
 
@@ -50,7 +50,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 4
   nomination_points: 2
 
@@ -64,7 +64,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
   place: 5
   nomination_points: 1
 
@@ -78,7 +78,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 6
   nomination_points: 0
 
@@ -92,7 +92,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: evicted
   place: 7
   nomination_points: 6
 
@@ -106,6 +106,6 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 8
   nomination_points: 0
