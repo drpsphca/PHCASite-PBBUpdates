@@ -15,7 +15,8 @@
   day: 2
   date: "2026-10-14"
   vote_type: save_evict
-  desk_state: started
+  desk_state: partial
+  results_as_of: "2026-10-16T18:00:00+08:00"
   note: Test eviction.
   nominated:
     - { id: a, label: "Housemate A", percent: 25.00, result: pending }
