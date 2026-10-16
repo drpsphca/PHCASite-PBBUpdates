@@ -2,7 +2,7 @@
   day: 1
   date: "2026-10-14"
   vote_type: save_evict
-  desk_state: closed_tally          # started | partial | eviction_night | closed_tally | closed_revealed
+  desk_state: closed_revealed          # started | partial | eviction_night | closed_tally | closed_revealed
   results_as_of: "2026-10-16T18:00:00+08:00"
   note: Test eviction.
   nominated:
