@@ -39,7 +39,7 @@ description: Test PBB Season.
     </div>
 
 {% elsif latest.desk_state == "partial" or latest.desk_state == "eviction_night" or latest.desk_state == "closed_tally" %}
-  <h2>Partial votes tally</h2>
+  <h2>Current vote standings</h2>
   <p class="mono">Voting results as of {{ latest.results_as_of | date: "%b %d, %Y %I:%M %p" }}</p>
   <div class="tally-grid">
     {% for n in latest.nominated %}
