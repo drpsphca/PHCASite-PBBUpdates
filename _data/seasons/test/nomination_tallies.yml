@@ -14,7 +14,7 @@
     - { id: test-8, label: 0 pt, state: not_nominated }
 
 - id: 2
-  title: 1st Nominations
+  title: 2nd Nominations
   week: 2
   method: House vote
   note: Test nomination round.
