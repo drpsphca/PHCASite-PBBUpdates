@@ -15,12 +15,12 @@
   day: 2
   date: "2026-10-14"
   vote_type: save_evict
-  desk_state: closed_tally
+  desk_state: closed_revealed
   results_as_of: "2026-10-16T18:00:00+08:00"
   note: Test eviction.
   nominated:
-    - { id: a, label: "Housemate A", percent: 25.00, result: pending }
-    - { id: b, label: "Housemate B", percent: 15.00, result: pending }
-    - { id: c, label: "Housemate C", percent: 35.00, result: pending }
-    - { id: d, label: "Housemate D", percent: 25.00, result: pending }
-  evicted: []
+    - { id: test-2, label: "Housemate A", percent: 25.00, result: saved }
+    - { id: test-4, label: "Housemate B", percent: 15.00, result: evicted }
+    - { id: test-6, label: "Housemate C", percent: 35.00, result: saved }
+    - { id: test-8, label: "Housemate D", percent: 25.00, result: saved }
+  evicted: [test-4]

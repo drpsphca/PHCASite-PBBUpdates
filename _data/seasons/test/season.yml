@@ -5,7 +5,7 @@ premiere: "2026-10-14"
 finale: null
 days: 2
 status: live
-voting_open: true
+voting_open: false
 current_week: 2
 current_day: 2
 updated_at: "2026-10-14T00:00:00+08:00"

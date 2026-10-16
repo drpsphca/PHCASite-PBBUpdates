@@ -49,8 +49,8 @@
   type: Adult
   pair_id: null
   day_entered: 1
-  day_exited: null
-  status: nominated
+  day_exited: 2
+  status: evicted
   place: 4
   nomination_points: 2
 
@@ -91,7 +91,7 @@
   type: Teen
   pair_id: null
   day_entered: 1
-  day_exited: null
+  day_exited: 1
   status: evicted
   place: 7
   nomination_points: 6
