@@ -406,6 +406,16 @@ html[data-theme="light"] .badge-live {
 .tally-card.desk-hidden .tally-label {
   color: #fff;
 }
+.tally-winner,
+.tally-runner_up,
+.tally-finalist,
+.tally-third,
+.tally-fourth {
+  background: #1565c0;
+}
+.tally-card .badge {
+  margin-top: 8px;
+}
 
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
