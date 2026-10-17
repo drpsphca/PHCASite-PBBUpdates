@@ -10,6 +10,7 @@ description: Test PBB Season.
 <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
 <p>This season is not available. <a href="{{ '/' | relative_url }}">Return to the main page</a>.</p>
 {% else %}
+{% endunless %}
 
 {% assign season = site.data.seasons.test.season %}
 

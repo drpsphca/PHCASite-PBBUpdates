@@ -9,6 +9,7 @@ description: Test PBB Season.
 <meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
 <p>This season is not available. <a href="{{ '/' | relative_url }}">Return to the main page</a>.</p>
 {% else %}
+{% endunless %}
 
 <h1>Nominations and evictions</h1>
 <p>Full house tally first, then the public-vote result. Red cards are nominated. Blue cards are not nominated or ineligible.</p>
