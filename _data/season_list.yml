@@ -11,5 +11,5 @@
 - id: test
   label: PBB Test Season
   href: /test/
-  available: true
+  available: false
   summary: "Test season for UI and API testing. Enable or disable with the available flag."
