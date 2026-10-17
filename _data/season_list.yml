@@ -6,7 +6,7 @@
 - id: collab3
   label: Collab 3.0
   href: /collab3/
-  available: false
+  available: true
   summary: "Coming soon on ABS-CBN and GMA platforms this October 2026."
 - id: test
   label: PBB Test Season
