@@ -5,6 +5,12 @@ permalink: /test/
 description: Test PBB Season.
 ---
 
+{% assign test_season = site.data.season_list | where: "id", "test" | first %}
+{% unless test_season.available %}
+<meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
+<p>This season is not available. <a href="{{ '/' | relative_url }}">Return to the main page</a>.</p>
+{% else %}
+
 {% assign season = site.data.seasons.test.season %}
 
 <section class="hero">

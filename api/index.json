@@ -4,10 +4,15 @@ layout: null
 ---
 {
   "posts_url": {{ "/api/posts.json" | relative_url | jsonify }},
-  "season_list": {{ site.data.season_list | jsonify }},
+  "season_list": {{ site.data.season_list | where: "available", true | jsonify }},
   "seasons": {
-    "gen11": {{ site.data.seasons.gen11 | jsonify }},
-    "collab3": {{ site.data.seasons.collab3 | jsonify }},
-    "test": {{ site.data.seasons.test | jsonify }}
+    {% assign first = true %}
+    {% for s in site.data.season_list %}
+      {% if s.available %}
+        {% unless first %},{% endunless %}
+        {{ s.id | jsonify }}: {{ site.data.seasons[s.id] | jsonify }}
+        {% assign first = false %}
+      {% endif %}
+    {% endfor %}
   }
 }

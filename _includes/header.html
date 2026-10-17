@@ -3,6 +3,13 @@
 {% if slug == "gen11" or slug == "collab3" or slug == "test" %}
   {% assign season = slug %}
 {% endif %}
+{% for s in site.data.season_list %}
+  {% if s.available %}
+    <option value="{{ s.href | relative_url }}" {% if season == s.id %}selected{% endif %}>
+      {{ s.label }}
+    </option>
+  {% endif %}
+{% endfor %}
 
 <header class="top">
   <div class="brand-row">

@@ -4,6 +4,11 @@ title: PBB Test - Housemates
 permalink: /test/housemates/
 description: Test PBB Season.
 ---
+{% assign test_season = site.data.season_list | where: "id", "test" | first %}
+{% unless test_season.available %}
+<meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
+<p>This season is not available. <a href="{{ '/' | relative_url }}">Return to the main page</a>.</p>
+{% else %}
 
 <h1>Housemates</h1>
 <p>Official monikers, type, and final status. 2-in-1 pairs share a single game slot.</p>
