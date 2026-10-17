@@ -5,16 +5,6 @@ permalink: /
 season: home
 ---
 
-{% for s in site.data.season_list %}
-  {% if s.available %}
-  <a class="season-card" href="{{ s.href | relative_url }}">
-    <p class="kicker">{{ s.label }}</p>
-    <h2>{{ s.label }}</h2>
-    <p>{{ s.summary }}</p>
-  </a>
-  {% endif %}
-{% endfor %}
-
 <section class="hero">
   <p class="kicker">Previous season</p>
   <h1><a href="{{ '/gen11/' | relative_url }}">Pinoy Big Brother: Gen 11</a></h1>
