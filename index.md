@@ -28,10 +28,12 @@ season: home
 
 <div class="season-cards">
   {% for s in site.data.season_list %}
-  <a class="season-card" href="{{ s.href | relative_url }}">
-    <p class="kicker">{{ s.label }}</p>
-    <h2>{{ s.label }}</h2>
-    <p>{{ s.summary }}</p>
-  </a>
+    {% if s.available %}
+    <a class="season-card" href="{{ s.href | relative_url }}">
+      <p class="kicker">{{ s.label }}</p>
+      <h2>{{ s.label }}</h2>
+      <p>{{ s.summary }}</p>
+    </a>
+    {% endif %}
   {% endfor %}
 </div>
