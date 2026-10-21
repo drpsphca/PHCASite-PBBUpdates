@@ -32,7 +32,7 @@ description: View all of the nomination tallies and eviction voting results of P
 {% for e in site.data.seasons.gen11.evictions reversed %}
 <section class="card block">
   <h3>Week {{ e.week }} · Day {{ e.day }} · {{ e.date }}</h3>
-  <p>Vote type: <code>{{ e.vote_type }}</code></p>
+  <p>Vote type: {% if e.vote_type == "save_evict" %}Save or Evict Voting{% elsif e.vote_type == "save" %}Save Voting{% elsif e.vote_type == "finale" %}Finale{% else %}{{ e.vote_type }}{% endif %}</p>
   <div class="tally-grid">
     {% for n in e.nominated %}
       {% assign hm = site.data.seasons.gen11.housemates | where: "id", n.id | first %}
