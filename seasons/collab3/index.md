@@ -28,7 +28,6 @@ description: Begins on October 24, 2026 at 18:00. Catch it on ABS-CBN and GMA pl
     <p>Public voting is open. Save your nominated housemates.</p>
   {% else %}
     <div class="empty">No ongoing eviction voting. Season status: <strong>{{ season.status }}</strong>.</div>
-    <p>Last public result was the Big Night. Winner: <strong>Fyang Smith</strong> (30.66%).</p>
   {% endif %}
 </section>
 
