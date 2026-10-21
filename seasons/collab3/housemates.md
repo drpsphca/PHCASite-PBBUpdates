@@ -8,13 +8,35 @@ description: View all of the housemates of Pinoy Big Brother Collab 3.0 here.
 <h1>Housemates</h1>
 <p>Official monikers, type, and final status. 2-in-1 pairs share a single game slot.</p>
 
-{% assign people = site.data.seasons.collab3.housemates %}
-{% if people.first %}
-  {% assign people = people | sort: "place" %}
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>#</th><th>Housemate</th><th>Moniker</th><th>Type</th><th>In</th><th>Out</th><th>Status</th><th>Nom. pts</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign people = site.data.seasons.collab3.housemates | sort: "place" %}
   {% for h in people %}
-    {% include housemate-photo.html id=h.id alt=h.display_name season="collab3" %}
-    <strong>{{ h.display_name }}</strong>
+    <tr>
+      <td>{{ h.place }}</td>
+      <td>
+        <div class="hm-cell">
+          {% include housemate-photo.html id=h.id alt=h.display_name %}
+          <div>
+            <strong>{{ h.display_name }}</strong><br>
+            <small>{{ h.name }} · {{ h.hometown }}</small>
+          </div>
+        </div>
+      </td>
+      <td>{{ h.moniker }}</td>
+      <td>{{ h.type }}</td>
+      <td>D{{ h.day_entered }}</td>
+      <td>D{{ h.day_exited }}</td>
+      <td>{% include status-badge.html status=h.status %}</td>
+      <td>{{ h.nomination_points }}</td>
+    </tr>
   {% endfor %}
-{% else %}
-  <p class="empty">Housemates will be posted when the season opens.</p>
-{% endif %}
+  </tbody>
+</table>
+</div>

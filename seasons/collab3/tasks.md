@@ -6,14 +6,13 @@ description: View all of the nomination tallies and eviction voting results of P
 ---
 
 <h1>Weekly tasks</h1>
-
-{% assign tasks = site.data.seasons.collab3.weekly_tasks | default: empty %}
-{% if tasks.size == 0 %}
-  <p class="empty">No weekly tasks yet.</p>
-{% endif %}
-{% for t in tasks %}
-  <article class="row">
+{% for t in site.data.seasons.collab3.weekly_tasks reversed %}
+<article class="row">
+  <div>
     <strong>Week {{ t.week }} · {{ t.title }}</strong>
-    {% include status-badge.html status=t.status %}
-  </article>
+    <p>{{ t.summary }}</p>
+    {% if t.note %}<p class="mono">{{ t.note }}</p>{% endif %}
+  </div>
+  {% include status-badge.html status=t.status %}
+</article>
 {% endfor %}

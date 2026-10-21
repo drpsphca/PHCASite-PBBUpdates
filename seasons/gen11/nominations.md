@@ -22,6 +22,12 @@ description: View all of the nomination tallies and eviction voting results of P
 </section>
 {% endfor %}
 
+{% if e.vote_type == "save_evict" %}Save or Evict Voting
+{% elsif e.vote_type == "save" %}Save Voting
+{% elsif e.vote_type == "finale" %}Finale
+{% else %}{{ e.vote_type }}
+{% endif %}
+
 <h2>Public vote results</h2>
 {% for e in site.data.seasons.gen11.evictions reversed %}
 <section class="card block">
