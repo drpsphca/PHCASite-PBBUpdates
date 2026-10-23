@@ -8,7 +8,7 @@ season: home
 <section class="hero">
   <p class="kicker">Previous season</p>
   <h1><a href="{{ '/collab3/' | relative_url }}">Pinoy Big Brother: Collab 3.0</a></h1>
-  <p>Now airing on GMA, ABS-CBN Entertainment YouTube, iWant, and Kapamilya Online Live.<a href="{{ '/collab3/' | relative_url }}">Go here.</a></p>
+  <p>Now airing on GMA, ABS-CBN Entertainment YouTube, iWant, and Kapamilya Online Live. <a href="{{ '/collab3/' | relative_url }}">Go here.</a></p>
   <p>
     <a href="{{ '/collab3/housemates/' | relative_url }}">Housemates</a> ·
     <a href="{{ '/collab3/nominations/' | relative_url }}">Nominations</a> ·
