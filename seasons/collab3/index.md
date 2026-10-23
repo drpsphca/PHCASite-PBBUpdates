@@ -2,7 +2,7 @@
 layout: default
 title: PBB Collab 3.0
 permalink: /collab3/
-description: Begins on October 24, 2026 at 18:00. Catch it on ABS-CBN and GMA platforms.
+description: Stay up to date with our PBB Updates Board for Pinoy Big Brother Collab 3.0.
 ---
 
 {% assign season = site.data.seasons.collab3.season %}

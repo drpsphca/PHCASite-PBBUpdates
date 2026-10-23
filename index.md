@@ -7,12 +7,12 @@ season: home
 
 <section class="hero">
   <p class="kicker">Previous season</p>
-  <h1><a href="{{ '/gen11/' | relative_url }}">Pinoy Big Brother: Gen 11</a></h1>
-  <p>July 20 to October 26, 2024. Winner <a href="{{ '/gen11/' | relative_url }}">Fyang Smith</a> (30.66%).</p>
+  <h1><a href="{{ '/collab3/' | relative_url }}">Pinoy Big Brother: Collab 3.0</a></h1>
+  <p>Now airing on GMA, ABS-CBN Entertainment YouTube, iWant, and Kapamilya Online Live.<a href="{{ '/collab3/' | relative_url }}">Go here.</a></p>
   <p>
-    <a href="{{ '/gen11/housemates/' | relative_url }}">Housemates</a> ·
-    <a href="{{ '/gen11/nominations/' | relative_url }}">Nominations</a> ·
-    <a href="{{ '/gen11/tasks/' | relative_url }}">Weekly tasks</a>
+    <a href="{{ '/collab3/housemates/' | relative_url }}">Housemates</a> ·
+    <a href="{{ '/collab3/nominations/' | relative_url }}">Nominations</a> ·
+    <a href="{{ '/collab3/tasks/' | relative_url }}">Weekly tasks</a>
   </p>
 </section>
 
