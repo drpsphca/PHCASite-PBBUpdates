@@ -1,1 +1,222 @@
-[]
+- id: bella-arcal
+  name: Bella Arcal
+  display_name: Bella
+  moniker: Ang Overseas Factory Senpai ng Cavite
+  age_on_entry: 0
+  hometown: Cavite
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: anthony-constantino
+  name: Anthony Constantino
+  display_name: Anthony
+  moniker: Ang Total Dream Heartthrob ng USA
+  age_on_entry: 0
+  hometown: Los Angeles, California
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: cianne-dominguez
+  name: Cianne Dominguez
+  display_name: Cianne
+  moniker: Ang Madlang Babe ng Antipolo
+  age_on_entry: 0
+  hometown: Antipolo, Rizal
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: primo-alterado
+  name: Primo Alterado
+  display_name: Primo
+  moniker: Ang Kwelang Creator ng Taguig
+  age_on_entry: 0
+  hometown: Taguig City
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: shea-valerio
+  name: Shea Valerio
+  display_name: Shea
+  moniker: Ang Miss Ma-Beauting Anak ng Rizal
+  age_on_entry: 0
+  hometown: Rizal
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: robbie-jaworski
+  name: Robbie Jaworski
+  display_name: Robbie
+  moniker: Ang Dedicated Son ng Pasig
+  age_on_entry: 0
+  hometown: Pasig City
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: nicole-fortuna
+  name: Nicole Fortuna
+  display_name: Nicole
+  moniker: Ang Pretty Dependable Ate ng Bohol
+  age_on_entry: 0
+  hometown: Bohol
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: raheel-bhyria
+  name: Raheel Bhyria
+  display_name: Raheel
+  moniker: Ang Brusko Boksingero ng Las Piñas
+  age_on_entry: 0
+  hometown: Las Piñas
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: mikee-quintos
+  name: Mikee Quintos
+  display_name: Mikee
+  moniker: Ang Independent Archi-tista ng Manila
+  age_on_entry: 0
+  hometown: City of Maynila
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: jeo-ong
+  name: Jeo Ong
+  display_name: Jeo
+  moniker: Ang Adventure Boy-Next-Door ng Palawan
+  age_on_entry: 0
+  hometown: Palawan
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: gehlee-dangca
+  name: Gehlee Dangca
+  display_name: Gehlee
+  moniker: Ang Darling K-Pop Idol ng Las Piñas
+  age_on_entry: 0
+  hometown: Las Piñas
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: ethan-benares
+  name: Ethan Benares
+  display_name: Ethan
+  moniker: Ang Sporty Palangga ng Bacolod
+  age_on_entry: 0
+  hometown: Bacolod
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: calix-esguerra
+  name: Calix Esguerra
+  display_name: Calix
+  moniker: Ang Rampanalong Apo ng Pampanga
+  age_on_entry: 0
+  hometown: Pampanga
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: winwyn-marquez
+  name: Winwyn Marquez
+  display_name: Winwyn
+  moniker: Ang Reyna Mama ng Parañaque
+  age_on_entry: 0
+  hometown: Parañaque
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: nathan-garcia
+  name: Nathan Garcia
+  display_name: Nathan
+  moniker: Ang Hustling Swag Stunner ng Cebu
+  age_on_entry: 0
+  hometown: Cebu
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: lans-nagal
+  name: Lans Nagal
+  display_name: Lans
+  moniker: Ang VetMed Content Creator ng Cavite
+  age_on_entry: 0
+  hometown: Cavite
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
