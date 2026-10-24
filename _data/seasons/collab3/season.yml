@@ -4,7 +4,7 @@ short_title: "PBB Collab 3.0"
 premiere: "2026-10-24"
 # finale: "null"
 days: 1
-status: upcoming          # live | eviction_open | ended
+status: live          # live | eviction_open | ended
 voting_open: false
 current_week: 1
 current_day: 1
