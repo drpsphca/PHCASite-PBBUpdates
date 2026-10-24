@@ -22,7 +22,7 @@ description: View all of the housemates of Pinoy Big Brother Collab 3.0 here.
       <td>{{ h.place }}</td>
       <td>
         <div class="hm-cell">
-          {% include housemate-photo.html id=h.id alt=h.display_name %}
+          {% include housemate-photo.html id=h.id alt=h.display_name season="collab3" %}
           <div>
             <strong>{{ h.display_name }}</strong><br>
             <small>{{ h.name }} · {{ h.hometown }}</small>
