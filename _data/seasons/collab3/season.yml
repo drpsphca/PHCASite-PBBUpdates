@@ -3,11 +3,11 @@ title: "Pinoy Big Brother: Collab 3.0"
 short_title: "PBB Collab 3.0"
 premiere: "2026-10-24"
 # finale: "null"
-days: 2
+days: 3
 status: live          # live | eviction_open | ended
 voting_open: false
 current_week: 1
-current_day: 2
+current_day: 3
 updated_at: "2026-10-25T00:00:00+08:00"
 # winner: tbd
 hosts:
