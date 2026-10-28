@@ -39,7 +39,7 @@ description: Stay up to date with our PBB Updates Board for Pinoy Big Brother Co
       <article class="row">
         <div>
           <strong>Week {{ t.week }} · {{ t.title }}</strong>
-          <p>{{ t.summary }}</p>
+          <p>{{ t.summary | newline_to_br }}</p>
         </div>
         {% include status-badge.html status=t.status %}
       </article>

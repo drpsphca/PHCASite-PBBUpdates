@@ -56,7 +56,7 @@ description: View the full summary of Pinoy Big Brother Gen 11, aired on ABS-CBN
       <article class="row">
         <div>
           <strong>Week {{ t.week }} · {{ t.title }}</strong>
-          <p>{{ t.summary }}</p>
+          <p>{{ t.summary | newline_to_br }}</p>
         </div>
         {% include status-badge.html status=t.status %}
       </article>

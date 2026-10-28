@@ -10,7 +10,7 @@ description: View all of the nomination tallies and eviction voting results of P
 <article class="row">
   <div>
     <strong>Week {{ t.week }} · {{ t.title }}</strong>
-    <p>{{ t.summary }}</p>
+    <p>{{ t.summary | newline_to_br }}</p>
     {% if t.note %}<p class="mono">{{ t.note }}</p>{% endif %}
   </div>
   {% include status-badge.html status=t.status %}
