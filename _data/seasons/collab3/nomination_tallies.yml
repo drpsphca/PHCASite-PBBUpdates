@@ -1,1 +1,6 @@
-[]
+- id: 1
+  title: 1st Nominations
+  week: 3
+  method: House vote
+  note: 
+  entries:
