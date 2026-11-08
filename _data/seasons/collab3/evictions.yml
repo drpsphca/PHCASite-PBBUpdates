@@ -1,1 +1,15 @@
-[]
+- week: 3
+  day: 22
+  date: "2026-11-14"
+  vote_type: save
+  desk_state: started         # started | partial | eviction_night | closed_tally | closed_revealed
+  results_as_of: "2026-11-08T18:00:00+08:00"
+  note: One Kapuso and One Kapamilya will be evicted.
+  nominated:
+    - { id: kapuso-housemate-a, label: "Kapuso Housemate A", percent: 0.00, result: pending }
+    - { id: kapuso-housemate-b, label: "Kapuso Housemate B", percent: 0.00, result: pending }
+    - { id: kapuso-housemate-c, label: "Kapuso Housemate C", percent: 0.00, result: pending }
+    - { id: kapamilya-housemate-a, label: "Kapamilya Housemate A", percent: 0.00, result: pending }
+    - { id: kapamilya-housemate-b, label: "Kapamilya Housemate B", percent: 0.00, result: pending }
+    - { id: kapamilya-housemate-c, label: "Kapamilya Housemate C", percent: 0.00, result: pending }
+  evicted: []
