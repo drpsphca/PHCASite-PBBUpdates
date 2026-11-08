@@ -387,6 +387,10 @@ html[data-theme="dark"] .badge-houseguest {
   background: #5e35b1 !important;
   color: #fff;
 }
+.tally-card.tally-result-pending {
+  background: #222222 !important;
+  color: #fff;
+}
 html[data-theme="dark"] .desktop-nav a:hover,
 html[data-theme="dark"] .desktop-nav a[aria-current="page"],
 html[data-theme="dark"] .mobile-nav a:hover,
