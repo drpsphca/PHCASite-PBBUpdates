@@ -23,13 +23,46 @@ description: Stay up to date with our PBB Updates Board for Pinoy Big Brother Co
 
 <section class="card nom-board">
   <p class="kicker">Eviction desk</p>
-  <h2>Nominated this week</h2>
   {% if season.voting_open %}
-    <p>Public voting is open. Save your nominated housemates.</p>
+    <h2>Current vote standings</h2>
+    <div class="tally-grid">
+      {% for entry in last_tally.entries %}
+        {% if entry.state == "nominated" %}
+          {% assign hm = site.data.seasons.collab3.housemates | where: "id", entry.id | first %}
+          <article class="tally-card desk-hidden">
+            {% include housemate-photo.html id=entry.id alt=hm.display_name season="collab3" %}
+            <h3>{{ hm.display_name }}</h3>
+            <p class="tally-label">0.00%</p>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
   {% else %}
-    <div class="empty">No ongoing eviction voting. Season status: <strong>{{ season.status }}</strong>.</div>
+    <h2>Eviction desk</h2>
+    <div class="empty">No ongoing eviction voting.</div>
   {% endif %}
 </section>
+
+{% assign last_tally = site.data.seasons.collab3.nomination_tallies | last %}
+{% if last_tally %}
+<section class="card block">
+  <h2>Latest nomination tally</h2>
+  <p class="mono">{{ last_tally.title }} · Week {{ last_tally.week }}</p>
+  <div class="tally-grid">
+    {% for entry in last_tally.entries %}
+      {% if entry.state == "nominated" %}
+        {% assign hm = site.data.seasons.collab3.housemates | where: "id", entry.id | first %}
+        <article class="tally-card tally-nominated">
+          {% include housemate-photo.html id=entry.id alt=hm.display_name season="collab3" %}
+          <h3>{{ hm.display_name }}</h3>
+          <p class="tally-label">{{ entry.label }}</p>
+          {% include status-badge.html status="nominated" %}
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 
 <section>
   <h2>Latest weekly tasks</h2>
