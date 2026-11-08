@@ -1,1 +1,7 @@
-[]
+- id: 1
+  title: 1st Nomination
+  week: 3
+  method: House vote
+  note: TBD
+  entries:
+    - { id: tbd, label: Auto, state: tbd }
