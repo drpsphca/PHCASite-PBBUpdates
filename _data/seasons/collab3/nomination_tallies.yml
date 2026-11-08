@@ -6,18 +6,18 @@
     Ligtask Mechanics: Each Kapamilya and Kapuso housemate will balance within the dome while building a tower using four red cups. After stacking, the tower must be placed within the balancer within the podium. If the tower was fell down, they can use their new cups and continue stacking. The fastest Kapamilya and Kapuso housemate will receive an immunity for this nomination. Ligtask winners: Shea Valerio (Kapamilya) with 1 min. 25 secs. and Raheel Bhyria (Kapuso) with 31 secs.
   entries:
     - { id: ethan-benares, label: 0 points, state: nominated }
+    - { id: mikee-quintos, label: 0 points, state: nominated }
     - { id: nicole-fortuna, label: 0 points, state: nominated }
     - { id: calix-esguerra, label: 0 points, state: nominated }
+    - { id: nathan-garcia, label: 0 points, state: nominated }
     - { id: primo-alterado, label: 0 points, state: nominated }
     - { id: bela-arcal, label: 0 points, state: tbd }
     - { id: anthony-constantino, label: 0 points, state: tbd }
     - { id: cianne-dominguez, label: 0 points, state: tbd }
     - { id: robbie-jaworski, label: 0 points, state: tbd }
-    - { id: mikee-quintos, label: 0 points, state: tbd }
     - { id: jeo-ong, label: 0 points, state: tbd }
     - { id: gehlee-dangca, label: 0 points, state: tbd }
     - { id: winwyn-marquez, label: 0 points, state: tbd }
-    - { id: nathan-garcia, label: 0 points, state: tbd }
     - { id: lans-nagal, label: 0 points, state: tbd }
     - { id: shea-valerio, label: Ligtask Winner, state: not_nominated }
     - { id: raheel-bhyria, label: Ligtask Winner, state: not_nominated }
