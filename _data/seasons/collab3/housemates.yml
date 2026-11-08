@@ -24,7 +24,7 @@
   day_exited: null
   status: safe
   place: 0
-  nomination_points: 0
+  nomination_points: 1
 
 - id: cianne-dominguez
   name: Cianne Dominguez
@@ -52,7 +52,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 0
+  nomination_points: 11
 
 - id: shea-valerio
   name: Shea Valerio
@@ -78,7 +78,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: houseguest
   place: 0
   nomination_points: 0
 
@@ -94,7 +94,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 0
+  nomination_points: 3
 
 - id: raheel-bhyria
   name: Raheel Bhyria
@@ -122,7 +122,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 0
+  nomination_points: 1
 
 - id: jeo-ong
   name: Jeo Ong
@@ -164,7 +164,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 0
+  nomination_points: 12
 
 - id: calix-esguerra
   name: Calix Esguerra
@@ -178,7 +178,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 0
+  nomination_points: 15
 
 - id: winwyn-marquez
   name: Winwyn Marquez
@@ -206,7 +206,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 0
+  nomination_points: 2
 
 - id: lans-nagal
   name: Lans Nagal

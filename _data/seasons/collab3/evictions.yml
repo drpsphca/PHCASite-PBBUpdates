@@ -6,10 +6,10 @@
   results_as_of: "2026-11-08T18:00:00+08:00"
   note: One Kapuso and One Kapamilya will be evicted.
   nominated:
-    - { id: kapuso-housemate-a, label: "Kapuso Housemate A", percent: 0.00, result: pending }
-    - { id: kapuso-housemate-b, label: "Kapuso Housemate B", percent: 0.00, result: pending }
-    - { id: kapuso-housemate-c, label: "Kapuso Housemate C", percent: 0.00, result: pending }
-    - { id: kapamilya-housemate-a, label: "Kapamilya Housemate A", percent: 0.00, result: pending }
-    - { id: kapamilya-housemate-b, label: "Kapamilya Housemate B", percent: 0.00, result: pending }
-    - { id: kapamilya-housemate-c, label: "Kapamilya Housemate C", percent: 0.00, result: pending }
+    - { id: kapuso-a, label: "Kapuso A", percent: 0.00, result: pending }
+    - { id: kapuso-b, label: "Kapuso B", percent: 0.00, result: pending }
+    - { id: kapuso-c, label: "Kapuso C", percent: 0.00, result: pending }
+    - { id: kapamilya-a, label: "Kapamilya A", percent: 0.00, result: pending }
+    - { id: kapamilya-b, label: "Kapamilya B", percent: 0.00, result: pending }
+    - { id: kapamilya-c, label: "Kapamilya C", percent: 0.00, result: pending }
   evicted: []
