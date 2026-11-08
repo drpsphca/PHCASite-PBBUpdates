@@ -3,16 +3,14 @@
   week: 3
   method: House vote and Ligtask
   note: | 
-    Ligtask Mechanics: TBD. Ligtask winners: Shea Valerio (Kapamilya) with 1 min. 25 secs. and TBD (Kapuso) with TBD. See "Extras" for full Ligtask results.
+    Ligtask Mechanics: TBD. Ligtask winners: Shea Valerio (Kapamilya) with 1 min. 25 secs. and Raheel Bhyria (Kapuso) with 31 secs. See "Extras" for full Ligtask results.
   entries:
     - { id: bela-arcal, label: 0 points, state: tbd }
     - { id: anthony-constantino, label: 0 points, state: tbd }
     - { id: cianne-dominguez, label: 0 points, state: tbd }
     - { id: primo-alterado, label: 0 points, state: tbd }
-    - { id: shea-valerio, label: Ligtask Winner, state: not_nominated }
     - { id: robbie-jaworski, label: 0 points, state: tbd }
     - { id: nicole-fortuna, label: 0 points, state: tbd }
-    - { id: raheel-bhyria, label: 0 points, state: tbd }
     - { id: mikee-quintos, label: 0 points, state: tbd }
     - { id: jeo-ong, label: 0 points, state: tbd }
     - { id: gehlee-dangca, label: 0 points, state: tbd }
@@ -21,3 +19,5 @@
     - { id: winwyn-marquez, label: 0 points, state: tbd }
     - { id: nathan-garcia, label: 0 points, state: tbd }
     - { id: lans-nagal, label: 0 points, state: tbd }
+    - { id: shea-valerio, label: Ligtask Winner, state: not_nominated }
+    - { id: raheel-bhyria, label: Ligtask Winner, state: not_nominated }
