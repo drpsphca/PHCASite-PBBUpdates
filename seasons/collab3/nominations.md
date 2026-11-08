@@ -35,12 +35,17 @@ description: View all of the nomination tallies and eviction voting results of P
   <p>Vote type: {% if e.vote_type == "save_evict" %}Save or Evict Voting{% elsif e.vote_type == "save" %}Save Voting{% elsif e.vote_type == "finale" %}Finale{% else %}{{ e.vote_type }}{% endif %}</p>
   <div class="tally-grid">
     {% for n in e.nominated %}
-      {% assign hm = site.data.seasons.collab3.housemates | where: "id", n.id | first %}
-      <article class="tally-card tally-result-{{ n.result }}{% if e.week >= 13 %} tally-finale tally-hm-{{ n.id }}{% endif %}">
-      {% include housemate-photo.html id=n.id alt=hm.display_name %}
+  {% assign hm = site.data.seasons.collab3.housemates | where: "id", n.id | first %}
+  <article class="tally-card tally-result-{{ n.result }}">
+    {% if hm %}
+      {% include housemate-photo.html id=n.id alt=hm.display_name season="collab3" %}
       <h3>{{ hm.display_name }}</h3>
-      <p class="tally-label">{{ n.percent }}%</p>
-      {% include status-badge.html status=n.result %}
+    {% else %}
+      <img class="hm-photo" src="{{ '/assets/img/misc/misc_hm.png' | relative_url }}" alt="{{ n.label }}">
+      <h3>{{ n.label }}</h3>
+    {% endif %}
+    <p class="tally-label">{{ n.percent }}%</p>
+    {% include status-badge.html status=n.result %}
   </article>
 {% endfor %}
 
