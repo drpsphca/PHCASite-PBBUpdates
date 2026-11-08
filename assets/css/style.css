@@ -379,6 +379,10 @@ html[data-theme="dark"] .badge-houseguest {
   color: #b39ddb;
   border-color: #5e35b1;
 }
+.tally-houseguest {
+  background: #5e35b1;
+  color: #fff;
+}
 html[data-theme="dark"] .desktop-nav a:hover,
 html[data-theme="dark"] .desktop-nav a[aria-current="page"],
 html[data-theme="dark"] .mobile-nav a:hover,
