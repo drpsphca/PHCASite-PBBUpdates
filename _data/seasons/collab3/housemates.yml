@@ -78,7 +78,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: houseguest
   place: 0
   nomination_points: 0
 

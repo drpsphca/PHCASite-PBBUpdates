@@ -15,9 +15,9 @@
     - { id: cianne-dominguez, label: 0 points, state: not_nominated }
     - { id: gehlee-dangca, label: 0 points, state: not_nominated }
     - { id: jeo-ong, label: 0 points, state: not_nominated }
-    - { id: robbie-jaworski, label: 0 points, state: not_nominated }
     - { id: bela-arcal, label: 0 points, state: not_nominated }
     - { id: lans-nagal, label: 0 points, state: not_nominated }
     - { id: winwyn-marquez, label: 0 points, state: not_nominated }
-    - { id: shea-valerio, label: Ligtask Winner, state: not_nominated }
-    - { id: raheel-bhyria, label: Ligtask Winner, state: not_nominated }
+    - { id: robbie-jaworski, label: Houseguest, state: ineligible }
+    - { id: shea-valerio, label: Ligtask Winner, state: ineligible }
+    - { id: raheel-bhyria, label: Ligtask Winner, state: ineligible }
