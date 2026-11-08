@@ -50,7 +50,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 0
   nomination_points: 0
 
@@ -92,7 +92,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 0
   nomination_points: 0
 
@@ -162,7 +162,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 0
   nomination_points: 0
 
@@ -176,7 +176,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: safe
+  status: nominated
   place: 0
   nomination_points: 0
 
