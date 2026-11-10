@@ -7,8 +7,8 @@ days: 17
 status: eviction_open          # live | eviction_open | ended
 voting_open: true
 current_week: 3
-current_day: 17
-updated_at: "2026-11-08T01:15:00+08:00"
+current_day: 18
+updated_at: "2026-11-10T12:10:00+08:00"
 # winner: tbd
 hosts:
 - Bianca Gonzalez
