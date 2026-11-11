@@ -3,12 +3,12 @@ title: "Pinoy Big Brother: Collab 3.0"
 short_title: "PBB Collab 3.0"
 premiere: "2026-10-24"
 # finale: "null"
-days: 19
+days: 20
 status: eviction_open          # live | eviction_open | ended
 voting_open: true
 current_week: 3
-current_day: 19
-updated_at: "2026-11-11T11:40:00+08:00"
+current_day: 20
+updated_at: "2026-11-12T00:05:00+08:00"
 # winner: tbd
 hosts:
 - Bianca Gonzalez
