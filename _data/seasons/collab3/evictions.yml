@@ -3,13 +3,13 @@
   date: "2026-11-14"
   vote_type: save
   desk_state: partial         # started | partial | eviction_night | closed_tally | closed_revealed
-  results_as_of: "2026-11-09T17:00:00+08:00"
+  results_as_of: "2026-11-11T17:00:00+08:00"
   note: One Kapuso and One Kapamilya will be evicted from the Big Brother house.
   nominated:
-    - { id: kapuso-a, label: "Kapuso A", percent: 41.81, result: pending }
-    - { id: kapuso-b, label: "Kapuso B", percent: 13.07, result: pending }
-    - { id: kapuso-c, label: "Kapuso C", percent: 45.12, result: pending }
-    - { id: kapamilya-a, label: "Kapamilya A", percent: 74.06, result: pending }
-    - { id: kapamilya-b, label: "Kapamilya B", percent: 0.97, result: pending }
-    - { id: kapamilya-c, label: "Kapamilya C", percent: 24.96, result: pending }
+    - { id: kapuso-a, label: "Kapuso A", percent: 32.06, result: pending }
+    - { id: kapuso-b, label: "Kapuso B", percent: 23.03, result: pending }
+    - { id: kapuso-c, label: "Kapuso C", percent: 44.91, result: pending }
+    - { id: kapamilya-a, label: "Kapamilya A", percent: 62.72, result: pending }
+    - { id: kapamilya-b, label: "Kapamilya B", percent: 1.62, result: pending }
+    - { id: kapamilya-c, label: "Kapamilya C", percent: 35.66, result: pending }
   evicted: []
