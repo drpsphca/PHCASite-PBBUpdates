@@ -50,7 +50,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
   place: 0
   nomination_points: 11
 
@@ -166,20 +166,6 @@
   place: 0
   nomination_points: 12
 
-- id: calix-esguerra
-  name: Calix Esguerra
-  display_name: Calix
-  moniker: Ang Rampanalong Apo ng Pampanga
-  age_on_entry: 18
-  hometown: Pampanga
-  type: Kapamilya
-  pair_id: null
-  day_entered: 1
-  day_exited: null
-  status: nominated
-  place: 0
-  nomination_points: 15
-
 - id: winwyn-marquez
   name: Winwyn Marquez
   display_name: Winwyn
@@ -204,7 +190,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
   place: 0
   nomination_points: 2
 
@@ -221,3 +207,17 @@
   status: safe
   place: 0
   nomination_points: 0
+
+- id: calix-esguerra
+  name: Calix Esguerra
+  display_name: Calix
+  moniker: Ang Rampanalong Apo ng Pampanga
+  age_on_entry: 18
+  hometown: Pampanga
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: evicted
+  place: 16
+  nomination_points: 15

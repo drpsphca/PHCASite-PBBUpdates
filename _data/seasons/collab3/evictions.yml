@@ -9,7 +9,7 @@
     - { id: kapuso-a, label: "Kapuso A", percent: 28.7, result: pending }
     - { id: kapuso-b, label: "Kapuso B", percent: 30.6, result: pending }
     - { id: kapuso-c, label: "Kapuso C", percent: 40.7, result: pending }
-    - { id: kapamilya-a, label: "Kapamilya A", percent: 54.6, result: pending }
-    - { id: kapamilya-b, label: "Kapamilya B", percent: 1.6, result: pending }
-    - { id: kapamilya-c, label: "Kapamilya C", percent: 43.8, result: pending }
-  evicted: []
+    - { id: kapamilya-a, label: "Kapamilya A", percent: 54.6, result: saved }
+    - { id: kapamilya-c, label: "Kapamilya C", percent: 43.8, result: saved }
+    - { id: calix-esguerra, label: "Calix", percent: 1.6, result: evicted }
+  evicted: [calix-esguerra]
