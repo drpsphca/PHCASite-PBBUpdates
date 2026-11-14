@@ -92,7 +92,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
   place: 0
   nomination_points: 3
 
@@ -120,7 +120,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
   place: 0
   nomination_points: 1
 
@@ -151,20 +151,6 @@
   status: safe
   place: 0
   nomination_points: 0
-
-- id: ethan-benares
-  name: Ethan Benares
-  display_name: Ethan
-  moniker: Ang Sporty Palangga ng Bacolod
-  age_on_entry: 20
-  hometown: Bacolod
-  type: Kapuso
-  pair_id: null
-  day_entered: 1
-  day_exited: null
-  status: nominated
-  place: 0
-  nomination_points: 12
 
 - id: winwyn-marquez
   name: Winwyn Marquez
@@ -208,6 +194,20 @@
   place: 0
   nomination_points: 0
 
+- id: ethan-benares
+  name: Ethan Benares
+  display_name: Ethan
+  moniker: Ang Sporty Palangga ng Bacolod
+  age_on_entry: 20
+  hometown: Bacolod
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: evicted
+  place: 8
+  nomination_points: 12
+
 - id: calix-esguerra
   name: Calix Esguerra
   display_name: Calix
@@ -219,5 +219,5 @@
   day_entered: 1
   day_exited: null
   status: evicted
-  place: 16
+  place: 8
   nomination_points: 15

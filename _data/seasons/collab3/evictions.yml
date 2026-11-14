@@ -6,10 +6,10 @@
   results_as_of: "2026-11-14T18:55:00+08:00"
   note: One Kapuso and One Kapamilya will be evicted from the Big Brother house.
   nominated:
-    - { id: kapuso-a, label: "Kapuso A", percent: 28.7, result: pending }
-    - { id: kapuso-b, label: "Kapuso B", percent: 30.6, result: pending }
-    - { id: kapuso-c, label: "Kapuso C", percent: 40.7, result: pending }
-    - { id: kapamilya-a, label: "Kapamilya A", percent: 54.6, result: saved }
-    - { id: kapamilya-c, label: "Kapamilya C", percent: 43.8, result: saved }
+    - { id: nathan-garcia, label: "Nathan", percent: 54.6, result: saved }
+    - { id: primo-alterado, label: "Primo", percent: 43.8, result: saved }
+    - { id: mikee-quintos, label: "Mikee", percent: 40.7, result: saved }
+    - { id: nicole-fortuna, label: "Nicole", percent: 30.6, result: saved }
     - { id: calix-esguerra, label: "Calix", percent: 1.6, result: evicted }
-  evicted: [calix-esguerra]
+    - { id: ethan-benares, label: "Ethan", percent: 28.7, result: evicted }
+  evicted: [calix-esguerra, ethan-benares]
