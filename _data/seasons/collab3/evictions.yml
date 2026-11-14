@@ -3,7 +3,7 @@
   date: "2026-11-14"
   vote_type: save
   desk_state: closed_revealed         # started | partial | eviction_night | closed_tally | closed_revealed
-  results_as_of: "2026-11-14T17:00:00+08:00"
+  results_as_of: "2026-11-14T18:55:00+08:00"
   note: One Kapuso and One Kapamilya will be evicted from the Big Brother house.
   nominated:
     - { id: kapuso-a, label: "Kapuso A", percent: 28.7, result: pending }
