@@ -21,3 +21,24 @@
     - { id: robbie-jaworski, label: Houseguest, state: ineligible }
     - { id: shea-valerio, label: Ligtask Winner, state: ineligible }
     - { id: raheel-bhyria, label: Ligtask Winner, state: ineligible }
+- id: 2
+  title: 2nd Nomination
+  week: 4
+  method: House vote and Ligtask
+  note: | 
+    Ligtask Mechanics: TBD. Ligtask winners: TBD (Kapamilya) with TBD. and TBD (Kapuso) with TBD.
+  entries:
+    - { id: nicole-fortuna, label: 0 points, state: pending }
+    - { id: mikee-quintos, label: 0 points, state: pending }
+    - { id: primo-alterado, label: 0 points, state: pending }
+    - { id: nathan-garcia, label: 0 points, state: pending }
+    - { id: anthony-constantino, label: 0 points, state: pending }
+    - { id: cianne-dominguez, label: 0 points, state: pending }
+    - { id: gehlee-dangca, label: 0 points, state: pending }
+    - { id: jeo-ong, label: 0 points, state: pending }
+    - { id: bela-arcal, label: 0 points, state: pending }
+    - { id: lans-nagal, label: 0 points, state: pending }
+    - { id: winwyn-marquez, label: 0 points, state: pending }
+    - { id: robbie-jaworski, label: 0 points, state: pending }
+    - { id: shea-valerio, label: 0 points, state: pending }
+    - { id: raheel-bhyria, label: 0 points, state: pending }
