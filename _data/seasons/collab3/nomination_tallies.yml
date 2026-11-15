@@ -18,7 +18,7 @@
     - { id: bela-arcal, label: 0 points, state: not_nominated }
     - { id: lans-nagal, label: 0 points, state: not_nominated }
     - { id: winwyn-marquez, label: 0 points, state: not_nominated }
-    - { id: robbie-jaworski, label: Houseguest, state: ineligible }
+    - { id: robbie-jaworski, label: House Guest, state: ineligible }
     - { id: shea-valerio, label: Ligtask Winner, state: ineligible }
     - { id: raheel-bhyria, label: Ligtask Winner, state: ineligible }
 - id: 2
@@ -26,7 +26,7 @@
   week: 4
   method: House vote and Ligtask
   note: | 
-    Ligtask Mechanics: TBD. Ligtask winners: TBD (Kapamilya) with TBD. and TBD (Kapuso) with TBD.
+    Ligtask Mechanics: Each Kapuso and Kapamilya housemate will get blocks incrementing with 5, 10, 15, and 20 points by moving it within the white platform while a baloon remains the air using their bare hands. Only one block can be moved at a time. If the block is farther than the white platform, they can accumulate more points. Housemates will only have two (2) minutes to perform this Ligtask, unless the baloon fells to the floor. The Kapamilya and Kapuso housemate with the highest amount of points will receive an immunity for this nomination. Ligtask winners: Jeo Ong (Kapamilya) with 325 points. and Lans Nagal (Kapuso) with 335 points.
   entries:
     - { id: nicole-fortuna, label: 0 points, state: pending }
     - { id: mikee-quintos, label: 0 points, state: pending }
@@ -35,10 +35,10 @@
     - { id: anthony-constantino, label: 0 points, state: pending }
     - { id: cianne-dominguez, label: 0 points, state: pending }
     - { id: gehlee-dangca, label: 0 points, state: pending }
-    - { id: jeo-ong, label: 0 points, state: pending }
     - { id: bela-arcal, label: 0 points, state: pending }
-    - { id: lans-nagal, label: 0 points, state: pending }
     - { id: winwyn-marquez, label: 0 points, state: pending }
-    - { id: robbie-jaworski, label: 0 points, state: pending }
     - { id: shea-valerio, label: 0 points, state: pending }
     - { id: raheel-bhyria, label: 0 points, state: pending }
+    - { id: robbie-jaworski, label: House Guest, state: ineligible }
+    - { id: jeo-ong, label: Ligtask Winner, state: ineligible }
+    - { id: lans-nagal, label: Ligtask Winner, state: ineligible }
