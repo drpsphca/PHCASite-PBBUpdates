@@ -194,6 +194,62 @@
   place: 0
   nomination_points: 0
 
+- id: allen-ansay
+  name: Allen Ansay
+  display_name: Allen
+  moniker: Ang Bro-binsyanong Dreamer ng Camarines Sur
+  age_on_entry: 0
+  hometown: Camarines Sur
+  type: Kapuso
+  pair_id: null
+  day_entered: 23
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: ronnie-pasamba
+  name: Ronnie Pasamba
+  display_name: Ronnie
+  moniker: Ang Varsity Cutie ng Bulacan
+  age_on_entry: 0
+  hometown: Bulacan
+  type: Kapuso
+  pair_id: null
+  day_entered: 23
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: daniela-stranner
+  name: Daniela Stranner
+  display_name: Daniela
+  moniker: Ang Sassy Cabalen ng Pampanga
+  age_on_entry: 0
+  hometown: Pampanga
+  type: Kapamilya
+  pair_id: null
+  day_entered: 23
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: lorelaine-sanosa
+  name: Lorelaine Sañosa
+  display_name: Lorelaine
+  moniker: Ang Devoted Dancer ng Quezon City
+  age_on_entry: 0
+  hometown: Quezon City
+  type: Kapamilya
+  pair_id: null
+  day_entered: 23
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
 - id: ethan-benares
   name: Ethan Benares
   display_name: Ethan
