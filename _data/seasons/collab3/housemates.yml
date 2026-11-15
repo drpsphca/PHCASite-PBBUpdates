@@ -9,7 +9,7 @@
   day_entered: 1
   day_exited: null
   status: nominated
-  place: 0
+  place: 5
   nomination_points: 0
 
 - id: anthony-constantino
@@ -24,7 +24,7 @@
   day_exited: null
   status: safe
   place: 0
-  nomination_points: 1
+  nomination_points: 3
 
 - id: cianne-dominguez
   name: Cianne Dominguez
@@ -37,7 +37,7 @@
   day_entered: 1
   day_exited: null
   status: nominated
-  place: 0
+  place: 2
   nomination_points: 0
 
 - id: primo-alterado
@@ -52,7 +52,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 11
+  nomination_points: 23
 
 - id: shea-valerio
   name: Shea Valerio
@@ -66,7 +66,7 @@
   day_exited: null
   status: safe
   place: 0
-  nomination_points: 0
+  nomination_points: 2
 
 - id: robbie-jaworski
   name: Robbie Jaworski
@@ -94,7 +94,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 3
+  nomination_points: 5
 
 - id: raheel-bhyria
   name: Raheel Bhyria
@@ -108,7 +108,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 0
+  nomination_points: 8
 
 - id: mikee-quintos
   name: Mikee Quintos
@@ -122,7 +122,7 @@
   day_exited: null
   status: safe
   place: 0
-  nomination_points: 1
+  nomination_points: 3
 
 - id: jeo-ong
   name: Jeo Ong
@@ -150,7 +150,7 @@
   day_exited: null
   status: safe
   place: 0
-  nomination_points: 0
+  nomination_points: 2
 
 - id: winwyn-marquez
   name: Winwyn Marquez
@@ -178,7 +178,7 @@
   day_exited: null
   status: nominated
   place: 0
-  nomination_points: 2
+  nomination_points: 4
 
 - id: lans-nagal
   name: Lans Nagal
