@@ -9,8 +9,8 @@
   day_entered: 1
   day_exited: null
   status: nominated
-  place: 5
-  nomination_points: 0
+  place: 0
+  nomination_points: 5
 
 - id: anthony-constantino
   name: Anthony Constantino
@@ -37,8 +37,8 @@
   day_entered: 1
   day_exited: null
   status: nominated
-  place: 2
-  nomination_points: 0
+  place: 0
+  nomination_points: 2
 
 - id: primo-alterado
   name: Primo Alterado
