@@ -51,14 +51,14 @@
   note: | 
     Ligtask Mechanics: TBD. Ligtask winners: TBD.
   entries:
-    - { id: primo-alterado, label: 0 points, state: nominated }
-    - { id: nathan-garcia, label: 0 points, state: nominated }
-    - { id: raheel-bhyria, label: 0 points, state: nominated }
-    - { id: bela-arcal, label: 0 points, state: nominated }
-    - { id: gehlee-dangca, label: 0 points, state: not_nominated }
-    - { id: shea-valerio, label: 0 points, state: not_nominated }
-    - { id: mikee-quintos, label: 0 points, state: not_nominated }
-    - { id: anthony-constantino, label: 0 points, state: not_nominated }
-    - { id: winwyn-marquez, label: 0 points, state: not_nominated }
-    - { id: jeo-ong, label: 0 points, state: not_nominated }
-    - { id: lans-nagal, label: 0 points, state: not_nominated }
+    - { id: primo-alterado, label: 0 points, state: pending }
+    - { id: nathan-garcia, label: 0 points, state: pending }
+    - { id: raheel-bhyria, label: 0 points, state: pending }
+    - { id: bela-arcal, label: 0 points, state: pending }
+    - { id: gehlee-dangca, label: 0 points, state: pending }
+    - { id: shea-valerio, label: 0 points, state: pending }
+    - { id: mikee-quintos, label: 0 points, state: pending }
+    - { id: anthony-constantino, label: 0 points, state: pending }
+    - { id: winwyn-marquez, label: 0 points, state: pending }
+    - { id: jeo-ong, label: 0 points, state: pending }
+    - { id: lans-nagal, label: 0 points, state: pending }
