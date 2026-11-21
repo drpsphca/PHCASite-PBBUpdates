@@ -8,7 +8,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: saved
+  status: safe
   place: 0
   nomination_points: 5
 
@@ -65,7 +65,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: saved
+  status: safe
   place: 0
   nomination_points: 8
 
@@ -135,7 +135,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: saved
+  status: safe
   place: 0
   nomination_points: 4
 
