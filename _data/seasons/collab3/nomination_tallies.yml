@@ -60,5 +60,5 @@
     - { id: mikee-quintos, label: 0 points, state: not_nominated }
     - { id: anthony-constantino, label: 0 points, state: not_nominated }
     - { id: winwyn-marquez, label: 0 points, state: not_nominated }
-    - { id: jeo-ong, label: 0 points, state: ineligible }
-    - { id: lans-nagal, label: 0 points, state: ineligible }
+    - { id: jeo-ong, label: 0 points, state: not_nominated }
+    - { id: lans-nagal, label: 0 points, state: not_nominated }
