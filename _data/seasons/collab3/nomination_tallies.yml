@@ -62,3 +62,7 @@
     - { id: winwyn-marquez, label: 0 points, state: pending }
     - { id: jeo-ong, label: 0 points, state: pending }
     - { id: lans-nagal, label: 0 points, state: pending }
+    - { id: allen-ansay, label: New Housemate, state: ineligible }
+    - { id: ronnie-pasamba, label: New Housemate, state: ineligible }
+    - { id: lorelaine-sanosa, label: New Housemate, state: ineligible }
+    - { id: daniela-stranner, label: New Housemate, state: ineligible }
