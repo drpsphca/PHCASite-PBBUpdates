@@ -6,12 +6,12 @@
   results_as_of: "2026-11-14T18:55:00+08:00"
   note: One Kapuso and One Kapamilya will be evicted from the Big Brother house.
   nominated:
-    - { id: nathan-garcia, label: "Nathan", percent: 54.6, result: saved }
-    - { id: primo-alterado, label: "Primo", percent: 43.8, result: saved }
-    - { id: mikee-quintos, label: "Mikee", percent: 40.7, result: saved }
-    - { id: nicole-fortuna, label: "Nicole", percent: 30.6, result: saved }
-    - { id: calix-esguerra, label: "Calix", percent: 1.6, result: evicted }
-    - { id: ethan-benares, label: "Ethan", percent: 28.7, result: evicted }
+    - { id: nathan-garcia, label: "Nathan", percent: 54.60, result: saved }
+    - { id: primo-alterado, label: "Primo", percent: 43.80, result: saved }
+    - { id: mikee-quintos, label: "Mikee", percent: 40.70, result: saved }
+    - { id: nicole-fortuna, label: "Nicole", percent: 30.60, result: saved }
+    - { id: calix-esguerra, label: "Calix", percent: 1.60, result: evicted }
+    - { id: ethan-benares, label: "Ethan", percent: 28.70, result: evicted }
   evicted: [calix-esguerra, ethan-benares]
 - week: 4
   day: 29
@@ -21,10 +21,10 @@
   results_as_of: "2026-11-21T17:00:00+08:00"
   note: One Kapuso and One Kapamilya will be evicted from the Big Brother house.
   nominated:
-    - { id: kapuso-a, label: "Kapuso A", percent: 22.6, result: pending }
-    - { id: kapuso-b, label: "Kapuso B", percent: 40.1, result: pending }
-    - { id: kapuso-c, label: "Kapuso C", percent: 37.3, result: pending }
-    - { id: kapamilya-a, label: "Kapamilya A", percent: 4.1, result: pending }
-    - { id: kapamilya-b, label: "Kapamilya B", percent: 40.9, result: pending }
-    - { id: kapamilya-c, label: "Kapamilya C", percent: 55.0, result: pending }
+    - { id: kapuso-a, label: "Kapuso A", percent: 23.92, result: pending }
+    - { id: kapuso-b, label: "Kapuso B", percent: 39.65, result: pending }
+    - { id: kapuso-c, label: "Kapuso C", percent: 36.43, result: pending }
+    - { id: kapamilya-a, label: "Kapamilya A", percent: 3.98, result: pending }
+    - { id: kapamilya-b, label: "Kapamilya B", percent: 41.08, result: pending }
+    - { id: kapamilya-c, label: "Kapamilya C", percent: 54.93, result: pending }
   evicted: []
