@@ -68,20 +68,6 @@
   place: 0
   nomination_points: 2
 
-- id: robbie-jaworski
-  name: Robbie Jaworski
-  display_name: Robbie
-  moniker: Ang Dedicated Son ng Pasig
-  age_on_entry: 26
-  hometown: Pasig City
-  type: Kapamilya
-  pair_id: null
-  day_entered: 1
-  day_exited: null
-  status: houseguest
-  place: 0
-  nomination_points: 0
-
 - id: nicole-fortuna
   name: Nicole Fortuna
   display_name: Nicole
@@ -247,6 +233,20 @@
   day_entered: 23
   day_exited: null
   status: safe
+  place: 0
+  nomination_points: 0
+
+- id: robbie-jaworski
+  name: Robbie Jaworski
+  display_name: Robbie
+  moniker: Ang Dedicated Son ng Pasig
+  age_on_entry: 26
+  hometown: Pasig City
+  type: Kapamilya
+  pair_id: null
+  day_entered: 1
+  day_exited: 29
+  status: evicted
   place: 0
   nomination_points: 0
 
