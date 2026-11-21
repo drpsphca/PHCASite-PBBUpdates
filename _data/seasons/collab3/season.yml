@@ -7,7 +7,7 @@ days: 29
 status: eviction_open          # live | eviction_open | ended
 voting_open: true
 current_week: 5
-current_day: 289
+current_day: 29
 updated_at: "2026-11-21T02:15:00+08:00"
 # winner: tbd
 hosts:
