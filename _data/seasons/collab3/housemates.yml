@@ -8,7 +8,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: saved
   place: 0
   nomination_points: 5
 
@@ -36,7 +36,8 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: safe
+  status: safe
   place: 0
   nomination_points: 23
 
@@ -54,20 +55,6 @@
   place: 0
   nomination_points: 2
 
-- id: nicole-fortuna
-  name: Nicole Fortuna
-  display_name: Nicole
-  moniker: Ang Pretty Dependable Ate ng Bohol
-  age_on_entry: 21
-  hometown: Bohol
-  type: Kapuso
-  pair_id: null
-  day_entered: 1
-  day_exited: null
-  status: nominated
-  place: 0
-  nomination_points: 5
-
 - id: raheel-bhyria
   name: Raheel Bhyria
   display_name: Raheel
@@ -78,7 +65,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: saved
   place: 0
   nomination_points: 8
 
@@ -148,7 +135,7 @@
   pair_id: null
   day_entered: 1
   day_exited: null
-  status: nominated
+  status: saved
   place: 0
   nomination_points: 4
 
@@ -235,6 +222,20 @@
   status: evicted
   place: 0
   nomination_points: 0
+
+- id: nicole-fortuna
+  name: Nicole Fortuna
+  display_name: Nicole
+  moniker: Ang Pretty Dependable Ate ng Bohol
+  age_on_entry: 21
+  hometown: Bohol
+  type: Kapuso
+  pair_id: null
+  day_entered: 1
+  day_exited: null
+  status: evicted
+  place: 8
+  nomination_points: 5
 
 - id: cianne-dominguez
   name: Cianne Dominguez
