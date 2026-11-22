@@ -27,4 +27,4 @@
     - { id: bela-arcal, label: "Bela", percent: 36.43, result: saved }
     - { id: cianne-dominguez, label: "Cianne", percent: 3.98, result: evicted }
     - { id: nicole-fortuna, label: "Nicole", percent: 23.92, result: evicted }
-  evicted: []
+  evicted: [cianne-dominguez, nicole-fortuna]
