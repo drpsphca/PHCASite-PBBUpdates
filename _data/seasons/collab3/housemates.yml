@@ -232,7 +232,7 @@
   type: Kapuso
   pair_id: null
   day_entered: 1
-  day_exited: null
+  day_exited: 29
   status: evicted
   place: 8
   nomination_points: 5
@@ -246,7 +246,7 @@
   type: Kapamilya
   pair_id: null
   day_entered: 1
-  day_exited: null
+  day_exited: 29
   status: evicted
   place: 8
   nomination_points: 2
