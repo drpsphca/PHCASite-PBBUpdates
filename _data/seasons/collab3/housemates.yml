@@ -209,6 +209,76 @@
   place: 0
   nomination_points: 0
 
+- id: eugene-reggio
+  name: Eugene Reggio
+  display_name: Eugene
+  moniker: Ang Driven K-Brit Model ng United Kingdom
+  age_on_entry: 0
+  hometown: United Kingdom
+  type: Kapamilya
+  pair_id: null
+  day_entered: 30
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: victoria-vargas
+  name: Victoria Vargas
+  display_name: Victoria
+  moniker: Ang Fasionable Daughter ng Quezon City
+  age_on_entry: 0
+  hometown: Quezon City
+  type: Kapamilya
+  pair_id: null
+  day_entered: 30
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: race-matias
+  name: Race Matias
+  display_name: Race
+  moniker: Ang Willful Brother ng Muntinlupa
+  age_on_entry: 0
+  hometown: Muntinlupa
+  type: Kapamilya
+  pair_id: null
+  day_entered: 30
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: lexi-gonzales
+  name: Lexi Gonzales
+  display_name: Lexi
+  moniker: Ang Fierce Princess ng Cavite
+  age_on_entry: 0
+  hometown: Cavite
+  type: Kapuso
+  pair_id: null
+  day_entered: 30
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
+- id: yza-uy
+  name: Yza Uy
+  display_name: Yza
+  moniker: ng Determined Chinitachiever ng Quezon City
+  age_on_entry: 0
+  hometown: Quezon City
+  type: Kapuso
+  pair_id: null
+  day_entered: 30
+  day_exited: null
+  status: safe
+  place: 0
+  nomination_points: 0
+
 - id: robbie-jaworski
   name: Robbie Jaworski
   display_name: Robbie
