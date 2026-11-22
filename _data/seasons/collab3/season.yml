@@ -5,7 +5,7 @@ premiere: "2026-10-24"
 # finale: "null"
 days: 31
 status: live          # live | eviction_open | ended
-voting_open: true
+voting_open: false
 current_week: 5
 current_day: 31
 updated_at: "2026-11-23T00:15:00+08:00"
